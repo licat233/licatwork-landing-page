@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斑掉了，好開心！</title>
+    <link type="favicon" rel="shortcut icon" href="https://img.alicdn.com/imgextra/i1/917298378/O1CN01kKtIsB2BlB0496h16_!!917298378.png">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3392837_cxpm2mhxnsu.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3446914_gls2w5uy4q.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        i {
+            font-style: normal;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        #bigBox {
+            padding: 10px 13px 0;
+        }
+
+        .bigTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .bigTopL {
+            display: flex;
+        }
+
+        .bigTopL img {
+            display: block;
+            width: 44px;
+            height: 44px;
+        }
+
+        .bigTopSmallDiv {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .bigTopSmallDiv-p1 {
+            font-weight: 600;
+        }
+
+        .bigTopSmallDiv-p2 {
+            font-size: 14px;
+        }
+
+        .bigTopR {
+            width: 86px;
+            height: 32px;
+            border-radius: 6px;
+            border: 1px solid #01ba04;
+        }
+
+        .bigTopR a {
+            display: block;
+            text-align: center;
+            line-height: 32px;
+            font-size: 12px;
+            color: #01ba04;
+            font-weight: 600;
+        }
+
+        .bigBody {
+            margin-top: 10px;
+        }
+
+        .switchTop {
+            display: flex;
+            justify-content: center;
+        }
+
+        .switchTopContent {
+            display: flex;
+            align-items: center;
+        }
+
+        .switchTop img {
+            width: 274px;
+            display: block;
+        }
+
+        .switchTop span {
+            display: block;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+
+        }
+
+        .switchL {
+            background-image: url('https://img.alicdn.com/imgextra/i4/917298378/O1CN01RpJPlZ2BlB01gEo9q_!!917298378.png');
+
+        }
+
+        .switchR {
+            background-image: url('https://img.alicdn.com/imgextra/i4/917298378/O1CN01uiDKdu2BlAzwhsOgM_!!917298378.png');
+        }
+
+        .switchL:hover {
+            background-image: url("https://img.alicdn.com/imgextra/i1/917298378/O1CN01yU7hCN2BlAzoPe35E_!!917298378.png");
+        }
+
+        .switchR:hover {
+            background-image: url("https://img.alicdn.com/imgextra/i3/917298378/O1CN01Qs8dW62BlB01gEjza_!!917298378.png");
+        }
+
+        .switchThumbnail {
+            height: 44px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .active {
+            box-shadow: 0 3px 8px 0 rgb(255 82 103 / 50%);
+            border: 1px solid #ff2741;
+            opacity: 1 !important;
+            transition: opacity .8s ease !important;
+        }
+
+        .thumbnailItem {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            margin: 0 5px 0 0;
+            border-radius: 4px;
+            opacity: .6;
+            transition: opacity .8s ease;
+            cursor: pointer;
+        }
+
+        .thumbnailItem i {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background-size: cover;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            border-radius: 3px;
+        }
+
+        .bigImgAll {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            transform: translateX(0px);
+        }
+
+        .transClassName {
+            transition: transform .8s ease;
+        }
+
+        .bigImgAllBox {
+            width: 260px;
+            height: 380px;
+            overflow: hidden;
+        }
+
+        .bigImgAll img {
+            position: absolute;
+        }
+
+        .brief {
+            max-width: 354px;
+            margin: 14px auto;
+        }
+
+        .brief h3 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #333333;
+        }
+
+        .brief>p {
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        .brief span {
+            display: block;
+            font-size: 14px;
+            color: #999999;
+            margin-top: 15px;
+        }
+
+        .ending {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 44px;
+            padding: 4px;
+            margin-top: 22px;
+            border: 1px solid #797979;
+            border-radius: 11px;
+        }
+
+        .ending p {
+            font-size: 12px;
+        }
+
+        .endingImg1 {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+        }
+
+        .commentBox {
+            margin-top: 30px;
+        }
+
+        .commentBoxP {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .commentContent {
+            margin-top: 20px;
+        }
+
+        .commentContent ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #d0d0d0;
+        }
+
+        .childUserPhoto,
+        .userPhoto {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+        }
+
+        .commentUserMsg {
+            margin-left: 12px;
+            flex: 1;
+        }
+
+        .userCommentContent {
+            margin-top: 8px;
+        }
+
+        .commentTime {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #999999;
+        }
+
+        .contentBox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .commentImg {
+            margin-top: 8px;
+            width: 100%;
+        }
+
+        .replyContentBox {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+
+        .replyContentR {
+            display: flex;
+            justify-content: space-between;
+            /*align-items: center;*/
+            margin-left: 12px;
+            flex: 1;
+        }
+
+        .commentUserFoot {
+            margin-left: 18px;
+        }
+
+        .replyImg {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .moreComment {
+            text-align: center;
+            color: #222222;
+            cursor: pointer;
+            /*margin-top: 20px;*/
+            height: 35px;
+            line-height: 35px;
+            font-size: 16px;
+            display: block;
+            font-size: 18px;
+        }
+        
+        .commentUserFoot i{
+            color: red;
+        }
+        
+        .commentUserFoot strong {
+            /*color: red;*/
+            font-weight: 400;
+            font-size: 14px;
+        }
+        
+        .commentUserFoot .judge{
+            color: red;
+        }
+
+        .uNament {
+            display: flex;
+            align-items: center;
+        }
+
+        .uNament span {
+            display: block;
+            margin-left: 8px;
+            color: #ffffff;
+            background-color: #d2d2d2;
+            border-radius: 10px;
+            width: 40px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+
+        .commentUserFoot>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .iconColor {
+            color: red;
+        }
+
+        .iconfont {
+            font-size: 24px !important;
+            cursor: pointer;
+        }
+
+        .addLine {
+            color: red;
+        }
+
+        .bigTopBox {
+            position: sticky;
+            left: 0;
+            top: 0;
+            padding: 0 13px;
+            height: 50px;
+            z-index: 1;
+            background: #fff;
+            box-shadow: 0 1px 2px 0px #e1e1e1;
+        }
+        
+        @media screen and (min-width: 380px) {
+            .bigTopBox {
+                height: 60px;
+            }
+        }
+
+        .footerZiti {
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 6px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #89d58b;
+            margin-top: 20px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footerUl1 {
+            width: 290px;
+            display: flex;
+            justify-content: space-between;
+            flex: 1;
+            margin-top: 10px;
+        }
+
+        .footerUl1 li {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        .footerUl1 li p {
+            text-align: center;
+        }
+
+        .footerUl2 {
+            width: 230px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerUl2 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .statement {
+            text-align: center;
+            color: #fff;
+            margin-top: 18px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        footer div {
+            width: 290px;
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer div i {
+            font-size: 34px !important;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layerBox bigTopBox">
+            <div class="bigTop">
+                <div class="bigTopL">
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01kKtIsB2BlB0496h16_!!917298378.png"
+                        class="bigTopImg">
+                    <div class="bigTopSmallDiv">
+                        <p class="bigTopSmallDiv-p1">祛斑秘寶</p>
+                        <p class="bigTopSmallDiv-p2">領取更多祛斑保養方法</p>
+                    </div>
+                </div>
+                <div class="bigTopR">
+                    <a onclick="$$.goline()">打開LINE</a>
+                </div>
+            </div>
+        </div>
+    <div id="bigBox">
+        <div class="bigBody">
+            <div class="switchContent">
+                <div class="switchTop">
+                    <div class="switchTopContent">
+                        <span class="switchL"></span>
+                        <div class="bigImgAllBox">
+                            <div class="bigImgAll transClassName"></div>
+                        </div>
+                        <span class="switchR"></span>
+                    </div>
+                </div>
+                <ul class="switchThumbnail"></ul>
+            </div>
+            <div class="brief">
+                <h3>祛斑</h3>
+                <p>原來祛斑並沒有網上說的那麼難嘛</p>
+                <p>斑掉了，好開心！</p>
+                <p>堅持使用，牛奶肌指日可待！</p>
+                <span>發佈於&nbsp;&nbsp;2022-05-15&nbsp;&nbsp;10:05</span>
+                <div class="ending">
+                    <img class="endingImg1"
+                        src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg" />
+                    <p>落落</p>
+                    <i>|</i>
+                    <p>分享給朋友們看看吧:</p>
+                    <img class="endingImg2" onclick="$$.goline()"
+                        src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01mf7aOY2BlB01fP77P_!!917298378.png" />
+                </div>
+            </div>
+        </div>
+        <div class="commentBox">
+            <p class="commentBoxP">筆記評論</p>
+            <div class="commentContent">
+                <ul>
+                </ul>
+            </div>
+            <a class="moreComment" id="showmore" href="javascript:void(0)">點擊查看更多評論</a>
+        </div>
+    </div>
+    <footer>
+        <p class="footerZiti">NOTEBOOK</p>
+
+        <ul class="footerUl2">
+            <li><a href="">首頁</a></li>
+            <li><a href="">資訊</a></li>
+            <li><a href="">聯系</a></li>
+        </ul>
+
+        <ul class="footerUl1">
+            <li>
+                <i class="iconfont icon-facebookfacebook51"></i>
+                <p>facebook</p>
+            </li>
+            <li>
+                <i class="iconfont icon-instagram"></i>
+                <p>instagram</p>
+            </li>
+            <li>
+                <i class="iconfont icon-email"></i>
+                <p>email</p>
+            </li>
+        </ul>
+        <p class="statement">© 2022 informationNet. All rights reserved.</p>
+    </footer>
+    <script>
+        class Switch {
+            thumbnailArr = [];
+            index = 0;
+            eleName;
+            bigImgClassName;
+            move;
+
+            // 初始化
+            init(obj) {
+                this.thumbnailArr = obj.arr;
+                this.eleName = obj.boxClassName;
+                this.bigImgClassName = obj.bigImgClassName;
+                this.move = obj.move
+
+                this.thumbnailInit()
+                this.mainImgInit()
+                this.thumbnailClick()
+            };
+
+            // 缩略图初始化
+            thumbnailInit() {
+                let arrLen = this.thumbnailArr.length;
+                let boxEle = this.getElement(this.eleName, false)
+                for (let i = 0; i < arrLen; i++) {
+                    let thumbnailItem = this.createElement('li')
+                    thumbnailItem.className = 'thumbnailItem'
+
+                    let thumbnailItemI = this.createElement('i')
+                    thumbnailItemI.style.backgroundImage = `url(${this.thumbnailArr[i]})`
+                    thumbnailItemI.setAttribute('index', i)
+
+                    thumbnailItem.append(thumbnailItemI)
+                    boxEle.append(thumbnailItem)
+                }
+
+                // 第一个元素添加active
+                boxEle.firstElementChild.classList.add('active')
+            }
+
+            // 大图初始化
+            mainImgInit() {
+                let bigImgEle = this.getElement(this.bigImgClassName, false)
+                let arrLen = this.thumbnailArr.length
+                bigImgEle.style.width = (arrLen * this.move) + 'px'
+                for (let i = 0; i < arrLen; i++) {
+                    let childImg = this.createElement('img')
+                    childImg.src = this.thumbnailArr[i]
+                    childImg.style.left = (i * this.move) + 'px'
+                    bigImgEle.append(childImg)
+                }
+            }
+
+            // 缩略图点击事件
+            thumbnailClick() {
+                let ele = this.getElement(this.eleName, false);
+                let _this = this
+                ele.addEventListener('click', function (e) {
+                    if (e.target.nodeName.toLowerCase() === 'i') {
+                        let idx = Number(e.target.getAttribute('index'))
+                        _this.index = idx
+                        _this.thumbnailActiveEvent()
+                        _this.bigImgSwitch(idx)
+                    }
+                })
+            };
+
+            // 更新缩略图active
+            thumbnailActiveEvent() {
+                let ele = this.getElement(this.eleName, false);
+                let arrLen = this.thumbnailArr.length
+                for (let i = 0; i < arrLen; i++) {
+                    ele.children[i].classList.remove('active')
+                    if (this.index === i) {
+                        ele.children[i].classList.add('active')
+                    }
+                }
+            }
+
+            // 左按钮点击事件
+            leftClickEvent() {
+                
+                if (this.index === 0) {
+                    return;
+                    this.index = 2
+                }
+                this.index -= 1
+                this.thumbnailActiveEvent()
+                this.bigImgSwitch(this.index)
+            };
+
+            // 右按钮点击事件
+            rightClickEvent() {
+                
+                if (this.index === 2) {
+                    return;
+                    this.index = 0
+                }
+                this.index += 1
+                this.thumbnailActiveEvent()
+                this.bigImgSwitch(this.index)
+            };
+
+            // 创建元素
+            createElement(eleName) {
+                return document.createElement(eleName)
+            };
+
+            // 获取元素  如果为true 表示元素是All
+            getElement(name, flag) {
+                if (flag) return document.querySelectorAll(name)
+                return document.querySelector(name)
+            };
+
+            // 大图切换函数
+            bigImgSwitch(index) {
+                let elBoxImg = this.getElement(this.bigImgClassName);
+                let totalPx = -(this.move * index) + 'px';
+                let arrLen = this.thumbnailArr;
+                elBoxImg.style.transform = `translateX(${totalPx})`;
+            }
+        }
+    </script>
+    <script async src="https://static.newworkbench.com/v4/licat.min.js?update=2022-6-2"></script>
+    <script>
+        let arr = [
+            'https://img.alicdn.com/imgextra/i4/917298378/O1CN01BaAyQq2BlB00asdwZ_!!917298378.jpg',
+            'https://img.alicdn.com/imgextra/i3/917298378/O1CN01gCh4Is2BlB01fNdei_!!917298378.jpg',
+            'https://img.alicdn.com/imgextra/i3/917298378/O1CN01fIgyeg2BlAzwh1YuW_!!917298378.jpg',
+        ];
+        let example = new Switch()
+        example.init({
+            arr,
+            boxClassName: ".switchThumbnail",
+            bigImgClassName: ".bigImgAll",
+            move: 274
+        })
+        let switchL = example.getElement('.switchL', false)
+        let switchR = example.getElement('.switchR', false)
+        switchL.onclick = example.leftClickEvent.bind(example)
+        switchR.onclick = example.rightClickEvent.bind(example)
+        // bigTopBox
+        // let bigTopBox = document.querySelector('.layerBox')
+        // window.addEventListener('scroll', function (e) {
+        //     let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+        //     if (scrollTop > 100) {
+        //         bigTopBox.classList.add('bigTopBox')
+        //     } else {
+        //         bigTopBox.classList.remove('bigTopBox')
+        //     }
+        // })
+        var startx, starty;
+        let bigImgAllBoxE = document.querySelector(".bigImgAllBox");
+
+        //获得角度
+        function getAngle(angx, angy) {
+            return Math.atan2(angy, angx) * 180 / Math.PI;
+        };
+
+        //根据起点终点返回方向 1向上滑动 2向下滑动 3向左滑动 4向右滑动 0点击事件
+        function getDirection(startx, starty, endx, endy) {
+            var angx = endx - startx;
+            var angy = endy - starty;
+            var result = 0;
+
+            //如果滑动距离太短
+            if (Math.abs(angx) < 2 && Math.abs(angy) < 2) {
+                return result;
+            }
+
+            var angle = getAngle(angx, angy);
+            if (angle >= -135 && angle <= -45) {
+                result = 1;
+            } else if (angle > 45 && angle < 135) {
+                result = 2;
+            } else if ((angle >= 135 && angle <= 180) || (angle >= -180 && angle < -135)) {
+                result = 3;
+            } else if (angle >= -45 && angle <= 45) {
+                result = 4;
+            }
+            return result;
+        }
+
+        //手指接触屏幕
+        bigImgAllBoxE.addEventListener("touchstart", function (e) {
+            startx = e.touches[0].pageX;
+            starty = e.touches[0].pageY;
+        }, false);
+
+        //手指离开屏幕
+        bigImgAllBoxE.addEventListener("touchend", function (e) {
+            var endx, endy;
+            endx = e.changedTouches[0].pageX;
+            endy = e.changedTouches[0].pageY;
+            var direction = getDirection(startx, starty, endx, endy);
+            switch (direction) {
+                case 0:
+                    // alert("点击！");
+                    break;
+                case 1:
+                    // alert("向上！");
+                    break;
+                case 2:
+                    // alert("向下！");
+                    break;
+                case 3:
+                    // alert("向左！");
+                    example.rightClickEvent.call(example);
+                    break;
+                case 4:
+                    // alert("向右！");
+                    example.leftClickEvent.call(example);
+
+                    break;
+                default:
+                    // alert("点击！");
+                    break;
+            }
+        }, false);
+    </script>
+    <script>
+        var webconfig = {
+            baseHost: location.host,
+        }
+        let commentUserInfo = [{
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01z2fbAf2BlB01KhIX4_!!917298378.png",
+                userName: "ainy",
+                commentPraise: 105,
+                commentImg: "",
+                author: false,
+                commentContent: "請問是怎麼去掉的",
+                timer: "2022-05-15",
+                replyArr: [{
+                        replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                        replyName: "落落",
+                        replyTimer: "2022-05-15",
+                        replyContent: "我是加這個老師的<span class='addLine'>LINE:<line></line></span>，在她的幫助下把斑點去掉的",
+                        replyPraise: 20,
+                        replyAuthor: true,
+                        replyimg: ""
+                    }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01IrhyIe2BlAzzH7Rw8_!!917298378.png",
+                userName: "軌跡",
+                commentPraise: 100,
+                commentContent: "我是雀斑，能去掉嗎？",
+                timer: "2022-05-15",
+                author: false,
+                replyArr: [{
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-15",
+                    replyContent: "可以去掉的哦",
+                    replyPraise: 13,
+                    replyAuthor: true
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                userName: "落落",
+                author: true,
+                commentPraise: 90,
+                commentContent: "斑點形成的主要原因一個是肌膚缺水影響了肌膚的自我循環代謝，另外一個就是隨著年齡的增長喝外界環境的影響，肌膚內部的膠原蛋白合成能力下降；斑點是由於真皮層的黑色素堆積過多而導致的，不是一時半會兒形成的。長了斑點不能拖，要盡快想辦法去掉，角質代謝的週期約28天，而一個黑色素的成長週期長達5年。當色斑“浮出”肌膚表面後，如不及時控制，斑的面積會越來越大、扎根得越來越深，也就加大了祛斑的難度！",
+                timer: "2022-05-15",
+                replyAuthor: false,
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01zjhNPI2BlAzq1kYXC_!!917298378.png",
+                userName: "Nicky辰",
+                commentPraise: 80,
+                commentContent: "26歲可以祛斑嗎？臉上的斑不明顯，但是我怕越來越多",
+                timer: "2022-05-15",
+                replyArr: [{
+                    author: false,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-15",
+                    replyContent: "可以呀，祛斑不分年齡，我認識的幾個阿姨的女兒讀中學就去把雀斑去掉了",
+                    replyPraise: 11,
+                    replyAuthor: true
+                }]
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                userName: "落落",
+                author: true,
+                commentPraise: 71,
+                commentContent: `講幾個祛斑要注意的點：
+                                1.不管冬天還是夏天，出門都要記得塗防曬霜，這樣能夠避免紫外線的照射所帶來的黑色素遺留。
+                                2.多吃含維生素C的水果。
+                                3別熬夜，盡量是11點前睡覺。
+                                4.注重保濕，保濕很重要！！！
+                    `,
+                timer: "2022-05-15",
+                replyArr: [{
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyAuthor: true,
+                    replyTimer: "2022-05-15",
+                    replyContent: "這些都是老師告訴我的，大家可以加她的<span class='addLine'>LINE:<line></line></span>，她的主頁有很多祛斑保養的秘方喲",
+                    replyPraise: 15,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01NauKjI2BlAzl9ML42_!!917298378.png",
+                userName: "微涼",
+                commentPraise: 50,
+                commentContent: "我之前就是臉頰兩邊和鼻樑有色斑，試了網上的很多方法，結果就是把肌膚弄成了敏感肌，斑點還越來越深！後面朋友給我推薦Anna老師，現在我明顯感覺我的肌膚狀態好了很多，斑點邊緣也已經開始淡化了",
+                timer: "2022-05-15",
+                author: false,
+                replyArr: [{
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN013hiLv52BlAvuTnzZG_!!917298378.png",
+                    replyName: "香菜耶",
+                    replyTimer: "2022-05-25",
+                    replyContent: "我的斑點也是在臉頰，真的能去掉嗎？求告知，我之前試了好多辦法，都不行",
+                    replyPraise: 3,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01Udo32L2BlAvtt9cr0_!!917298378.png",
+                userName: "雪瑩",
+                commentPraise: 60,
+                commentContent: "我臉上的斑本來是不多的，做了雷射之後，更多了，角質層也變薄，稍微一冷一熱臉上就刺痛，所以老師是幫我先修復再淡斑，現在已經完全好了，日常生活中我都很小心，出門一定塗防曬",
+                timer: "2022-05-20",
+                author: false,
+                replyArr: [{
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01WAqK4I2BlAw49UTBJ_!!917298378.png",
+                    replyName: "清蘋雨露",
+                    replyTimer: "2022-05-21",
+                    replyContent: "真的嗎？我估計就是紫外線曬傷了，也是肌膚比較敏感，現在就是想去斑，但是又不敢隨便用祛斑產品",
+                    replyPraise: 10,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01ITo7222BlAw0n6ygC_!!917298378.png",
+                userName: "木冉",
+                commentPraise: 20,
+                commentContent: "怎麼去掉的？求告知",
+                timer: "2022-05-15",
+                author: false,
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01t4r1Iv2BlAzsJkd8v_!!917298378.png",
+                userName: "李心艾",
+                commentPraise: 10,
+                commentContent: "敏感肌能用嗎？",
+                timer: "2022-05-15",
+                author: false,
+                replyArr: [{
+                    replyHeaderImg: "https://storage.licat.work/gravatar/26.jpg",
+                    replyName: "肉肉吃不胖",
+                    replyTimer: "2022-05-15",
+                    replyContent: "同問，敏感肌能用嗎，我也是敏感肌",
+                    replyPraise: 3,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01yOHP792BlAvxv0ZC1_!!917298378.png",
+                userName: "靜靜",
+                commentPraise: 88,
+                commentContent: "懷孕時長的妊娠斑能去嗎？生完孩子一年了斑點也沒消下去，現在人看著比生孩子之前老了10歲",
+                timer: "2022-06-03",
+                replyArr: [{
+                    author: false,
+                    replyAuthor: true,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-06-03",
+                    replyContent: "可以去掉的，你加老師的LINE，她會給你出具體的除斑方案的",
+                    replyPraise: 2,
+                }],
+
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01WCBcNb2BlAzl9LjdS_!!917298378.png",
+                userName: "susu",
+                commentPraise: 10,
+                commentContent: "敏感肌能用嗎？從小就有斑",
+                timer: "2022-05-15",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01b3LEjw2BlB026NMKp_!!917298378.png",
+                userName: "丫丫",
+                commentPraise: 10,
+                author: false,
+                commentContent: "10多年的斑點能去掉嗎？",
+                timer: "2022-05-15",
+                replyArr: [{
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-15",
+                    replyContent: "可以的，你加老師的LINE，老師了解情況後會給你祛斑方案",
+                    replyPraise: 10,
+                    replyAuthor: true,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN015DD1wr2BlAzwYesEQ_!!917298378.jpg",
+                userName: "朝夕",
+                commentPraise: 10,
+                commentContent: "臉上斑點很多可以去掉嗎？",
+                timer: "2022-05-16",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01l3HuoG2BlAzx0snkF_!!917298378.png",
+                userName: "一路向北",
+                commentPraise: 10,
+                commentContent: "會反黑嗎？",
+                timer: "2022-05-17",
+                replyArr: [{
+                    author: false,
+                    replyAuthor: true,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-17",
+                    replyContent: "不會，平時注意防曬",
+                    replyPraise: 1,
+                }]
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01tt4PVv2BlAzwYesE5_!!917298378.png",
+                userName: "小怡呀",
+                commentPraise: 10,
+                commentContent: "有斑點的地方祛斑成功後會不會變敏感肌",
+                timer: "2022-05-16",
+                replyArr: [{
+                    author: false,
+                    replyAuthor: true,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-17",
+                    replyContent: "不會",
+                    replyPraise: 5,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN0162BlkC2BlAzzH6yo2_!!917298378.png",
+                userName: "zy",
+                commentPraise: 10,
+                commentContent: "怎麼去掉的？",
+                timer: "2022-05-19",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01G0DaoY2BlB026KsSn_!!917298378.png",
+                userName: "丹丹",
+                commentPraise: 10,
+                commentContent: "用什麼去掉的",
+                timer: "2022-05-23",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01Syuc5d2BlAw49Xp5c_!!917298378.png",
+                userName: "小鵝",
+                commentPraise: 50,
+                commentContent: "皮膚泛黃沒有光澤，臉上還有半點，看著一點都不像年輕小姑娘，用了很多方法祛斑美白，但是都沒有效果，姐姐你是怎麼把斑點去掉的啊？",
+                timer: "2022-05-30",
+                replyArr: [{
+                    author: false,
+                    replyAuthor: true,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-05-31",
+                    replyContent: "我以前的情況跟你這個也差不多，後面我加了Anna老師的<span class='addLine'>LINE:<LINE></LINE></span>,在她的幫助下把斑點去掉了，現在在美白，向牛奶肌靠近，你也可以加她的LINE試試",
+                    replyPraise: 5,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01r3si2u2BlB03JDQPt_!!917298378.png",
+                userName: "薑薑不愛吃薑",
+                commentPraise: 10,
+                commentContent: "我眼角，臉頰，鼻子都有斑，能去掉嗎？",
+                timer: "2022-05-22",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01Ct4eHm2BlAzx0qWLi_!!917298378.png",
+                userName: "happy",
+                commentPraise: 10,
+                commentContent: "祛斑真有你說的這麼簡單嗎？",
+                timer: "2022-05-26",
+                replyArr: []
+            },
+            {
+                userImg: "https://storage.licat.work/gravatar/32.jpg",
+                userName: "小泡芙",
+                commentPraise: 20,
+                commentContent: "請問我媽媽生了我之後臉上有斑，我到五六歲了臉上也有斑，可以去掉嗎？",
+                timer: "2022-05-28",
+                replyArr: []
+            },
+            {
+                userImg: "https://storage.licat.work/gravatar/35.jpg",
+                userName: "無奈",
+                commentPraise: 21,
+                commentContent: "曬斑和祛斑後留下的黑印能祛除嗎？",
+                timer: "2022-05-28",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/2684310334/TB2mCYYXkUkyKJjy1zjXXX1wFXa_!!2684310334.jpg",
+                userName: "Yolo",
+                commentPraise: 5,
+                commentContent: "怎麼去掉的？",
+                timer: "2022-05-31",
+                replyArr: []
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01Udo32L2BlAvtt9cr0_!!917298378.png",
+                userName: "橘子",
+                commentPraise: 5,
+                commentContent: "我之前就是不注意防曬，有了曬斑，現在祛斑還來得及嗎？",
+                timer: "2022-06-01",
+                replyArr: [{
+                    author: false,
+                    replyAuthor: true,
+                    replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Fio2EG2BlAzxdXEmm_!!917298378.jpg",
+                    replyName: "落落",
+                    replyTimer: "2022-06-03",
+                    replyContent: "來得及呀，祛斑以後注意防曬，不管冬天夏天都要塗防曬",
+                    replyPraise: 2,
+                }],
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01NzhoRI2BlAvwVNuM5_!!917298378.png",
+                userName: "隨你而安",
+                commentPraise: 17,
+                commentContent: "臉上的斑點已經在慢慢變好了，姐妹們加油呀，沖沖沖",
+                timer: "2022-05-31",
+                replyArr: []
+            },
+        ]
+
+        const commentContent = document.querySelector('.commentContent ul')
+
+        // let localArr = []
+
+        commentContent.addEventListener('click', function (event) {
+            if (event.target.nodeName === "I") {
+                let eventCommon = event.path[1].children[1]
+                let numClass = event.path[1].children[1].className
+                let num = Number(eventCommon.innerText)
+                if (numClass != 'judge') {
+                    event.path[1].children[1].innerText = num + 1
+                    event.path[1].children[0].classList.remove('icon-aixin1')
+                    event.path[1].children[0].classList.add('icon-aixin2', 'iconColor')
+                    event.path[1].children[1].className = 'judge'
+                } else {
+                    event.path[1].children[1].innerText = num - 1
+                    event.path[1].children[0].classList.add('icon-aixin1')
+                    event.path[1].children[0].classList.remove('icon-aixin2', 'iconColor')
+                    event.path[1].children[1].className = ''
+                }
+            }
+        })
+
+        function applyComment(el, source) {
+            if(!Array.isArray(source)) return;
+            if(source.length <= commentNum) return $$.footer();
+            let steps = 6;
+            let obj = source.slice(commentNum, commentNum + steps);
+            commentNum += steps;
+            let strInner = obj.map((item, index, array) => {
+                return `
+			    <li>
+                    <img src="${item.userImg}" class="userPhoto">
+                    <div class="commentUserMsg">
+                        <div class="contentBox">
+                            <div class="commentUserHead">
+                                <p class="uNament">${item.userName} ${item.author?"<span>作者</span>":""}</p>
+                                <div class="userCommentContent">
+                                    <p>${item.commentContent}</p>
+                                    ${item.commentImg ? `<img class="commentImg" src="${item.commentImg}" />`:''}
+                                </div>
+                                <p class="commentTime">${item.timer}</p>
+                            </div>
+                            <div class="commentUserFoot">
+                                <div style="user-select: none;">
+                                    <i class="iconfont icon-aixin1"></i>
+                                    <strong class="">${item.commentPraise}</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        ${item.replyArr.map(it=>{
+                            return `
+                            <div class="replyContentBox">
+                                <div class="replyContentL">
+                                    <img class="childUserPhoto" src="${it.replyHeaderImg}" />
+                                </div>
+                                <div class="replyContentR">
+                                    <div class="commentUserHead">
+                                        <p class="uNament">${it.replyName} ${it.replyAuthor?"<span>作者</span>":""}</p>
+                                        <div class="userCommentContent">
+                                            <p>${it.replyContent}</p>
+                                            ${it.replyimg ? `<img class='replyImg' src='${it.replyimg}' />`:""}
+                                                
+                                        </div>
+                                        <p class="commentTime">${it.replyTimer}</p>
+                                    </div>
+                                    <div class="commentUserFoot">
+                                        <div style="user-select: none;">
+                                            <i class="iconfont icon-aixin1"></i>
+                                            <strong class="">${it.replyPraise}</strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            `
+                        }).join('')}
+                    </div>
+                </li>
+			`
+            })
+            commentContent.insertAdjacentHTML("beforeEnd",strInner.join(''));
+            // commentContent.innerHTML = strInner.join('')
+        }
+        
+        let moreE = document.querySelector("#showmore");
+        let commentNum = 0;
+        moreE.addEventListener("click",()=>{
+            applyComment(commentContent, commentUserInfo);
+        })
+        applyComment(commentContent, commentUserInfo);
+        //
+
+    </script>
+</body>
+
+</html>

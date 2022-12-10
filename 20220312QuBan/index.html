@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3236571_31kj6ff8ov5.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #bigBox {
+            max-width: 718px;
+            margin: auto;
+        }
+
+        header {
+            padding: 10px 10px 3px;
+            background-color: #fff;
+            height: auto;
+        }
+
+        header img {
+            display: block;
+            height: 74%;
+            user-select: none;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        header i {
+            font-size: 26px !important;
+            color: rgb(210, 176, 124);
+        }
+
+        .h-Div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 43px;
+            border-bottom: 1px solid #000;
+        }
+
+        .oUl {
+            display: flex;
+            list-style: none;
+            margin-top: 10px;
+            user-select: none;
+        }
+
+        .colorBlue {
+            color: blue;
+        }
+
+        .mt20 {
+            margin-top: 20px;
+        }
+
+        .mt22 {
+            margin-top: 22px;
+        }
+
+        .mt24 {
+            margin-top: 24px;
+        }
+
+        .mt28 {
+            margin-top: 28px;
+        }
+
+        .mt30 {
+            margin-top: 30px;
+        }
+
+        .mt34 {
+            margin-top: 34px;
+        }
+
+        .fs12 {
+            font-size: 12px;
+        }
+
+        .fs14 {
+            font-size: 14px;
+        }
+
+        .oUl li {
+            cursor: pointer;
+            font-family: cursive;
+            user-select: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 10px;
+            box-sizing: border-box;
+            background-color: rgb(178, 190, 126);
+        }
+
+        footer h4 {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            user-select: none;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+            font-size: 12px;
+            user-select: none;
+        }
+
+        .articleContent {
+            padding: 0 16px;
+        }
+
+        .articleContent h1 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 6px;
+        }
+
+        .article-introduce {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .article-introduce p {
+            font-size: 12px;
+            color: #61779f;
+            margin: 0 8px;
+        }
+
+        .article-introduce span {
+            font-size: 12px;
+            color: #cbcac7;
+        }
+
+        .article-p {
+            line-height: 28px;
+        }
+
+        .tac {
+            text-align: center;
+        }
+
+        .tar {
+            text-align: right;
+        }
+
+        .characterRed {
+            color: #ff1813;
+        }
+
+        .imgTopCharacter p {
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .articleImg {
+            display: block;
+            width: 100%;
+        }
+
+        .weight {
+            font-weight: 600;
+        }
+
+        .article-p span {
+            color: red;
+        }
+
+        .colorGray {
+            color: rgb(124, 117, 117);
+        }
+
+        .articleUl {
+            background-color: rgb(235, 247, 253);
+            box-sizing: border-box;
+            padding: 14px 0 4px 10px;
+            margin-top: 6px;
+        }
+
+        .articleUl li {
+            line-height: 24px;
+        }
+
+        .section {
+            color: #ee85ee;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .colorPurple {
+            color: #ee85ee;
+        }
+
+        .section span {
+            font-style: italic;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        .windowInfo {
+            border: 1px solid rgb(206, 182, 239);
+            box-shadow: rgb(204 204 204) 3px 3px 4px;
+            padding: 10px;
+        }
+
+
+
+        .commentBox {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 0 14px;
+        }
+
+        .commentBoxTitle {
+            font-size: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .commentContent ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .commentContent ul {
+            margin-top: 20px;
+        }
+
+        .commentUserMsg {
+            flex: 1;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgb(243, 243, 243);
+        }
+
+        .uNament {
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        .commentContent ul li .userPhoto {
+            width: 40px;
+            height: 40px !important;
+            display: block;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-top: 12px;
+        }
+
+        .commentUserHead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .commentUserHead i {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .commentUserBody {
+            margin-top: 10px;
+        }
+
+
+        .commentImgClass {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .commentImg {
+            display: none;
+        }
+
+        .commentUserFoot {
+            margin-top: 10px;
+        }
+
+        .judge {
+            max-width: 100%;
+        }
+
+        .commentBox textarea {
+            width: 100%;
+            resize: none;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        .userComment {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .userComment button {
+            outline: none;
+            border: none;
+            width: 80px;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: thistle;
+            color: #fff;
+        }
+
+        fieldset {
+            padding: 16px;
+            border-radius: 6px;
+            border: 1px solid rgb(124, 117, 117);
+        }
+
+        fieldset legend {
+            width: 74px;
+            height: 26px;
+            background-color: rgb(124, 117, 117);
+            border-radius: 4px;
+        }
+
+        fieldset legend p {
+            color: #fff;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        fieldset img {
+            max-width: 380px;
+            display: block;
+            margin: auto;
+        }
+
+        .slideShow {
+            overflow: hidden;
+            position: relative;
+            height: 415px;
+        }
+
+        .slideShow ul {
+            width: 100%;
+            height: 415px;
+            overflow: hidden;
+        }
+
+
+
+        .slideShow ul li {
+            max-width: 686px;
+            float: left;
+        }
+
+        .slideShow img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bigBox">
+        <header>
+            <div class="h-Div">
+                <i class="iconfont icon-daohang"></i>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN0156vOdR2BlAyyc41sm_!!917298378.png">
+                <i class="iconfont icon-sousuo"></i>
+            </div>
+            <ul class="oUl">
+                <li>&nbsp;首頁&nbsp;></li>
+                <li>&nbsp;美容&nbsp;></li>
+                <li>&nbsp;祛斑資訊</li>
+            </ul>
+        </header>
+
+        <div class="articleContent">
+            <h1>無論你“色斑”有多深，跟著專家這樣做，70歲前都有希望！</h1>
+            <div class="article-introduce">
+                <span>blk</span>
+                <p>祛斑資訊</p>
+                <span>2022-03-03 12:30</span>
+            </div>
+            <div class="article-content">
+                <p class="article-p mt24">“太神奇了！ 如果不是親身經歷，我簡直不敢相信這是真的！”</p>
+                <p class="article-p mt20">祛斑成功後，49歲的陳女士激動的說到：</p>
+                <p class="article-p characterRed mt20">“真的只有一個多月，臉蛋好像被施了魔法，斑點竟然全部沒有了！”</p>
+                <div class="imgTopCharacter fs14 mt20">
+                    <p>看這張白皙透亮的臉</p>
+                    <p>誰敢說她長過十幾年斑點？</p>
+                </div>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01BsVs2x2BlAylkH44z_!!917298378.jpg"
+                    class="articleImg mt20">
+                <p class="article-p mt20">但就在2個月前，她還在為這滿點的斑點發愁，甚至被丈夫嘲諷苦相。</p>
+                <div class="imgTopCharacter fs14 mt20 colorBlue">
+                    <p>不僅膚色暗黃、粗糙顯老</p>
+                    <p>斑點像生了鏽的鐵皮，粉底都遮不住</p>
+                </div>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01lDimxm2BlAywnFDq5_!!917298378.png"
+                    class="articleImg mt20">
+                <p class="article-p mt24">“萬萬沒想到！僅僅是一次意外的嘗試，就成功祛斑了！”</p>
+                <p class="article-p mt22">如今，斑點也沒有了、心態也好了！<span class="weight">氣質都提升了好幾個檔次，旁人根本看不出她現在幾歲！</span></p>
+                <img class="articleImg mt22"
+                    src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01K8WAx92BlAyyX92Ej_!!917298378.jpg">
+                <p class="article-p mt20">和同齡人拍照，乍一看還以為是母女照，這種感覺對陳女士來說何止是暗爽！！</p>
+                <img class="articleImg mt22"
+                    src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01sp0l2q2BlAys5qOtW_!!917298378.jpg">
+                <p class="article-p mt20">更過分的是，和21歲兒子出門逛街，因為皮膚實在太好，別人就使勁誇：你姐姐真漂亮！</p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01zOvcKY2BlAyqaX1h7_!!917298378.jpg"
+                    class="articleImg mt22">
+                <p class="article-p">現在啊，陳女士就是就是社區裏的紅人，走到哪裏都被人追著要祛斑方法！</p>
+                <p class="article-p mt22">陳女士也不跟大家藏著掖著，笑了笑說："她這斑點，<span
+                        style="letter-spacing: 3px;">全都是台灣一位祛斑專家的功勞</span>"</p>
+                <p class="article-p mt20">下面這位是我嫂子，跟我一起去祛斑的，<span>祛斑成功後她整個人都年輕了10歲不止</span></p>
+                <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01OxRRgb2BlAys63pTB_!!917298378.png"
+                    class="articleImg mt20">
+                <p class="article-p mt20">在很多人看來，像我臉上這樣的斑點，看起來都沒救了，說的人多了，我自己都覺得我的斑點沒救了</p>
+                <p class="article-p mt20">直到我遇到了Anna，說起我跟Anna，我覺得這就是緣分吧！</p>
+                <p class="article-p mt20">
+                    我在上網的時候無意間刷到一篇關於Anna幫助別人成功祛斑的文章，好奇心驅使我點進去，我越看越精神，越看越激動，看完這篇文章以後我就立馬去網上查有關Anna的信息。</p>
+                <p class="article-p mt20">在查之前我是真的沒想到Anna這麼厲害， <span
+                        class="weight">不但是肌膚研究專家，還是一位高級美容師，在日本那邊也很有名的肌膚顧問。</span></p>
+                        
+                        
+                        
+                <video autoplay="" loop="" muted="" x5-video-player-fullscreen="true" x5-playsinline=""
+							playsinline="" webkit-playsinline="" width="100%" height="auto" class="mt24">
+                    <source src="https://cloud.video.taobao.com//play/u/2505451590/p/2/e/6/t/1/266536515693.mp4"
+                        type="video/mp4">
+                </video> 
+					
+					
+					
+					
+					
+						
+						
+                <p class="article-p mt30">我心想既然Anna這麼厲害，那這次我的斑點應該就有救了吧，緊接著就加了她的LINE，然後按照她教我的方法持續使用，沒想到
+                    <span>才30天我臉上的斑點就全沒了！</span>
+                </p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01VJkpKY2BlAyvpjRdM_!!917298378.jpg"
+                    class="articleImg mt20">
+                <p class="article-p mt20">為了讓大家看到效果，我又找了我認識的在Anna幫助下成功祛斑的網友前來分享：</p>
+                <p class="article-p mt22">她們分別是26歲的琪琪、36歲的Ada和49歲邱阿姨：</p>
+                <ul class="articleUl">
+                    <li>琪琪：敏感肌，下眼瞼和臉頰有小雀斑</li>
+                    <li>Ada：中性皮膚，顴骨色斑明顯</li>
+                    <li>邱阿姨：混油皮，兩邊蘋果肌有黃褐斑</li>
+                </ul>
+
+                <video autoplay="" loop="" muted="" x5-video-player-fullscreen="true" x5-playsinline=""
+							playsinline="" webkit-playsinline="" width="100%" height="auto" class="mt24">
+                    <source src="https://cloud.video.taobao.com//play/u/917298378/p/1/e/6/t/1/351834375331.mp4"
+                        type="video/mp4">
+                </video>
+
+                <p class="article-p mt30">看到她們這麼年輕貌美的樣子，你敢相信她們曾經是這樣的嗎？</p>
+
+                <div class="imgTopCharacter mt20 colorBlue weight">
+                    <p>臉上就像生了鏽的鐵皮</p>
+                    <p>黑迹斑斑，醫生看了都搖頭</p>
+                </div>
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN010a3b092BlAylsKsgC_!!917298378.gif"
+                    class="articleImg mt22">
+                <p class="article-p mt22">而現在，她們臉上的色斑沒有了，每個人的氣質都發生了巨大的變化，談吐自如、大氣自信：</p>
+                <p class="article-p mt24 tac colorBlue weight">這種感覺，就像進行了“換頭”！</p>
+
+
+
+                <div class="slideShow">
+                    <ul>
+                        <li>
+                            <img
+                                src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01xFOHiE2BlAylkGnRb_!!917298378.png">
+                        </li>
+                        <li>
+                            <img
+                                src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01gbX36y2BlAyvAqJTb_!!917298378.png">
+                        </li>
+                        <li>
+                            <img
+                                src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01NodHsh2BlAyvArWKS_!!917298378.png">
+                        </li>
+                    </ul>
+                </div> 
+
+
+
+
+
+
+                <p class="article-p mt30">看到這裡是不是就想問，這Anna老師到底是何方神聖？她的祛斑方法是不是真的這麼厲害？</p>
+
+                <p class="article-p mt20">Anna與她的研發團隊 <span>針對頑固色斑問題研發的“全新祛斑新科技”， 它打破了“精華=基礎護膚”的宿命，親膚高效。</span></p>
+                <p class="article-p mt30"><span class="weight characterRed">一個月：祛斑+美白+修復+嫩膚！</span>
+                    堅持使用，皮膚就像“枯木逢春”一般，由斑斑點點變得白白嫩嫩的！</p>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01hYmNzp2BlAyqaYIkM_!!917298378.gif"
+                    class="articleImg">
+                <p class="article-p">Anna獨創的配比秘方，除少數遺傳色斑以外，<span class="characterRed weight">90%以上的色斑患者通過它成功祛斑！</span>
+                </p>
+                <p class="article-p mt20">其中包括<span class="characterRed weight">黃褐斑、雀斑、妊娠斑、曬斑等！</span></p>
+                <div class="section mt24">
+                    <span>01</span>
+                    <p>諾貝爾最新成果加持</p>
+                    <p>讓細胞把黑色素“吃掉”</p>
+                </div>
+                <p class="article-p mt30">Anna祛斑的首要秘方，就是它的核心技術，2016年諾貝爾醫學獎成果——<span class="weight">細胞自噬科技。</span></p>
+                <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01YscV9E2BlAyxDjCQ2_!!917298378.jpg"
+                    class="articleImg mt28" />
+                <p class="article-p tac weight" style="line-height: 30px;">▲細胞自噬科技諾貝爾得主：大隅良典</p>
+                <p class="article-p mt28">小編查過很多資料發現：</p>
+                <p class="article-p mt20">細胞自噬是人體自帶的機制，細胞分泌的溶酶體會與自噬體結合，自動吞噬、溶解細胞內的廢物。</p>
+
+                <p class="article-p mt20">
+                    <span class="weight">也就是說，當細胞產生過多黑色素時，自噬機制就會將黑色素“吃掉”。</span>
+                </p>
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Sm1Icm2BlAz1OSAUC_!!917298378.gif"
+                    class="articleImg mt20" />
+                <p class="article-p mt30">但是隨著年齡增長，體內自噬機制也會“老化”，不能及時將黑色素“吃掉”，以至於色斑滋生。</p>
+                <p class="article-p mt24">為了徹底祛斑，Anna與她的研發團隊借助成分的黃金配方，<span
+                        class="weight">再次啟動、並源源不斷給細胞內自噬機制輸入能量。</span></p>
+                <p class="article-p  mt22"><span class="weight">也就是說，用了「祛斑王」，細胞時刻在“吃”黑色素，色斑不會再長！</span></p>
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01LTHngS2BlAyzbHCen_!!917298378.gif"
+                    class="articleImg" />
+
+                <p class="article-p mt24">此外，「祛斑王」還複配了氨甲環酸、鞣花酸、煙醯胺等美容界祛斑成分，針對表皮層-中胚層-基底層精准給藥：</p>
+
+                <ul class="articleUl mt30">
+                    <li>氨甲環酸：醫學界公認祛“黃褐斑”之王</li>
+                    <li>鞣花酸：專利祛斑成分，阻擋黑色素向表皮運輸，預防色斑再生</li>
+                    <li>煙醯胺：歐萊雅御用美白成分，由內而外煥白肌膚</li>
+                </ul>
+
+                <p class="article-p mt30">從細胞內抑制黑色素再生、阻擋黑色素運輸，由內而外煥白肌膚！</p>
+
+                <video autoplay="" loop="" muted="" x5-video-player-fullscreen="true" x5-playsinline=""
+							playsinline="" webkit-playsinline="" width="100%" height="auto" class="mt30">
+                    <source src="https://cloud.video.taobao.com//play/u/917298378/p/1/e/6/t/1/351834459601.mp4"
+                        type="video/mp4">
+                </video>
+                <p class="article-p mt22">為了檢測<b>「祛斑王」</b>的效果，Anna實驗室進行了一項特殊的實驗：</p>
+                <div class="windowInfo mt20">
+                    <b>實驗內容：</b>
+                    <p class="article-p" style="margin-top: 6px;">同一塊皮膚組織分成兩塊，右邊的皮膚組織抹上「祛斑王」，左邊不添加，觀察細胞的黑色素變化情况。</p>
+                </div>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01G9JVug2BlAyxDloZy_!!917298378.gif"
+                    class="articleImg mt34">
+                <p class="article-p tac">▲黃色小點代表黑素小體，藍色代表自噬小體</p>
+                <p class="article-p tac">左側是沒有塗抹祛斑王的細胞，右側是塗抹的</p>
+
+                <div class="windowInfo mt20">
+                    <b>顯微鏡觀察發現：</b>
+                    <p class="article-p mt22">
+                        塗抹了祛斑王的右邊，藍色小點明顯增多，意味著自噬小體增多，自噬活性增强，黃色小點明顯減少，意味著黑色素被大量吞噬。</p>
+                    <p class=" article-p mt22">
+                        <span class="weight">僅48小時，細胞黑色素自噬力增强了11.8倍，且時間越長，增長越明顯！</span>
+                    </p>
+                </div>
+
+
+
+
+                <p class="article-p colorBlue mt34">用在二十幾年頑固色斑患者臉上，色斑越嚴重，效果越明顯！</p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01Ysoa2p2BlAylkEJNX_!!917298378.png"
+                    class="articleImg mt22">
+
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01q7dZD12BlAyvpft6H_!!917298378.png"
+                    class="articleImg">
+
+
+                <p class="article-p mt24">如果你也正被色斑困擾，並且非常渴望改變，那你就像我一樣去添加Anna的LINE吧，她會給你意想不到的驚喜！</p>
+
+                <a onclick="$$.goline()">
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01XeQ6sz2BlAz1ORIC7_!!917298378.gif"
+                    class="articleImg mt30">
+                </a>
+
+
+
+                <div class="section mt24">
+                    <span>02</span>
+                    <p>1個月真人實測</p>
+                    <p>是真是假，我們眼見為實</p>
+                </div>
+
+
+                <p class="article-p mt34">下麵分享醫務從業人員果果的使用體驗。</p>
+
+
+
+
+
+
+                <form class="mt20">
+                    <fieldset>
+                        <legend>
+                            <p class="tac weight">真人實測</p>
+                        </legend>
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN013zqf8T2BlAywn40l5_!!917298378.png"
+                            class="articleImg">
+                        <p class="article-p tac">▲文/果果 年齡/32歲</p>
+                        <p class="article-p">說實話，一開始我對Anna是持懷疑的態度的，因為她看起來真的很年輕，感覺不像是很厲害的樣子，但是後面我才發現，我錯了。</p>
+                        <p class="article-p mt24"><span>我按照她說的用了大概2週，幾乎每一天都能看到膚色有明顯的提亮，色斑也的確變淡了不少！</span></p>
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01WX1ysB2BlAyzSOMk3_!!917298378.png"
+                            class="articleImg mt20">
+                        <p class="article-p mt20">對比15天前，我的膚色和色斑都得到很大改善</p>
+                        <p class="article-p mt20">緊接著又繼續使用了半個月左右<span>我自己用相機分別記錄了使用前、第2週、1個月的變化，對比很搶眼吧！</span></p>
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01tArmlq2BlAyyX3KaL_!!917298378.jpg"
+                            class="articleImg">
+                        <p class="article-p mt20">連朋友們都說，幾乎已經媲美醫美的祛斑效果了。</p>
+                    </fieldset>
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <p class="mt20">最後，聽別人說的再多，都不如自己親自見證。 用過了，才知道它是真真實實的好！</p>
+
+                <p class="mt22">而此前購買的朋友，也都通過了這個產品，改變了“黃臉婆”的形象。</p>
+
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN0109qhZc2BlAyqaSWr4_!!917298378.jpg"
+                    class="articleImg mt20">
+
+                <p class="article tar colorGray" style="font-size: 12px;margin-top: 6px;">▲由網友提供，實際效果因人而異</p>
+
+                <p class="article-p mt30">她們沒有一夜“換臉”，但卻在一天一天的堅持中，成功祛斑；</p>
+
+                <p class="article-p mt20">每天輕輕鬆松的塗抹一下，收穫的不僅僅是乾淨無暇的臉，還有用錢買不來的氣質，和他人的尊重……</p>
+
+
+                <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01olYKYf2BlAyqaS7su_!!917298378.gif"
+                    class="articleImg mt20">
+
+                <p class="article-p" style="margin-top: 18px;">作為一個女人，永遠不要懷疑自己買的值不值。</p>
+
+                <p class="article-p mt28"><span class="weight">當機會擺在你面前而你猶豫不決的時候，就已經有人在悄悄變美。</span></p>
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Bfw1Mt2BlAz3NlRIe_!!917298378.gif"
+                    class="articleImg mt20">
+                <p class="article-p colorPurple tac mt22">不用再去醫美</p>
+                <p class="article-p colorPurple tac">每天僅需2~3分鐘</p>
+                <p class="article-p colorPurple tac">一套改善你的色斑問題！</p>
+                <a onclick="$$.goline()">
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01XeQ6sz2BlAz1ORIC7_!!917298378.gif"
+                    class="articleImg mt20">
+                </a>
+            </div>
+        </div>
+
+        <div class="commentBox">
+            <h3 class="commentBoxTitle"><strong>歡迎留言你的評論</strong></h3>
+            <div class="userComment">
+                <textarea cols="30" rows="10"></textarea>
+                <button>評論</button>
+            </div>
+            <div class="commentContent">
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+
+        <footer>
+            <h4>深雅資訊網</h4>
+            <ul>
+                <li>未經允許&nbsp;|</li>
+                <li>&nbsp;禁止轉載&nbsp;|</li>
+                <li>&nbsp;網站聲明&nbsp;</li>
+            </ul>
+            <p style="text-align: center;color: #000;font-size: 10px;
+            user-select: none;">©2022 All rights reserved.</p>
+        </footer>
+
+    </div>
+
+
+
+    <script>
+            let commentUserInfo = [{
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN010dL9cj2BlAyvASH5u_!!917298378.jpg",
+            userName: "張彩霞",
+            commentPraise: 1931,
+            commentContent: "按照Anna老師說的做了一個星期，效果挺明顯的，期待一個月後的我",
+            commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01a5jnuR2BlAyxDk8cR_!!917298378.jpg",
+            timer: "1分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01xJUgqR2BlAz1Y0pYU_!!917298378.jpg",
+            userName: "解脫",
+            commentPraise: 1911,
+            commentContent: "第一次使用後感覺不明顯，我去問Anna她說肌膚一個代謝週期為28天，讓我堅持使用幾次可以看出來了，到目前堅持用了一個月，果然黑斑變淡了，上妝後都看不出來，不錯不錯",
+            commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN018IJahL2BlAyyX9lwQ_!!917298378.jpg",
+            timer: "12分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01okDSR82BlAz0K2Gzf_!!917298378.jpg",
+            userName: "歲月靜好",
+            commentPraise: 1911,
+            commentContent: "一直都有在使用Anna的保養法啦，即使現在臉上沒有了斑點，但還是一直有堅持保養喔~",
+            commentImg: null,
+            timer: "2分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01iBPmKj2BlAyzc0aNJ_!!917298378.jpg",
+            userName: "平安喜樂",
+            commentPraise: 1911,
+            commentContent: "之前試過很多方法祛斑，但是都沒什麼效果，有點效果的後面也會反黑。在機緣巧合下認識了Anna，才1個月時間就把困擾我多年的斑點去掉了~",
+            commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01LmxUDQ2BlAysnsI38_!!917298378.jpg",
+            timer: "4分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01k7SnK72BlAysFOnUE_!!917298378.jpg",
+            userName: "隨心所欲",
+            commentPraise: 1911,
+            commentContent: "朋友也有向我推薦Anna，說Anna在護膚方面很專業，已添加LINE，等我的好消息吧",
+            commentImg: null,
+            timer: "6分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01TyUkYk2BlAyvKWxuQ_!!917298378.jpg",
+            userName: "下一站是幸福",
+            commentPraise: 1911,
+            commentContent: "超贊的!!!困擾多年的黑斑終於除掉了，效果太感人了~",
+            commentImg: null,
+            timer: "8分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01f6kXce2BlAyvKYJ5i_!!917298378.jpg",
+            userName: "隨遇而安",
+            commentPraise: 1911,
+            commentContent: "用了1個星期的效果，還是挺明顯的",
+            commentImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01srH4Vy2BlAyvApNDW_!!917298378.jpg",
+            timer: "12分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01ocqxkh2BlAyqk1nLv_!!917298378.jpg",
+            userName: "遊客",
+            commentPraise: 1911,
+            commentContent: "在Anna的幫助下，我斑點問題基本解決了，非常感謝Anna解決了我的難題。有問題的推薦大家添加她的LINE諮詢喲~",
+            commentImg: null,
+            timer: "14分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01Ca5dFM2BlAyzc0372_!!917298378.jpg",
+            userName: "李心艾",
+            commentPraise: 1911,
+            commentContent: "效果真有這麽好嗎，我也想試一試了，我用了很多方法都沒效果，都快失去信心了，看評論區大家都在說有效果，那我也去試試",
+            commentImg: null,
+            timer: "18分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN0182v6Hi2BlAyvKYuWM_!!917298378.jpg",
+            userName: "小仙女",
+            commentPraise: 1911,
+            commentContent: "我也是，認識老師還是舞伴介紹的，效果挺不錯的",
+            commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01lclKn42BlAysnscr3_!!917298378.jpg",
+            timer: "21分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN013PCRjC2BlAyqk1G7i_!!917298378.jpg",
+            userName: "不為誰而做的歌",
+            commentPraise: 1911,
+            commentContent: "才三十幾歲的我，手就跟五六十歲的阿姨一樣，我這手還有得救嗎？",
+            commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Hf3m9Q2BlAylkI8YG_!!917298378.jpg",
+            timer: "26分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN013PzMtm2BlAyygTOf9_!!917298378.jpg",
+            userName: "遊客",
+            commentPraise: 1911,
+            commentContent: "效果很明顯，老師的態度也很好好，隔三差五就問我怎麽樣，不過老師以後要是把下午發信息的時間改為晚上我更高興",
+            commentImg: null,
+            timer: "32分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01kdw3qp2BlAyvAQjRh_!!917298378.jpg",
+            userName: "果果",
+            commentPraise: 1911,
+            commentContent: "嘿，我跟你說，我那天上瑜伽課我的瑜伽老師都說了，我斑點消了不少，變的更年輕漂亮了，值得推薦",
+            commentImg: null,
+            timer: "37分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01QlIYsj2BlAyqk2X5C_!!917298378.jpg",
+            userName: "點點",
+            commentPraise: 1911,
+            commentContent: "我這段看見我老婆在用，臉上有變化，連衣服都穿時尚款，看她這段心情越變越好，整天很開心，我給她又買了一套面部的，老婆子說比送她金項鏈都開心",
+            commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01cCgFtK2BlAysnpsNJ_!!917298378.jpg",
+            timer: "41分鐘前"
+        }, {
+            userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01OXSSHN2BlAysFRD7s_!!917298378.jpg",
+            userName: "堅果麻麻",
+            commentPraise: 1911,
+            commentContent: "剛開始加上老師的時候沒耐心聽她講解，說了不好聽的話，後來被她服務所打動才決定試一試，現在用了不到30天，真的就如老師所說一樣，徹底把我斑點祛除了，皺紋也沒了，有點小開心，果然專業的老師就是不一樣，我會介紹更多朋友回報老師的",
+            commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01WFjsGV2BlAz3FnGC9_!!917298378.jpg",
+            timer: "54分鐘前"
+        }]
+
+        let textareaEl = document.querySelector('textarea')
+        let commentBtn = document.querySelector('.userComment button')
+        let commentContent = document.querySelector('.commentContent ul')
+        let local = localStorage.getItem('userComment') 
+
+        let localArr = []
+
+        applyComment(commentContent, commentUserInfo)
+
+
+
+        commentBtn.onclick = function () {
+            let locals = localStorage.getItem('userComment')
+            let reg = /^(\s*)$/;
+            let textValue = textareaEl.value
+            if (locals) localArr = JSON.parse(locals);
+            if (!reg.test(textValue)) {
+                commentUserInfo.unshift({
+                    userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01rtnRHT2BlAxUZk1Z7_!!917298378.jpg",
+                    userName: "游客",
+                    commentPraise: 0,
+                    commentContent: textValue,
+                    commentImg: null,
+                    timer: "刚刚"
+                })
+
+                localArr.push(textValue)
+                localStorage.setItem('userComment', JSON.stringify(localArr))
+                applyComment(commentContent, commentUserInfo)
+            }
+        }
+
+        commentContent.addEventListener('click', function (event) {
+            if (event.target.nodeName === "I") {
+
+                let eventCommon = event.path[1].children[0]
+
+                let numClass = event.path[1].children[0].className
+
+                let num = Number(eventCommon.innerText)
+
+                if (numClass != 'judge') {
+                    event.path[1].children[0].innerText = num + 1
+                    event.path[1].children[0].className = 'judge'
+                } else {
+                    event.path[1].children[0].innerText = num - 1
+                    event.path[1].children[0].className = ''
+                }
+            }
+        })
+
+
+
+        function applyComment(el, obj) {
+            let strInner = commentUserInfo.map((item, index, array) => {
+                return `
+			<li>
+				<img src="${item.userImg}" class="userPhoto">
+				<div class="commentUserMsg">
+					<div class="commentUserHead">
+						<p class="uNament">${item.userName}</p>
+							<div style="user-select: none;">
+								<strong class="">${item.commentPraise}</strong>
+								<i class="iconfont icon-zan1"></i>
+							</div>
+						</div>
+		
+						<div class="commentUserBody">
+						<p class="userCommentContent">${item.commentContent}</p>
+						<img class="${item.commentImg ? "commentImgClass" : "commentImg"}" src="${item.commentImg ?? ""}">
+					</div>
+					<div class="commentUserFoot">
+						<p class="commentTime">${item.timer}</p>
+					</div>
+				</div>
+			</li>
+			`
+            })
+            commentContent.innerHTML = strInner.join('')
+        }
+        
+      
+    </script>
+    
+    <script>
+        window.onload = function() {
+            let oSlideShow = document.querySelector('.slideShow')
+            let oUl = document.querySelector('.slideShow ul')
+            let aLi = document.querySelectorAll('.slideShow ul li')
+            let slideBoxW = document.querySelector('.slideShow').offsetWidth
+            oUl.appendChild(aLi[0].cloneNode(true)) // 复制第一个图片添加到最后一个形成循环
+            let liW = aLi[0].offsetWidth
+            let liH = aLi[0].offsetHeight
+            let liLength = aLi.length + 1
+            let index = 0
+            let timer
+
+                    init()
+                    
+                    window.addEventListener('resize',function(){
+                        init()
+                    })
+
+                    function init() {
+                        clearInterval(timer)
+                        liH = aLi[0].offsetHeight
+                        slideBoxW = document.querySelector('.slideShow').offsetWidth
+                        oUl.style.width = `${liLength*100}%` // 初始化元素长度
+                        
+                        aLi = document.querySelectorAll('.slideShow ul li') // 重新获取添加后的元素
+                        for (let i = 0; i < aLi.length; i++) {
+                            aLi[i].style.width = slideBoxW + 'px'
+                        }
+                        
+                        autoTranslate()
+                    }
+
+                    function move(callback) {
+                        callback && callback() // 回调存在执行liW = aLi[0].offsetWidth
+                        
+                        liW = aLi[0].offsetWidth
+                        
+                        setTimeout(function(){
+                            liH = aLi[0].offsetHeight
+                            oUl.style.height = liH + 'px'
+                            oSlideShow.style.height = liH + 'px'
+                        })
+                        
+                            animate(oUl, {
+                                marginLeft: -index * liW + 'px'
+                            })
+                            
+                    }
+
+                    // 获取样式
+                    function getStyle(obj, attr) {
+                        return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj, false)[attr];
+                    }
+
+                    // 自动轮播 通过index判断
+                    function autoTranslate() {
+                        timer = setInterval(function () {
+                            move(function () {
+                                if (index === aLi.length - 1) {
+                                    index = 0
+                                    oUl.style.marginLeft = -index * liW + 'px'
+                                }
+                                index++
+                                index = index % liLength
+                            })
+                        }, 3000)
+                    }
+
+                    function animate(ele, json, callback) {
+                        clearInterval(ele.time); //保证每一次都只有一个定时器在运行
+                        var toggle = false;
+                        var currLeft = parseInt(getStyle(ele, 'left'));
+                        ele.time = setInterval(function () {
+                            //每次定时循环都暂且认为他们都可以达到最终结果
+                            toggle = true;
+                            for (var key in json) {
+                                var target = parseInt(json[key])
+                                curr = parseInt(getStyle(ele, key));
+                                speed = (target - curr) / 10;
+                                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                                if (curr === target) {
+                                    //width 先到了指定值了 定时器结束了 
+                                    ele.style[key] = target + 'px';
+                                }
+                                ele.style[key] = curr + speed + 'px';
+                                if (curr !== target) {
+                                    //只要有某一个属性的值不到指定结果 关闭锁
+                                    toggle = false;
+                                }
+                            }
+                            if (toggle) {
+                                clearInterval(ele.time);
+                                callback && callback();
+                            }
+                        }, 1000 / 60);
+                    }
+        }
+    </script>
+
+</body>
+<script src="https://static.newworkbench.com/v4/licat.min.js"></script> 
+
+</html>

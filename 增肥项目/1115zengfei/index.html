@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>增重成功後 我擺脫了體重焦慮</title>
+  <style>
+  /* http://meyerweb.com/eric/tools/css/reset/  v2.0 | 20110126 License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Ã¥Â¾Â®Ã¨Â»Å¸Ã¥â€žÂ·Ã©Â»â€˜Ã©Â«â€, Ã¥Â¾Â®Ã¨Â»Å¸Ã¦Â­Â£Ã©Â»â€˜Ã©Â«â€, Arial, Helvetica, Microsoft JhengHei, Verdana';
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.img-scroll {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.img-scroll::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0);
+    border-left: 1px solid rgba(0, 0, 0, 0);
+}
+
+.img-scroll::-webkit-scrollbar {
+    width: 0.24rem;
+    height: 13px;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+.img-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-clip: padding-box;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+.img-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    border-radius: 0.1rem;
+}
+
+html {
+    font-size: 13.33333333vw;
+    color: #313131;
+}
+
+html body {
+    background-color: #eeeeee;
+}
+
+@media (min-width: 560px) {
+    html {
+        font-size: 54px;
+    }
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+img.express {
+    width: 0.39rem;
+    height: 0.39rem;
+    vertical-align: top;
+}
+
+.shadow-mask, .wechat-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    max-width: 7.5rem;
+    left: 50%;
+    margin-left: -3.75rem;
+}
+
+.shadow-mask .img-wrap {
+    padding: 0 2%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.shadow-mask .img-wrap img {
+    width: 100%;
+}
+
+.wechat-mask .c-box {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+}
+
+.wechat-mask .c-box .content {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.wechat-mask .c-box .closed {
+    position: absolute;
+    right: 0.1rem;
+    top: 0;
+    font-size: 0.6rem;
+    font-weight: bold;
+    color: #ea424a;
+    cursor: pointer;
+}
+
+.top-bar {
+    width: 7.5rem;
+    box-sizing: border-box;
+    padding: 0 0.2rem;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    margin-left: -3.75rem;
+    height: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    z-index: 99;
+}
+
+.top-bar .left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar .left .icon-back {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.top-bar .left .head-pic {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.top-bar .left .name {
+    font-size: 0.26rem;
+}
+
+.top-bar .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-bar .right .btn-follow {
+    width: 1.08rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    border-radius: 0.48rem;
+    color: #ea424a;
+    font-size: 0.26rem;
+    text-align: center;
+    border: 2px solid #ea424a;
+    margin-right: 0.4rem;
+}
+
+.top-bar .right .icon-share {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+.box {
+    width: 7.5rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.box .top-bar-position {
+    width: 100%;
+    height: 1rem;
+}
+
+.box .banner {
+    width: 100%;
+}
+
+.box .banner .swiper-container {
+    padding-bottom: 0rem;
+}
+
+.box .banner .swiper-pagination-bullet {
+    background-color: #ffffff;
+    opacity: 1;
+}
+
+.box .banner .swiper-pagination-bullet-active {
+    background-color: #ea4149;
+}
+
+.box .content {
+    padding: 0.25rem 0.25rem 0rem 0.25rem;
+    border-bottom: 0.005rem solid #dcdde0;
+}
+
+.box .content .tit {
+    font-size: 0.38rem;
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 0.2rem auto;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.box .content .intro {
+    margin: 0.1rem auto 0 auto;
+}
+
+.box .content .intro .dashed-box {
+    border: 1px dashed #cccccc;
+    font-size: 0.36rem;
+    padding: 0.4rem 0.2rem;
+    text-align: center;
+    margin: 0.3rem auto;
+}
+
+.box .content .intro .dashed-box p {
+    line-height: 2;
+    font-weight: bold;
+    color: #ea4149;
+}
+
+.box .content .intro .img-tit {
+    font-size: 0.24rem;
+    color: #ea424a;
+    text-align: center;
+    margin: 0.2rem auto;
+}
+
+.box .content .intro .text {
+    font-size: 0.28rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #000;
+    margin: 0.22rem auto;
+    letter-spacing: 0rem;
+    text-indent: 0;
+}
+
+.box .content .intro .txt {
+    font-size: 0.30rem;
+    line-height: 2;
+    text-align: justify;
+    color: #444444;
+    margin: 0.12rem 0;
+    letter-spacing: 0.03rem;
+    text-indent: 2em;
+}
+
+.box .content .intro .txt span {
+    font-weight: bold;
+}
+
+.box .content .intro .center {
+    text-align: center;
+    text-indent: 0;
+}
+
+.box .content .intro .txt .dot {
+    padding: 0 1.5em;
+    position: relative;
+    display: inline-block;
+    margin: 0.35rem 0 0.2rem 0;
+    text-indent: 0;
+    font-size: 0.32rem;
+}
+
+.box .content .intro .txt .dot::before {
+    content: '';
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    background-color: #ea4149;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -0.09rem;
+}
+
+.box .content .intro .txt .dot::after {
+    content: '';
+    width: 0.18rem;
+    height: 0.18rem;
+    display: block;
+    background-color: #ea4149;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -0.09rem;
+}
+
+.box .content .intro .bg-title {
+    font-size: 0.32rem;
+    color: #ffffff;
+    background-color: #ea424a;
+    opacity: 0.9;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    line-height: 1.8;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.1rem;
+    margin: 0.3rem auto;
+}
+
+/* Ã¥Â·Â¦Ã¥Â¯Â¹Ã©Â½ÂÃ¥Â°ÂÃ¦Â â€¡Ã©Â¢Ëœ */
+.left-title {
+    font-size: 0.32rem;
+    color: #ea424a;
+    padding-left: 0.2rem;
+    position: relative;
+    font-weight: bold;
+    margin: 0.5rem 0 0.2rem 0;
+    line-height: 1.5;
+}
+
+.left-title:after {
+    content: '';
+    width: 0.1rem;
+    height: 100%;
+    display: block;
+    background-color: #ea424a;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.box .content .intro .arrow {
+    color: #ea424a;
+    font-size: 0.6rem;
+    line-height: 1.2;
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5rem auto 0.7rem auto;
+}
+
+.box .content .intro .tips {
+    padding: 0.2rem 0.3rem;
+    border: 1px dashed #cccccc;
+    color: #444444;
+    font-size: 0.30rem;
+    text-align: center;
+    line-height: 2;
+    margin: 0.5rem auto;
+}
+
+.box .content .intro .tips span {
+    background-color: #3b5998;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0.02rem 0.12rem;
+    border-radius: 0.1rem;
+    line-height: 1.4;
+}
+
+.box .content .intro .txt .red {
+    color: #ea424a;
+}
+
+.box .content .intro .bold {
+    font-weight: bold;
+}
+
+.box .content .intro .img {
+    padding: 0rem 0;
+    font-size: 0;
+    margin: 0.2rem auto;
+}
+
+.box .content .intro .img-scroll {
+    height: 4.6rem;
+    overflow-y: scroll;
+    padding: 0 0;
+    margin: 0.3rem auto;
+}
+
+.box .content .intro .img-group {
+    overflow: hidden;
+}
+
+.box .content .intro .img-group img {
+    width: 49%;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.box .content .intro .img-group img:nth-child(1) {
+    margin-right: 2%;
+}
+
+.box .content .time {
+    font-size: 0.26rem;
+    color: #999999;
+    padding: 0.8rem 0 0.26rem 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.box .remark {
+    padding: 0.42rem 0.2rem 0.4rem 0.2rem;
+    overflow: hidden;
+}
+
+.box .remark .summary {
+    font-size: 0.24rem;
+    margin: 0.3rem 0 0.5rem;
+    color: #000000;
+    font-size: 0.3rem;
+}
+
+.box .remark .remark-input {
+    display: flex;
+    height: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.2rem;
+}
+
+.box .remark .remark-input .head-img {
+    width: 0.58rem;
+    height: 0.58rem;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+}
+
+.box .remark .remark-input input {
+    width: 4.6rem;
+    border: none;
+    height: 0.7rem;
+    font-size: 0.30rem;
+    background-color: #f5f5f5;
+    border-radius: 0.2rem;
+    display: inline-block;
+    padding: 0 0.2rem;
+    outline: none;
+}
+
+.box .remark .remark-input input[type='button'] {
+    width: 1.2rem;
+    background-color: #3b5998;
+    color: #ffffff;
+}
+
+.box .remark .remark-list .remark-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.box .remark .remark-list .remark-item .head-pic {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+}
+
+.box .remark .remark-list .sub-item {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.24rem;
+}
+
+.box .remark .remark-list .sub-item .head-pic {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.box .remark .remark-list .remark-item .main-box {
+    max-width: 6rem;
+    padding: 0rem 0;
+    margin-left: 0.1rem;
+    position: relative;
+    font-size: 0;
+}
+
+.box .remark .remark-list .remark-item .main-box .sub-item .main-box {
+    max-width: 5.32rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .first-floor {
+    position: relative;
+    display: inline-block;
+}
+
+.box .remark .remark-list .remark-item:last-child .main-box {
+    border-bottom: none;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.20rem 0.24rem;
+    border-radius: 0.4rem;
+    background-color: #f0f1f5;
+    color: #000000;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .name {
+    font-size: 0.26rem;
+    color: #000000;
+    margin-bottom: 0.02rem;
+    font-weight: bold;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .name .author {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.24rem;
+    background-color: #f5f5f5;
+    color: #444444;
+    margin-left: 0rem;
+    border-radius: 0.2rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .txt {
+    font-size: 0.26rem;
+    color: #222222;
+    line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 0.0rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .txt .time {
+    font-size: 0.24rem;
+    color: #999999;
+    display: block;
+    padding-left: 0rem;
+    text-align: right;
+    margin: 0.1rem 0 0 0;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .txt img {
+    margin-top: 0.1rem;
+    display: block;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .img-box {
+    margin-top: 0.15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .img-box .img-item {
+    width: 48%;
+    height: 0;
+    padding-bottom: 48%;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.box .remark .remark-list .remark-item .main-box .time-nice {
+    font-size: 0.22rem;
+    color: #666668;
+    display: flex;
+    margin-top: 0.16rem;
+    padding-left: 0.24rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .time-nice span {
+    margin-right: 0.4rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .reply-box {
+    display: flex;
+    margin-top: 0.2rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .reply-box .head-pic {
+    width: 0.4rem;
+    height: 0.4rem;
+    margin-top: 0;
+}
+
+.box .remark .remark-list .remark-item .main-box .text-box .reply-box .text-box {
+    flex: 1;
+    padding-left: 0.2rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .img-box {
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    margin-top: 0.01rem;
+    font-size: 0;
+}
+
+.box .remark .remark-list .remark-item .main-box .icon-love {
+    background: #ffffff;
+    font-size: 0;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.06rem;
+    box-shadow: 0 0 0.1rem rgba(0,0,0,0.3);
+    position: absolute;
+    right: 0rem;
+    bottom: 0.20rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .icon-love img {
+    width: 0.26rem;
+    height: 0.26rem;
+}
+
+.box .remark .remark-list .remark-item .main-box .icon-love p {
+    font-size: 0.22rem;
+    text-align: center;
+    margin-top: 0rem;
+    color: #373737;
+    display: inline-block;
+    padding-left: 0.02rem;
+}
+
+.box .bottom-tip {
+    font-size: 0.26rem;
+    color: #666666;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0.3rem 0rem 0.4rem 0rem;
+    position: fixed;
+    width: 7.5rem;
+    bottom: 0;
+    background-color: #ffffff;
+    border-top: 1px solid #eeeeee;
+    z-index: 999;
+}
+
+.yellow {
+    color: rgb(199,155,0);
+}
+
+/* facebook */
+.top-title {
+    display: flex;
+    height: 0.84rem;
+    font-size: 0.34rem;
+    color: #ffffff;
+    background-color: #d1ac89;
+    padding: 0 0.25rem;
+    align-items: center;
+}
+
+.top-title .icon {
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.top-title .tit {
+    flex: 1;
+    text-align: center;
+}
+
+.content .base-info {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0.1rem 0 0.2rem 0;
+}
+
+.content .base-info .auth-head {
+    width: 0.78rem;
+    height: 0.78rem;
+    border-radius: 50%;
+}
+
+.content .base-info .sl {
+    font-size: 0.50rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.content .base-info .auth-info {
+    flex: 1;
+    font-size: 0.30rem;
+    line-height: 1.5;
+    padding-left: 0.25rem;
+}
+
+.content .base-info .auth-info .tp {
+    font-size: 0.30rem;
+    font-weight: bold;
+    color: #1d2129;
+}
+
+.content .base-info .auth-info .tp .icon-r {
+    color: #616876;
+    font-size: 0.25rem;
+    margin: 0 0rem;
+}
+
+.content .base-info .auth-info .bt {
+    color: #7d828b;
+    font-size: 0.28rem;
+}
+
+.content .base-info .auth-info .bt .iconfont {
+    font-size: 0.3rem;
+}
+
+.share {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 0.26rem;
+    color: #5c636c;
+    padding: 0.16rem 0.25rem 0.16rem 0.25rem;
+    border-bottom: 0.005rem solid #dcdde0;
+    border-top: 0.005rem solid #dcdde0;
+    margin-top: 0.36rem;
+}
+
+.share .nice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.share .nice .iconfont {
+    margin-right: 0.10rem;
+}
+
+.nicetext {
+    margin: 0.2rem auto;
+    color: #000000;
+    font-size: 0.26rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nicetext .ic-nice {
+    width: 0.30rem;
+    height: 0.30rem;
+    display: block;
+    border-radius: 50%;
+}
+
+.nicetext .nicenum {
+    flex: 1;
+    margin-left: 0.06rem;
+}
+
+.readmore {
+    font-size: 0.26rem;
+    color: #000000;
+    margin: 0.2rem 0;
+    text-align: left;
+    display: block;
+}
+.index{width: 100%;padding-bottom: 1.1rem;}
+
+.topic{position: relative;height: 100%;overflow-y:auto;width: 100%;background-attachment:fixed;box-sizing: border-box;}
+
+.topic-frameli{line-height: 1.5rem;font-size: 0.36rem;width: 5.65rem;height: 1.3rem;margin: 0rem auto 0.35rem auto;color: #000000;background-size: cover; text-align: center;}
+.topic-frameli div{display: inline-block;font-size: 0.54rem;color: #ea424a;}
+.entrance-bottom{width: 100%;position: relative;z-index: 10;height:auto;overflow-x: hidden;}
+.entrance-bottom-frame{transition: all 0.5s;width: 10000%;margin: 0 auto;margin-top:0.3rem;}
+.entrance-bottom-frame-beijing{position: absolute;z-index: 1;width: 100%;height: 100%;top:0;left: 0;background: url(../images/yincang.png);background-size:cover;}
+.entrance-bottom-frame-line{transition: all 0.5s;pointer-events: none;cursor: default;width: 1%;float: left;position: relative;padding: 0 0.35rem;box-sizing: border-box;}
+.entrance-bottom-frame-line-id{font-size: 30px;color: white;text-align:center;line-height: 60px;position: absolute;left: 50%;margin-left: -30px;height: 60px;width: 60px;background: url(../images/e-id.png);background-size: cover;top: -30px;}
+.entrance-bottom-frame-line-title{font-size: 0.32rem;margin-bottom: 0.4rem;line-height: 0.5rem; font-weight: bold; color: #333;}
+.entrance-bottom-frame-line-button{transition: margin 0.5s;position: relative;cursor: pointer;width: 100%;min-height:0.9rem;margin-bottom:0.3rem;float: left;box-sizing: border-box;background: #f7f7f7;border-radius: 0.54rem;padding: 0 0.5rem;}
+.entrance-bottom-frame-line-button-frame{width: 100%;min-height: 0.9rem;display: table-cell; vertical-align:middle;font-size: 0.3rem;padding:0.1rem 0rem 0.1rem 0.5rem;}
+.entrance-bottom-frame-line-button-id{height: 0.9rem;display: table-cell;line-height: 0.9rem;font-size: 0.3rem;}
+.entrance-bottom-frame-line-button:hover{color: white; background: #ea424a;}
+.entrance-bottom-frame-line.active{pointer-events: auto;  }
+.entrance-bottom-frame-line.active .entrance-bottom-frame-beijing{display: none;}
+.entrance-bottom-frame-beijing.none{background: #000000;opacity: 0.2;}
+
+.final_result {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 998;
+  display: none;
+}
+.result_title {
+  padding: 0 0 0.3rem 0;
+  font-size: 0.30rem;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+.result_content {
+  width: 90%;
+  padding: 0.2rem 0.2rem;
+  margin: 0rem auto 0.5rem auto;
+  font-size: 0.30rem;
+  color: #333333;
+  line-height: 2;
+  border: 1px dashed #cccccc;
+  letter-spacing: 0.04rem;
+}
+.page_title {
+  font-size: 0.40rem;
+  color: #000000;
+  margin: 0.5rem 0 0.4rem 0;
+  text-align: left;
+}
+.footer-nav {
+  width: 100%;
+  max-width: 7.5rem;
+  background: #d1ac89;
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+    .icon {
+      width: 1em;
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+
+    svg {
+      font-size: 0.36rem;
+      margin: 0 0.02rem;
+    }
+
+    /* 隐藏用户评论用户名 */
+    .box .remark .remark-list .remark-item .main-box .text-box .name {
+      display: none;
+    }
+  </style>
+  <!-- 問答測試資源檔 end -->
+
+  <!-- 聯繫方式浮窗 -->
+  <style>
+    .contact-fixed {
+      position: fixed;
+      right: 0.08rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 999;
+    }
+
+    .contact-fixed .way {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 0.2rem;
+      background-color: green;
+      text-align: center;
+      opacity: 1;
+      position: relative;
+      margin: 0.08rem 0;
+      display: block;
+      overflow: hidden;
+    }
+
+    .contact-fixed .iconfont {
+      color: #ffffff;
+      font-size: 0.50rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+
+    .contact-fixed .wx_bg {
+      background-color: rgba(90, 194, 108, 1);
+    }
+
+    .contact-fixed .line_bg {
+      background-color: rgba(0, 185, 0, 1);
+    }
+
+    .contact-fixed .line_bg .iconfont {
+      font-size: 0.58rem;
+    }
+
+    .contact-fixed .app_bg {
+      background-color: rgba(89, 188, 72, 1);
+    }
+
+    .contact-fixed .app_bg .iconfont {
+      font-size: 0.58rem;
+    }
+
+    [name="account"] {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+  <!-- 聯繫方式浮窗 -->
+</head>
+
+<body>
+  <div class="box">
+    <div class="top-title">
+      <!-- <span class="iconfont icon-xiangzuo icon"></span> -->
+      <span class="tit">增重成功後 我擺脫了體重焦慮</span></div>
+    <div class="content">
+      <div class="intro">
+        <!-- <p class="text">50天改善灰指甲，從羨慕到徹底改變</p> -->
+        <p class="img"><img src="https://img.alicdn.com/imgextra/i1/43843319/O1CN01dbZl5x1aO9GAzt6y5_!!43843319.jpg"
+            alt=""></p>
+        <p class="text">身邊吃不胖、腸胃不好的朋友，由於版權的問題，我不能直接把方法分享出來，但大家可以加LINE：<span style="color:red;">
+            <script>
+              document.write(stxlwx);
+            </script>
+          </span>&nbsp;咨詢。學習適合自己的增重方法（感覺增重這件事真的很小眾，更需要正確的方向方法引導）</p>
+        <div class="share">
+          <div class="nice" id="nice"><span class="iconfont icon-thumbs-o-up"></span>贊</div>
+          <a href="javascript:{showline()};" style="color: green; text-decoration: none;">添加客服</a>
+        </div>
+        <div class="nicetext"><span class="ic-nice"
+            style="background:url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png) no-repeat center; background-size: cover;"></span><span
+            class="nicenum">2254人</span></div>
+      </div>
+    </div>
+    <div class="remark">
+      <div class="remark-input" style="display: none;">
+        <div class="head-img"
+          style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01FhYhh51aO9BQh0yjg_!!43843319.jpg) no-repeat center; background-size:cover;">
+        </div>
+        <input type="text" placeholder="匿名訪客評論">
+        <input type="button" value="提交">
+      </div>
+      <div class="remark-list">
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01FMkkVx1aO9FhVkkai_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">1樓</p>
+                <p class="txt">
+                  超神奇，我也沒想到裡面的方法那麼管用。抱著試一試的心態，我是從上週一開始試的，到現在才8天，增重2kg，效果短時間看不出來，但肯定是有的。哈哈哈，現在有點期待一個月後的樣子。
+                </p>
+              </div>
+              <!---->
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>829</p>
+              </div>
+              <div class="time-nice"><span class="time">18天</span><span class="good">贊</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01yr42fS1aO9Ff7v9W2_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">2樓</p>
+                <p class="txt">
+                  感謝分享，效果真的很驚人!試了一個月後，體重變化很大，鐵瘦子已經擺脫了，整個人照鏡子看有活力。身體健康的增重！實在是太激動了！
+                </p>
+              </div>
+              <div class="img-box"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01Jq9Uts1aO9FWqJOfv_!!43843319.png" alt=""></div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>209</p>
+              </div>
+              <div class="time-nice"><span class="time">15天</span><span class="good">贊</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01Jm32Dh1aO9FVLRoZy_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">3樓</p>
+                <p class="txt">我也很滿意，2個月下來達到自己的目標體重，朋友還說我是胖了之後人變的更好看了，看來太瘦還影響顏值！</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>390</p>
+              </div>
+              <div class="time-nice"><span class="time">8天</span><span class="good">贊</span></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN014cBwMn1aO9FbMi081_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">4樓</p>
+                <p class="txt">我是剛剛用，感覺還不錯，胃口很好，而且消化正常，期待結果。</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>467</p>
+              </div>
+              <div class="time-nice"><span class="time">11天</span><span class="good">贊</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01wTgNTz1aO9FgoKj0j_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">5樓</p>
+                <p class="txt">主要是超級方便，在家自己就能弄，每天下班回到家，最多10分鐘就能搞定，就當是嘗試一下，而且目前看來還是很有效的。</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>309</p>
+              </div>
+              <div class="time-nice"><span class="time">16天</span><span class="good">贊</span></div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01HBFajq1aO9FdW4ocA_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">6樓</p>
+                <p class="txt">155 40KG，好焦慮，好想增重</p>
+              </div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>384</p>
+              </div>
+              <div class="time-nice"><span class="time">16天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">行動起來</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">16天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01L6TZ9N1aO9FaACPNV_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">6樓</p>
+                  <p class="txt">一樣的體重 幾年了 一直沒變過</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>121</p>
+                </div>
+                <div class="time-nice"><span class="time">17天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01gX50jI1aO9Fb46peb_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">6樓</p>
+                  <p class="txt">
+                    怎麼行動</p>
+                </div>
+              
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>461</p>
+                </div>
+                <div class="time-nice"><span class="time">17天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">6樓</p>
+                  <p class="txt">
+                    加這個line:
+                    <span name="account">
+                      <script>
+                        document.write(stxlwx);
+                      </script>
+                    </span>
+                    簡單有效，朋友可以加一下試試。
+                  </p>
+                </div>
+              
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>461</p>
+                </div>
+                <div class="time-nice"><span class="time">17天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01nfeCsy1aO9FhWcnKA_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">7樓</p>
+                <p class="txt">好看的不止一點點啊！！</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>927</p>
+              </div>
+              <div class="time-nice"><span class="time">14天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">謝謝</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01ci73rk1aO9FfroJDC_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">我無肉不歡怎麼辦 155 37.5kg 每餐少不了肉啊 體重就是一直上不來 增重太難了</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">喜歡吃肉很好啊，一餐一個手槍腿+1-2碗飯/粉/面，有空位再吃菜，最後來碗湯</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01s29Itl1aO9Fb4jpys_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">8樓</p>
+                <p class="txt">本來42.5斤，胃炎瘦了5kg，真的一下子老了很多的，怎樣增重</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>138</p>
+              </div>
+              <div class="time-nice"><span class="time">11天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">統一回覆。加這個line：
+                    <span name="account">
+                      <script>
+                        document.write(stxlwx);
+                      </script>
+                    </span>
+                    可以立刻學到適合自己的方法，最主要是簡單有效，我就是最大受益者。有需求的朋友可以加一下試試。</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN011rhKBA1aO9FcXTyRE_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">同款，165的身高，生孩子前47kg，現在孩子快五歲了，我體重只有42kg</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN013XsQKf1aO9Ffs3XzS_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">25樓</p>
+                  <p class="txt">我也是之前43.3 後來加LINE調理2個月， 現在努力中已經54.5kg了。 瘦是真不好看啊 臉</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>501</p>
+                </div>
+                <div class="time-nice"><span class="time">101天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01lBznc71aO9Fe2ghqA_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">9樓</p>
+                <p class="txt">羡慕你們，都是怎麼改善的？從高中開始到現在體重重來沒超過43kg，中間嘗試過各種方法還是沒有大的改善，求各位指教。</p>
+              </div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>914</p>
+              </div>
+              <div class="time-nice"><span class="time">9天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01dBLYTh1aO9FQcpxKf_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">26樓</p>
+                  <p class="txt">163，39kg一天吃6餐都沒用</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>581</p>
+                </div>
+                <div class="time-nice"><span class="time">8天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">27樓</p>
+                  <p class="txt">加這個LINE ID：
+                    <span name="account">
+                      <script>
+                        document.write(stxlwx);
+                      </script>
+                    </span>
+                    我就是在這裡get到好方法的。對於我來說是非常有效的。</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>674</p>
+                </div>
+                <div class="time-nice"><span class="time">7天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01wiMdTK1aO9FcXl1f9_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">28樓</p>
+                  <p class="txt">我37kg好煩啊</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>545</p>
+                </div>
+                <div class="time-nice"><span class="time">6天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01xNM1CW1aO9FgpZG4Z_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">28樓</p>
+                  <p class="txt">我38kg</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>545</p>
+                </div>
+                <div class="time-nice"><span class="time">6天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01VuJ2631aO9Fb5IHFI_!!43843319.png) no-repeat center; background-size:100% 100%; ">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">10樓</p>
+                <p class="txt">你們說我這樣還有救嗎？已經好幾年了，感覺已經絕望了。</p>
+              </div>
+              <div class="img-box"><img
+                src="https://img.alicdn.com/imgextra/i2/43843319/O1CN01GWunV91aO9FQbYwL9_!!43843319.png" alt=""></div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>333</p>
+              </div>
+              <div class="time-nice"><span class="time">6天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01XOMmWM1aO9FhVzrAO_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">22樓</p>
+                  <p class="txt">現在體重身高多少？先定目標，再找適合自己的堅持方式，你有加上面那個LINE嗎？</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>722</p>
+                </div>
+                <div class="time-nice"><span class="time">6天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01VuJ2631aO9Fb5IHFI_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">21樓</p>
+                  <p class="txt">身高165體重37.6kg，我加一下試試哈。</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>442</p>
+                </div>
+                <div class="time-nice"><span class="time">5天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01VuJ2631aO9Fb5IHFI_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">28樓</p>
+                  <p class="txt">實在是太感謝了，來給大家做個反饋哈，我加了LINE後，按照裡面的方法就跟著試了一下，到現在大概是三個月了，因為我的BIM比較低所以時間比較長。給你們看看我的回饋圖，簡直不要太驚喜。</p>
+                </div>
+                <div class="img-box"><img
+                  src="https://img.alicdn.com/imgextra/i1/43843319/O1CN01c3hHeV1aO9FXQA9Tf_!!43843319.png" alt=""></div>
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>442</p>
+                </div>
+                <div class="time-nice"><span class="time">40天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01VjFHXS1aO9FcYDUJ4_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">11樓</p>
+                <p class="txt">超瘦的我每次看到其他肉肉的小姐姐就好羡慕.....</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>690</p>
+              </div>
+              <div class="time-nice"><span class="time">10天</span><span class="good">贊</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN0167ZrCZ1aO9FbOMzGQ_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">12樓</p>
+                <p class="txt">其實找對方法，增重真的不難。</p>
+              </div>
+             
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>530</p>
+              </div>
+              <div class="time-nice"><span class="time">34天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01TolQM71aO9FVN7Gns_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">2樓</p>
+                  <p class="txt">求方法！</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>672</p>
+                </div>
+                <div class="time-nice"><span class="time">34天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01tO4leu1aO9FQdOGNG_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">12樓</p>
+                  <p class="txt">同求。</p>
+                </div>
+               
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>672</p>
+                </div>
+                <div class="time-nice"><span class="time">1天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01NF1pjG1aO9FQdPjq1_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">12樓</p>
+                  <p class="txt">哇哇哇！求方法！</p>
+                </div>
+               
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>672</p>
+                </div>
+                <div class="time-nice"><span class="time">1天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN0167ZrCZ1aO9FbOMzGQ_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">13樓</p>
+                <p class="txt">別再私信我了，加這個line : 
+                  <span name="account">
+                    <script>
+                      document.write(stxlwx);
+                    </script>
+                  </span>
+                </p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>249</p>
+              </div>
+              <div class="time-nice"><span class="time">5天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN014ze2GT1aO9FdXmQ2u_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">20樓</p>
+                  <p class="txt">謝謝</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>783</p>
+                </div>
+                <div class="time-nice"><span class="time">4天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01UV9yLq1aO9FaBpNam_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">5樓</p>
+                  <p class="txt">怪不得我的體重一直都上不來，原來是沒有用對方法！</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>112</p>
+                </div>
+                <div class="time-nice"><span class="time">3天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN016pDHe01aO9FbOeN6R_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">5樓</p>
+                  <p class="txt">感謝感謝，我感覺我的體重有希望上漲了~~</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>112</p>
+                </div>
+                <div class="time-nice"><span class="time">3天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01UO6ok51aO9FhXkoV1_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">14樓</p>
+                <p class="txt">上面分享Line裡面的方法有人有在用嗎？我自己的話，居然有意外之喜，而且完全是不敢相信的情況，半個月就已經有明顯效果，這速度簡直誇張！ 總之感謝分享哈！</p>
+              </div>
+
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>555</p>
+              </div>
+              <div class="time-nice"><span class="time">16天</span><span class="good">贊</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01Wtaexs1aO9Fb5qaDY_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">15樓</p>
+                <p class="txt">像我女兒這樣的體重有方法嗎？從小到現在，不管吃再多補品什麽的，體重一直都是偏瘦小，去醫院檢查說腸胃消化吸收不好.醫生開藥吃了兩個月也沒改變....我也好無奈啊,有沒有好的方法。</p>
+              </div>
+              <div class="img-box"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01xLkIf61aO9FVLGbUE_!!43843319.png" alt=""></div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>356</p>
+              </div>
+              <div class="time-nice"><span class="time">6天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01VEinhw1aO9FVNRPZA_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">2樓</p>
+                  <p class="txt">前面有推薦LINE，你可以試試</p>
+                </div>
+
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>782</p>
+                </div>
+                <div class="time-nice"><span class="time">5天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i1/43843319/O1CN01Wtaexs1aO9Fb5qaDY_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">2樓</p>
+                  <p class="txt">感謝推薦，今天來反饋一下成果。女兒的體重增加了，加了line以後找到了最適合自己女兒情況的改善方法，堅持了3個月就好了！</p>
+                </div>
+                <div class="img-box"><img
+                  src="https://img.alicdn.com/imgextra/i3/43843319/O1CN01sha7j21aO9FZbsNkB_!!43843319.png" alt=""></div>
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>782</p>
+                </div>
+                <div class="time-nice"><span class="time">5天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="remark-item">
+          <div class="head-pic"
+            style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01BH6V1u1aO9FbOvxhl_!!43843319.png) no-repeat center; background-size:100% 100%;">
+          </div>
+          <div class="main-box">
+            <div class="first-floor">
+              <div class="text-box">
+                <p class="name">16樓</p>
+                <p class="txt">樓上姐妹說的LINE，大家有去加嗎？有效嗎？</p>
+              </div>
+              <div class="icon-love"><img
+                  src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                <p>211</p>
+              </div>
+              <div class="time-nice"><span class="time">9天</span><span class="good">贊</span></div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i4/43843319/O1CN01ZQGxEF1aO9FbOwZIU_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">2樓</p>
+                  <p class="txt">我加了，反正就看看唄，實在不行或者覺得不靠譜再刪掉。</p>
+                </div>
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>782</p>
+                </div>
+                <div class="time-nice"><span class="time">59天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+            <div class="sub-item">
+              <div class="head-pic"
+                style="background: url(https://img.alicdn.com/imgextra/i2/43843319/O1CN01OK8Zpn1aO9FcYrq6B_!!43843319.png) no-repeat center; background-size:100% 100%;">
+              </div>
+              <div class="main-box">
+                <div class="text-box">
+                  <p class="name">2樓</p>
+                  <p class="txt">我覺得好像還行，諮詢了一下，老師很專業，而且每天都有在line主頁裡分享增重秘笈。</p>
+                </div>
+                <div class="icon-love"><img
+                    src="https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png" alt="">
+                  <p>782</p>
+                </div>
+                <div class="time-nice"><span class="time">5天</span><span class="good">贊</span></div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <span class="readmore">查看更多評論...</span>
+      </div>
+    </div>
+    <br />
+    <a href="javascript:{showline()};" style="text-decoration: none">
+      <div class="footer-nav" onclick="copyArticle()">點擊添加客服獲得更多增重資訊</div>
+    </a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    // 隱藏部分評論點擊後打開
+    $(".remark-item").each(function (index, item) {
+      if (index > 12) {
+        $(this).css("display", "none")
+      }
+    })
+    $(".readmore").click(function () {
+      $(this).css("display", "none")
+      $(".remark-item").each(function () {
+        $(this).css("display", "flex")
+      })
+      clickFollow()
+    })
+    // 文章點讚
+    let nicestatus = false
+    $("#nice").click(function () {
+      if (nicestatus === false) {
+        $(this).css("color", "rgb(32, 120, 244)")
+        $(".nicenum").text("你和其他2254位用戶")
+      } else {
+        $(this).css("color", "#5c636c")
+        $(".nicenum").text("2254人")
+      }
+      nicestatus = !nicestatus
+    })
+    // 點贊功能
+    function clickRemark() {
+      $(".first-floor").each(function (index, item) {
+        var j = 0
+        $(item).find(".good").click(function () {
+          if (j == 0) {
+            $(this).css("color", "rgb(32, 120, 244)")
+            $(this).css("font-weight", "bold")
+            var sum = parseInt($(item).find(".icon-love").find("p").text()) + 1
+            $(item).find(".icon-love").find("p").text(sum)
+            j++
+          } else {
+            $(this).css("color", "#666668")
+            $(this).css("font-weight", "normal")
+            var sum = parseInt($(item).find(".icon-love").find("p").text()) - 1
+            $(item).find(".icon-love").find("p").text(sum)
+            j--
+          }
+        })
+      })
+      $(".sub-item").each(function (index, item) {
+        var j = 0
+        $(item).find(".good").click(function () {
+          if (j == 0) {
+            $(this).css("color", "rgb(32, 120, 244)")
+            var sum = parseInt($(item).find(".icon-love").find("p").text()) + 1
+            $(item).find(".icon-love").find("p").text(sum)
+            j++
+          } else {
+            $(this).css("color", "#666668")
+            var sum = parseInt($(item).find(".icon-love").find("p").text()) - 1
+            $(item).find(".icon-love").find("p").text(sum)
+            j--
+          }
+        })
+      })
+    }
+    clickRemark()
+    // 評論用戶頭像
+    $(".remark-item > .head-pic").each(function (index, item) {
+      if (index !== 9) {
+        $(this).css("background-image",
+          `url(images/8421ce3ecacb4c29a6454839899733b0.gif)>9?parseInt(index+1):'0'+parseInt(index+1)}.jpg)`)
+      }
+    })
+    // 隨機點贊數
+    $(".first-floor > .icon-love p").each(function (index, item) {
+      $(item).text(
+        30 * ($(".icon-love p").length - index) +
+        Math.ceil(Math.random() * 10))
+    })
+    // 隨機點贊數
+    $(".sub-item .icon-love p").each(function (index, item) {
+      $(item).text(
+        14 * ($(".icon-love p").length - index) +
+        Math.ceil(Math.random() * 10))
+    })
+    // 評論
+    $(".remark-input input[type='button']").click(function () {
+      let msg = $(".remark-input input[type='text']").val()
+      if (msg === "") {
+        alert("不允許為空")
+        return false
+      }
+      let insertRemarkItem = `
+        <div class="remark-item">
+          <div class="head-pic" style="background: url(https://img.alicdn.com/imgextra/i3/43843319/O1CN01FhYhh51aO9BQh0yjg_!!43843319.jpg) no-repeat center; background-size:100% 100%;"></div>
+          <div class="main-box">
+            <div class="text-box">
+              <p class="name">匿名訪客<span style="color: #cccccc;">&nbsp;評論審核中...</span></p>
+              <p class="txt">${msg}<span class="time">今天</span></p>
+            </div>
+            <div class="icon-love"><img src="picture/icon-love.png" alt=""><p>0</p></div>
+          </div>
+        </div>`
+      alert("提交成功，審核後展示")
+      $(".remark-list .remark-item").eq(0).before(insertRemarkItem)
+      $(".remark-input input[type='text']").val("")
+    })
+    // 評論日期
+    // $(".first-floor .time").each(function (index, item) {
+    //   if (index != 5) {
+    //     let tinmes = Math.ceil(Math.random() * 10) < 1 ? 10 : Math.ceil(Math.random() * 10) + Math.ceil(Math
+    //       .random() * 10)
+    //     $(this).text(tinmes + '天')
+    //     $(this).parent().parent().parent().find(".sub-item").find(".main-box").find(".time-nice").find(".time")
+    //       .each(function (index, item) {
+    //         -
+    //         $(this).text(tinmes - Math.ceil(Math.random() * 1) - index + '天')
+    //       })
+    //   }
+    // })
+    // 點擊放大圖片
+    $(".intro img").each(function (index, item) {
+      $(item).click(function () {
+        var imgUrl = $(item).attr("src")
+        $(".shadow-mask .img-wrap img").attr("src", imgUrl)
+        $(".shadow-mask").fadeIn(300)
+      })
+    })
+    $(".img-box img").each(function (index, item) {
+      $(item).click(function () {
+        var imgUrl = $(item).attr("src")
+        $(".shadow-mask .img-wrap img").attr("src", imgUrl)
+        $(".shadow-mask").fadeIn(300)
+      })
+    })
+    $(".shadow-mask").click(function () {
+      $(this).fadeOut(300)
+    })
+
+
+
+    // 点赞按钮跟随图片
+    function clickFollow() {
+      let floorWidth = $(".first-floor").eq(0).width()
+      $(".first-floor .img-box img").each(function (index, item) {
+        if ($(this).attr("src")) {
+          let imgwidth = $(this).width()
+          $(this).parent().parent().find(".icon-love").css("right", floorWidth - imgwidth)
+        }
+      })
+      let mainBoxWidth = $(".sub-item .main-box").eq(0).width()
+      $(".sub-item .main-box .img-box img").each(function (index, item) {
+        if ($(this).attr("src")) {
+          let imgwidth = $(this).width()
+          $(this).parent().parent().find(".icon-love").css("right", mainBoxWidth - imgwidth)
+        }
+      })
+    }
+    window.onload = function () {
+      let floorWidth = $(".first-floor").eq(0).width()
+      $(".first-floor .img-box img").each(function (index, item) {
+        if ($(this).attr("src")) {
+          let imgwidth = $(this).width()
+          $(this).parent().parent().find(".icon-love").css("right", floorWidth - imgwidth)
+        }
+      })
+      let mainBoxWidth = $(".sub-item .main-box").eq(0).width()
+      $(".sub-item .main-box .img-box img").each(function (index, item) {
+        if ($(this).attr("src")) {
+          let imgwidth = $(this).width()
+          $(this).parent().parent().find(".icon-love").css("right", mainBoxWidth - imgwidth)
+        }
+      })
+    }
+  </script>
+  <!-- <script src="js/qq.js"></script>
+  <script>
+    wx = document.getElementsByName("account")[0].innerHTML
+  </script>
+  <script>
+    $(document).on('copy', '[name="account"]', function () {
+      $(".wechat-mask").fadeIn(300)
+      window.location.href = "#jump";
+    })
+    $(document).on('click', '[name="link"]', function () {
+      window.location.href = "#jump";
+    })
+  </script> -->
+</body>
+
+</html>

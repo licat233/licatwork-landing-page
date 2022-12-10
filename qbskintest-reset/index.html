@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>參與肌膚檢測領取獨家保養秘訣</title>
+    <link rel="stylesheet" href="https://cdn.matrixec.com/js/fontawesome_5_15_3/css/all.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        html {
+            -webkit-text-size-adjust: none;
+            -webkit-overflow-scrolling: touch
+        }
+
+        body {
+            min-width: 350px;
+            color: #686464;
+            font-family: "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif;
+            max-width: 600px;
+            margin: 0 auto
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        a:active,
+        a:link,
+        a:visited {
+            color: #666;
+            font-size: 110%;
+            text-decoration: none;
+            font-family: "微軟正黑體", "新細明體", Arial, Helvetica, sans-serif
+        }
+
+        .hide {
+            display: none
+        }
+
+        header {
+            z-index: 9999;
+            width: 100%;
+            padding: 0;
+            border: 1px solid #ccc;
+            background: #fff
+        }
+
+        header .table_header {
+            width: 100%;
+            padding: 10px 0;
+            margin: 0;
+            border-collapse: separate;
+            border: 0
+        }
+
+        .table_header td.meun {
+            width: 15%;
+            text-align: center
+        }
+
+        .table_header td.logo {
+            text-align: left
+        }
+
+        .table_header td.logo span {
+            font-size: 24px;
+            font-weight: 700;
+            color: #424242;
+            font-family: 'Font Awesome 5 Brands'
+        }
+
+        .table_header td.share {
+            width: 12%;
+            text-align: center
+        }
+
+        .table_header td.member {
+            width: 12%;
+            text-align: center
+        }
+
+        .table_header i {
+            color: #666;
+            font-size: 130%
+        }
+
+        .table_header td.meun i {
+            color: #666;
+            font-size: 150%
+        }
+
+        .table_header td.search {
+            width: 12%;
+            text-align: center
+        }
+
+        article {
+            padding: 10px
+        }
+
+        .webtitle h1 {
+            color: #424242;
+            margin: 8px 0
+        }
+
+        .questionbox_template {
+            display: none
+        }
+
+        .testbox .questionbox {
+            display: block;
+            margin-bottom: 20px
+        }
+
+        .question {
+            font-size: 125%;
+            text-align: left;
+            font-weight: 700
+        }
+
+        .answer {
+            padding: 20px 0 0 0
+        }
+
+        .answer::after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            zoom: 1
+        }
+
+        .option {
+            display: block;
+            float: left;
+            min-height: 40px;
+            padding: 9px 0 0 50px;
+            color: #666;
+            font-size: 100%;
+            line-height: 22px;
+            border-radius: 0;
+            border: none !important;
+            background-image: url(https://img.alicdn.com/imgextra/i4/917298378/O1CN01hePjIC2BlAw5fJI8c_!!917298378.png);
+            background-repeat: no-repeat;
+            background-position: left top;
+            text-align: left;
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            width: 50%;
+            height: auto;
+            margin: 10px 0
+        }
+
+        .checked {
+            /* background-image: url(https://img.alicdn.com/imgextra/i1/917298378/O1CN01DCHjom2BlAwBCetDn_!!917298378.png) */
+            /* background-image: url(https://img.alicdn.com/imgextra/i3/917298378/O1CN01IgNDNj2BlAwL9tCSY_!!917298378.png); */
+            background-image: url(https://img.alicdn.com/imgextra/i3/917298378/O1CN01IBF0Go2BlAwFJAMiV_!!917298378.png);
+        }
+
+        .captionbox {
+            padding-left: 10px
+        }
+
+        .caption {
+            padding-left: 10px;
+            text-align: left;
+            line-height: 200%;
+            background: rgba(255, 255, 255, .3)
+        }
+
+        .overtestbox {
+            height: 75px;
+            padding: 30px 0 0 0;
+            margin-bottom: 4em;
+            border-top: 1px solid #c4c2c0;
+            text-align: center
+        }
+
+        .submit_tip {
+            color: red
+        }
+
+        .submit_hitory {
+            width: 98%;
+            margin: 0 auto 50px
+        }
+
+        .historytitle {
+            color: #686464;
+            border-bottom: 1px solid #686464;
+            font-size: 110%;
+            font-weight: 700;
+            line-height: 200%;
+            text-align: left;
+        }
+
+        .historybox {
+            position: relative;
+            background-color: #fff;
+            padding: 10px;
+            height: 200px;
+            overflow: hidden;
+            transition: all .5s
+        }
+
+        .historybox::before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0), #fff);
+            width: 100%;
+            height: 20px;
+            z-index: 1
+        }
+
+        .historybox::after {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            background-image: linear-gradient(rgba(255, 255, 255, 0), #fff);
+            width: 100%;
+            height: 20px
+        }
+
+        .historybox ul {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            z-index: 0;
+            transition: transform 0s
+        }
+
+        .autoscroll {
+            -webkit-animation: 60s rowup linear infinite normal;
+            animation: 60s rowup linear infinite normal
+        }
+
+        .historybox ul::after {
+            display: list-item;
+            content: "......."
+        }
+
+        .historybox ul li {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 400
+        }
+
+        @-webkit-keyframes rowup {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+
+            100% {
+                -webkit-transform: translate3d(0, -1320px, 0);
+                transform: translate3d(0, -1320px, 0)
+            }
+        }
+
+        @keyframes rowup {
+            0% {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+
+            100% {
+                -webkit-transform: translate3d(0, -1320px, 0);
+                transform: translate3d(0, -1320px, 0)
+            }
+        }
+
+        footer {
+            min-height: 100px;
+            width: 100%;
+            margin: 0;
+            padding: 5px 0;
+            color: #fff;
+            line-height: 180%;
+            text-align: center;
+            background-color: #ccc;
+            padding-bottom: 50px
+        }
+
+        footer p {
+            line-height: 20.8px;
+            text-align: center
+        }
+
+        .footer_menu_box {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            z-index: 1001
+        }
+
+        .footer_menu {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 600px;
+            border-top: 1px solid #ccc;
+            background-image: linear-gradient(to bottom, #f6f6f6, #ccc)
+        }
+
+        .footer_menu::after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+            zoom: 1
+        }
+
+        .line_box {
+            float: left;
+            width: 50%;
+            height: 50px;
+            padding: 4px 0;
+            margin: 0 auto
+        }
+
+        .line_box div {
+            width: 95%;
+            padding: 0;
+            margin: 0 auto;
+            text-align: center
+        }
+
+        .line_box .line_btn {
+            width: 100%;
+            height: 40px;
+            padding: 0 0;
+            color: #fff;
+            text-align: left;
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-radius: 3px;
+            background-image: linear-gradient(to bottom, #00c300, #007100);
+            display: inline-block
+        }
+
+        .line_box .line_btn .line_icon {
+            padding: 0 10px
+        }
+
+        .line_box .line_btn .line_icon embed {
+            width: 20px;
+            height: 20px;
+            pointer-events: auto;
+            vertical-align: text-bottom
+        }
+
+        .normal_box {
+            float: right;
+            width: 16%;
+            height: 50px;
+            background-color: #f6f6f6;
+            color: #333;
+            padding: 5px 0;
+            border-left: 1px solid #ccc;
+            padding: 0;
+            text-align: center
+        }
+
+        .fa-envelope:before {
+            content: "\f0e0"
+        }
+
+        .normal_box a {
+            display: block;
+            height: inherit;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center
+        }
+
+        .normal_box .this_icon {
+            font-size: 130%;
+            margin-top: -5px
+        }
+
+        .normal_box .this_caption {
+            font-size: 80%
+        }
+
+        .wrong {
+            color: red !important
+        }
+
+        .wrong::after {
+            content: "(必選)";
+            display: inline-block;
+            font-size: inherit
+        }
+
+        .line_button_box {
+            display: block;
+            text-align: center;
+            margin-bottom: 50px
+        }
+
+        .line_button {
+            width: 140px;
+            height: 40px;
+            padding: 0 0;
+            color: #fff;
+            text-align: left;
+            line-height: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-radius: 3px;
+            background-color: #00c300;
+            display: inline-block
+        }
+
+        .line_button i {
+            font-size: 20px;
+            line-height: 40px;
+            padding: 0 10px
+        }
+
+        .helpButton {
+            display: none;
+            position: fixed;
+            bottom: 12px;
+            right: 12px;
+            height: 46px;
+            -webkit-font-smoothing: subpixel-antialiased;
+            width: 100%
+        }
+
+        .helpButton .helpcontent {
+            position: relative;
+            margin: 0 auto;
+            max-width: 600px;
+            width: 100%
+        }
+
+        .helpButton .helpbox {
+            float: right
+        }
+
+        .helpButton .uiButton {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0 12px;
+            box-shadow: 0 0 12px 0 rgb(0 0 0 / 50%);
+            line-height: 1;
+            background: #000;
+            color: #fff;
+            font-weight: 400;
+            text-shadow: none;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            background-color: #555;
+            font-family: "Microsoft JhengHei", sans-serif;
+            position: relative;
+            bottom: 25px;
+            font-size: 9pt;
+            z-index: 10005;
+            border: none;
+            border-radius: 99em;
+            height: 30px;
+            cursor: pointer;
+            min-width: 12em;
+            max-width: 100%;
+            text-decoration: none;
+            text-align: center
+        }
+
+        .assistiveText {
+            position: absolute !important;
+            height: 1px;
+            width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px)
+        }
+
+        .uiButton .helpButtonLabel .message {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis
+        }
+
+        .embeddedServiceIcon {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            margin-right: 10px;
+            line-height: 1;
+            vertical-align: top;
+            font-size: 14px
+        }
+
+        .testbox {
+            counter-reset: num
+        }
+
+        .question:before {
+            counter-increment: num;
+            content: counter(num) "."
+        }
+
+        .startbtn {
+            padding: 6px 30px;
+            border: 1px solid;
+            display: inline;
+            border-radius: 3px;
+            letter-spacing: 3px;
+            font-size: 18px;
+            border: 1px solid currentColor;
+            color: #666
+        }
+
+        .codeText {
+            color: #007100;
+            margin-top: 1em;
+            display: none
+        }
+
+        .resultcode {
+            color: red;
+            -webkit-user-select: text;
+            user-select: text;
+            font-size: 1.2em
+        }
+
+        .webmainimg {
+            margin-bottom: 1rem;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .webmainimg img {
+            width: 100%;
+            display: block;
+        }
+
+        :root {
+            --color1: #e6507c;
+            --color2: #0da2e6;
+            --color3: #fff001;
+            --color4: #f39804;
+            --color5: #f05640;
+        }
+
+        .webcolor1 {
+            color: #e6507c;
+        }
+
+        .webcolor2 {
+            color: #0da2e6;
+        }
+
+        .webcolor3 {
+            color: #fff001;
+        }
+
+        .question {
+            color: var(--color1);
+        }
+
+        .option {
+            color: var(--color2);
+            /* color: #0da2e6; */
+        }
+
+        .checked {
+            color: var(--color4);
+            /* background-image: url(https://img.alicdn.com/imgextra/i3/917298378/O1CN01IgNDNj2BlAwL9tCSY_!!917298378.png); */
+        }
+
+        .caption {
+            color: var(--color5);
+            /* background-color: #fff001; */
+            /* background-color: #fff777; */
+        }
+
+        .startbtn {
+            background-color: var(--color3);
+            border-color: var(--color3);
+            color: var(--color1);
+            box-shadow: 0 1px 2px 2px #c8e8ff;
+            border-radius: 9px;
+            font-size: 20px;
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            cursor: pointer;
+        }
+
+        .startbtn:active {
+            box-shadow: none;
+            border: none;
+            font-size: 19px;
+            border-radius: 8px;
+            color: var(--color1);
+        }
+
+        .historytitle {
+            color: var(--color1);
+        }
+
+        .historybox ul li {
+            color: var(--color4);
+        }
+
+        .overtestbox {
+            border-top: 1px solid var(--color4);
+        }
+
+        footer {
+            /* display: none; */
+            background-color: #c8e8ff;
+            /* background-image: linear-gradient(0deg, var(--color1), #fff); */
+        }
+
+        .line_box .line_btn {
+            padding: 0 10px;
+            text-align: center;
+            /* background-image: linear-gradient(to bottom, #ffa2be, var(--color1)); */
+            background-color: var(--color1);
+            background-image: var(--color1);
+        }
+
+        .line_icon {
+            display: none;
+        }
+
+        .this_icon,
+        .this_caption {
+            color: var(--color1);
+        }
+
+        .normal_box {
+            background-color: #fff;
+            /* border-left: 1px solid var(--color3); */
+            border: none;
+            background-image: linear-gradient(to bottom, #f6f6f6, var(--color3));
+        }
+
+        .footer_menu {
+            padding-top: 2px;
+            background-image: linear-gradient(to bottom, #f6f6f6, var(--color3));
+        }
+
+        .helpButton .uiButton {
+            background-color: var(--color2);
+        }
+        .helpButton{
+            z-index: 999;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="display: none">
+        <table class="table_header" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td class="meun"><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></td>
+                    <td class="logo"><span>PLANTTITLE</span></td>
+                    <td class="share"><a href="javascript:void(0)"><i class="fab fa-line"></i></a></td>
+                    <td class="member"><a href="javascript:void(0)"><i class="fa fa-user "></i></a></td>
+                    <td class="search"><a href="javascript:void(0)"><i class="fas fa-search"></i></a></td>
+                    <td width="10">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <div class="webmainimg"><img
+            src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01CJPL9X2BlAwK0VYpZ_!!917298378.jpg" alt=""></div>
+    <article>
+        <div class="webtitle" style="display: none">
+            <h1>你是不是也這樣？平時沒少花錢做保養，但臉上斑點依舊不減，肌膚問題依舊不斷?</h1>
+        </div>
+        <div style="display: none">
+            <p><i class="fas fa-question"></i>&nbsp;你開始思考：是買的保養品沒有效果嗎？被營銷商家騙了？可是為什麼別人使用就有效果？</p>
+            <p>歸根結底，是因為你對自己肌膚存在認知偏差，跟風使用了不適合自己肌膚的保養方式，導致平時的保養是「無效的」甚至是「傷害肌膚的」！</p>
+            <p>日積月累，臉上斑點愈來愈多/黑，皺紋愈來愈深，毛孔愈來愈大。</p><img
+                src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01ts4WKK2BlAwBvum9k_!!917298378.jpg" alt="">
+            <h3><i class="fas fa-question"></i>&nbsp;臉上斑點久久除不掉？關鍵步驟「肌膚檢測」你做了沒？</h3>
+            <p>眾所周知，除斑方式有很多，但鮮有人知道「祛斑前一定要做肌膚檢測」，無論你是選擇做雷射，還是選擇祛斑產品，醫師建議：一定要先做肌膚檢測，其主要目的：</p>
+            <ol>
+                <li>檢測你屬於哪種膚質；</li>
+                <li>檢測你屬於哪種色斑；</li>
+                <li>檢測你是否為敏感肌。</li>
+            </ol>
+            <p>如果你也有肌膚問題，不妨靜下心來，花幾分鐘重新認識一下自己的肌膚</p>
+        </div>
+        <div style="display: none"><img
+                src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01RxOZF02BlAw5w75Zt_!!917298378.jpg" alt="">
+        </div>
+
+        <section class="testbox" id="testbox"></section>
+        <div class="overtestbox">
+            <a href="javascript:startTest(this)"><button class="startbtn">立即檢測</button></a>
+            <p class="codeText"></p>
+        </div>
+        <div class="submit_hitory">
+            <div class="historytitle">檢測日誌 </div>
+            <div class="historybox">
+                <ul id="historylist" class="autoscroll"></ul>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>聯絡我們 | 免付費諮詢LINE: <line style="color:#fff">anby02</line>
+        </p>
+        <p>© 2021 PLANTTITLE CO.</p>
+        <p>® LTD All Rights Reserved</p>
+    </footer>
+    <div class="footer_menu_box">
+        <div class="footer_menu">
+            <div class="line_box">
+                <div><a href="javascript:$$.goline()"><span class="line_btn"><i class="line_icon"><embed
+                                    src="https://static.newworkbench.com/svg/appicon3.svg"
+                                    type="image/svg+xml"></i>點擊領取保養秘籍</span></a></div>
+            </div>
+            <div class="normal_box"><a href="javascript:to_scroll_top()">
+                    <div class="this_icon"><i class="fa fa-chevron-up"></i></div>
+                    <div class="this_caption">回頂端</div>
+                </a></div>
+            <div class="normal_box"><a href="javascript:share_to_line();">
+                    <div class="this_icon"><i class="fa fa-heart"></i></div>
+                    <div class="this_caption">分享</div>
+                </a></div>
+            <div class="normal_box"><a href="javascript:$$.goline()">
+                    <div class="this_icon"><i class="far fa-envelope"></i></div>
+                    <div class="this_caption">發訊息</div>
+                </a></div>
+        </div>
+    </div>
+    <div class="questionbox_template">
+        <div class="question"></div>
+        <div class="answer"></div>
+        <div class="captionbox"></div>
+    </div>
+    <div id="alert_bg"
+        style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000;display:none"></div>
+    <div id="alert_box" class="fadeOut"
+        style="width: 100%; height: 100%; position: fixed; top: 120px; left: 0px; z-index: 2002; border: 0px solid rgb(255, 0, 0);display:none;">
+        <table width="90%" border="0" cellpadding="4" cellspacing="8" align="center"
+            style="border:1px solid #666666;border-radius:10px;background-color:#CCCCCC;max-width:500px;">
+            <tbody>
+                <tr>
+                    <td style="color:#666666;font-weight:bold;text-align:left;"><span
+                            style="color:#FFFFFF;font-size:12px;font-weight:bold;background-color:#019bdb;padding:2px 9px 2px 9px;border-radius:20px;">!</span>&nbsp;&nbsp;提示訊息
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:#FFFFFF;padding-top:20px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:left;vertical-align:top;"><span
+                                            style="line-height:30px;">你還有問題尚未選擇 !</span></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;padding:15px 0px;">
+                                        <div style="text-align:center;padding:10px;cursor:pointer;"
+                                            onclick="closeWrong()"><span
+                                                style="padding:5px 10px;color:#666666;border:1px solid #CCCCCC;background-color:#EEEEEE;">OK</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="loading_bg"
+        style="width: 100%;height: 100%;position: fixed;top: 0px;left: 0px;z-index: 2000;background-color: rgb(239, 239, 239);opacity: 0.6;display: none;">
+    </div>
+    <div id="loading_box"
+        style="width: 100%;position: fixed;top: 30%;left: 0px;z-index: 2001;text-align: center;border: 0px solid rgb(255, 0, 0);background-color: rgba(255,255,255,0);display: none;">
+        <i class="fa fa-spinner"></i>&nbsp;&nbsp;&nbsp; Please Wait ... </div>
+    <div id="result_box" class="fadeOut"
+        style="width: 100%; height: 100%; position: fixed; top: 120px; left: 0px; z-index: 2002; border: 0px solid rgb(255, 0, 0);display:none;">
+        <table width="90%" border="0" cellpadding="4" cellspacing="8" align="center"
+            style="border:1px solid #666666;border-radius:10px;background-color:#CCCCCC;max-width:500px;">
+            <tbody>
+                <tr>
+                    <td style="color:#666666;font-weight:bold;text-align:left;"><span
+                            style="color:#FFFFFF;font-size:12px;font-weight:bold;background-color:#019bdb;padding:2px 9px 2px 9px;border-radius:20px;">!</span>&nbsp;&nbsp;提示訊息
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:#FFFFFF;padding-top:20px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:left;vertical-align:top;"><span style="line-height:30px;"
+                                            id="result_msg"></span></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:center;padding:15px 0px;">
+                                        <div style="text-align:center;padding:10px;cursor:pointer;"
+                                            onclick="closeResult()"><span
+                                                style="padding:5px 10px;color:#666666;border:1px solid #CCCCCC;background-color:#EEEEEE;">OK</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="helpButton fadeTop" id="helpButton" data-hide="hide">
+        <div class="helpcontent">
+            <div class="helpbox"><button class="uiButton" onclick="$$.goline()"><i
+                        class="fas fa-comment-dots embeddedServiceIcon"></i><span class="helpButtonLabel"><span
+                            class="message">加LINE獲取針對你肌膚問題的解決方案</span></span></button></div>
+        </div>
+    </div>
+    <script>
+        var radio = Symbol("单选"),
+            checkbox = Symbol("多选"),
+            qbquestion = [{
+                question: "你知道自己是什麼斑嗎？",
+                option: new Map([
+                    ["老人斑", "● 與長期受太陽曝曬引發的皮膚老化及年長後，皮膚功能逐漸衰退、自由基排除能力下降、內分泌失調、血液循環不良及內臟功能變差等有關。"],
+                    ["肝斑/妊娠斑", "● 懷孕期間體內雌雄激素影響容易出現肝斑。"],
+                    ["曬斑", "● 一般皮膚白的女性容易長，或者經常暴曬在太陽下，多長在臉頰和鼻樑上，呈褐色斑點。"],
+                    ["雀斑", "雀斑是一種淺褐色小斑點，針尖至米粒大小，常出現於前額、鼻樑和臉頰等處，和遺傳、陽光曝曬、內分泌失調等因素有關。"],
+                    ["激素斑", "● 經常使用激素類化妝品或藥膏，皮膚長期受刺激，形成紅色的激素斑點。"],
+                    ["鉛汞中毒斑", "● 彩妝導致的重金屬中毒，色素沉著，使皮膚變成青灰色或者黑色的斑。"],
+                    ["真皮斑", "● 由於皮膚受到創傷後形成的色素沉著，或內分泌失調引起的，呈黑灰色斑點。"]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }, {
+                question: "你長斑多久了？",
+                option: new Map([
+                    ["半年", ""],
+                    ["1-3年", ""],
+                    ["5-10年", ""],
+                    ["10年以上", ""]
+                ]),
+                checktype: radio,
+                checked: null
+            }, {
+                question: "你的臉部肌膚類型？",
+                option: new Map([
+                    ["中性肌膚", ""],
+                    ["乾性肌膚", ""],
+                    ["油性肌膚", ""],
+                    ["混合型肌膚", ""],
+                    ["敏感肌膚", ""]
+                ]),
+                checktype: radio,
+                checked: null
+            }, {
+                question: "平時是如何保養肌膚的？",
+                option: new Map([
+                    ["無", ""],
+                    ["補水", ""],
+                    ["美白", ""],
+                    ["淡斑", ""],
+                    ["祛皺", ""],
+                    ["祛眼袋", ""]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }, {
+                question: "你用過什麼方法除斑？",
+                option: new Map([
+                    ["無", ""],
+                    ["美白淡斑", ""],
+                    ["果酸換膚", ""],
+                    ["皮秒雷射", ""],
+                    ["祛斑膏/霜", ""],
+                    ["其它", ""]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }],
+            testcontent = [{
+                question: "請選擇你的年齡？",
+                option: new Map([
+                    ["25以下", "● 此年齡段肌膚處於修復能力較強階段！本身新陳代謝能力都非常理想，出現肌膚問題可以無痕改善。建議做好日常保養的同時，更要針對性修復肌膚問題。"],
+                    ["26~35",
+                        "● 此年齡段肌膚水分和膠原蛋白逐漸流失中！開始出現乾燥、粗糙的現象。因此除了做好日常基礎保養外，建議此時做好初級抗老保養，最好每週進行1-2次特殊護理，包含去角質、按摩、敷臉等。"
+                    ],
+                    ["36~45", "● 此年齡段肌膚開始缺乏彈力！加上皮脂腺分泌減少，容易出現細紋、鬆弛下垂、黑斑。建議開始選用抗老修復功能的保養品，並搭配適度臉部按摩，延緩肌膚老化。"],
+                    ["46以上",
+                        "● 此年齡段肌膚乾燥鬆弛、缺少光澤！容易沉積黑色素，皺紋也漸漸浮現。平時除了加強保濕外，更需油脂強化潤澤，並搭配臉部按摩，可促進血液循環與代謝，幫助肌膚迅速吸收保養成分。"
+                    ]
+                ]),
+                checktype: radio,
+                checked: null
+            }, {
+                question: "你目前的臉部肌膚狀況為？",
+                option: new Map([
+                    ["肌膚乾燥緊繃，甚至出現局部脫皮症狀",
+                        "● 當肌膚油脂分泌較少，水分易蒸發，含水量相對下降。此時須具備「保濕也要鎖水」概念，才能做好保濕。建議選擇玻尿酸成份的精華「保濕」，再利用含油脂的乳液，做好「鎖水」步驟。"
+                    ],
+                    ["T字略顯油光、鼻頭毛孔明顯且易脫妝",
+                        "● 肌膚在缺水情況下會分泌更多的油脂。建議做好控油清潔保養，從皮脂根源抑制出油同時加強角質層保水機能，讓肌膚維持正常的油水平衡，打造零油光的無瑕肌。"
+                    ],
+                    ["肌膚暗沉、膚色不均，有斑點困擾",
+                        "● 夜間是黑色素最活躍的時期，因此調整正常作息外，建議使用美白、淡斑精華，抑制黑色素生長並修復白天受損細胞。飲食方面可多攝取含維他命C，並加強日間防曬保養。"
+                    ],
+                    ["輪廓鬆弛、出現細紋且缺乏彈性",
+                        "● 紫外線、飲食、生活作息及賀爾蒙等因素都是造成肌膚老化的主因，肌膚缺乏彈性及細紋是老化初兆，建議加強滋潤保養，搭配由下而上的按摩手勢，促進血液循環及新陳代謝，預防老化。"
+                    ],
+                    ["肌膚粗糙有粉刺，且保養品吸收力差", "● 粉刺是老廢角質和皮脂分泌物堆積而成，因此在每天的代謝過程中都會被製造出來。建議可搭配控油、去角質、深層清潔來幫助肌膚代謝。"]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }, {
+                question: "你目前有哪些肌膚問題？",
+                option: new Map([
+                    ["痘疤、斑點",
+                        "● 正常情況下所產生的黑色素，會自然的排出體外，但因年齡增長，代謝減緩，黑色素就會慢慢浮現在肌表，形成色斑與色塊。除日常防曬外，選用抗氧化成份的「祛斑美白」產品，也降低斑點生成。"
+                    ],
+                    ["乾燥及敏感",
+                        "● 換季時節或天生敏感性膚質，都會因保水力低落而產生乾燥問題，此時應簡化保養步驟，並加強保濕和日曬防護，建議選用含天然植萃、維他命E的高效保濕修復產品，加強角質護理。"
+                    ],
+                    ["油痘及粉刺",
+                        "● 粉刺痘痘的成因除荷爾蒙、熬夜、壓力與疲勞外，也可能是保養程序不當造成，建議重新檢視保養品是否太過油膩、清潔力太強或過度繁瑣造成肌膚負擔，並替換為清爽、溫和、簡單的保養品。"
+                    ],
+                    ["黑眼圈及眼袋", "● 針對血管性的黑眼圈及眼袋，建議使用眼部護理精華，搭配按摩促進眼部循環，改善黑眼圈的同時消除眼袋，也可使用熱敷或按摩方式輔助改善。"],
+                    ["眼袋細紋或魚尾紋",
+                        "● 眼部肌膚厚度僅0.33mm，每天超過1萬次眨眼，及長時間瀏覽手機及電腦，都會因用眼過度而產生紋路，長期下來就會生成皺紋。除改善用眼習慣外，建議搭配眼部緊緻產品，解決細紋問題。"
+                    ]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }, {
+                question: "你挑選保養品時，會優先考量何者？",
+                option: new Map([
+                    ["價錢", ""],
+                    ["使用週期", ""],
+                    ["步驟是否繁瑣", ""],
+                    ["是否清爽不油膩", ""],
+                    ["敏感肌是否可用", ""]
+                ]),
+                checktype: checkbox,
+                checked: null
+            }];
+
+        function TestPaper(arr) {
+            var testfgE = document.createDocumentFragment(),
+                isqb = arr === qbquestion;
+            return arr.forEach((item, index) => {
+                var qE = document.querySelector(".questionbox_template").cloneNode(!0);
+                qE.className = "questionbox", isqb && (qE.dataset.qb = "qb"), qE.querySelector(".question")
+                    .innerText = item.question || "";
+                var answerE = qE.querySelector(".answer"),
+                    anfgE = document.createDocumentFragment();
+                item.option.forEach((caption, key) => {
+                    var optionE = document.createElement("div");
+                    optionE.className = "option", optionE.innerText = key, optionE.addEventListener(
+                        "click", () => {
+                            if (item.checktype !== radio || item.checked !== optionE) {
+                                if (item.checktype === radio) return optionE.classList.add(
+                                        "checked"), item.checked && item.checked.classList
+                                    .remove("checked"), qE.querySelector(".captionbox")
+                                    .innerHTML = `<div class="caption">${caption}</div>`, item
+                                    .checked = optionE, void validate(item);
+                                var targetindex;
+                                if (null !== item.checked && (targetindex = item.checked.indexOf(
+                                        optionE)), item.checktype === checkbox && targetindex > -
+                                    1) {
+                                    optionE.classList.remove("checked"), item.checked.splice(
+                                        targetindex, 1);
+                                    var targetcaption = qE.querySelector(".captionbox")
+                                        .querySelector(`[data-option="${key}"]`);
+                                    return qE.querySelector(".captionbox").removeChild(
+                                        targetcaption), void validate(item)
+                                }
+                                if (item.checktype === checkbox) {
+                                    optionE.classList.add("checked");
+                                    var captionE = document.createElement("div");
+                                    captionE.className = "caption", captionE.innerText = caption,
+                                        captionE.dataset.option = key, qE.querySelector(
+                                            ".captionbox").appendChild(captionE), null === item
+                                        .checked ? item.checked = [optionE] : item.checked.push(
+                                            optionE)
+                                }
+                                validate(item)
+                            }
+                        }), anfgE.appendChild(optionE)
+                }), answerE.appendChild(anfgE), testfgE.appendChild(qE), item.currentElement = qE
+            }), testfgE
+        }
+
+        function to_scroll_top() {
+            var now_scrollTop, to_scrollTop = .6 * (document.documentElement.scrollTop || document.body.scrollTop || 0);
+            to_scrollTop > 10 ? (window.scrollTo(0, to_scrollTop), window.setTimeout("to_scroll_top()", 20)) : window
+                .scrollTo(0, 0)
+        }
+
+        function share_to_line() {
+            location.href = "https://social-plugins.line.me/lineit/share?url=" + location.href
+        }
+
+        function randomMsg() {
+            var firstname = new Array("趙", "孫", "李", "周", "吳", "王", "馮", "陳", "蔣", "沈", "韓", "楊", "朱", "許", "何", "施",
+                    "張", "孔", "曹", "華", "金", "陶", "謝", "鄒", "喻", "柏", "水", "竇", "章", "云", "蘇", "潘", "葛", "奚", "范", "彭",
+                    "郎", "韋", "昌", "馬", "苗", "鳳", "花", "方", "任", "袁", "柳", "唐", "薛", "賀", "滕", "殷", "羅", "畢", "郝", "安",
+                    "常", "傅", "元", "顧", "孟", "平", "黃", "尹", "姚", "邵", "汪", "祁", "成", "宋", "舒", "屈", "項", "祝", "董", "梁",
+                    "杜", "藍", "季", "賈", "路", "婁", "江", "童", "顏", "郭", "梅", "盛", "林", "徐", "邱", "高", "夏", "蔡", "田", "樊",
+                    "胡", "凌", "霍", "虞", "萬", "支", "柯", "管", "莫", "柯", "房", "裘", "繆", "解", "宗", "丁", "宣", "鄧", "單", "洪",
+                    "吉", "程", "裴", "陸", "于", "惠", "甄", "曲", "仲", "伊", "寧", "仇", "甘", "武", "符", "劉", "景", "詹", "龍", "葉",
+                    "幸", "司", "黎", "蒲", "邰", "從", "索", "賴", "卓", "姬", "申", "冉", "通", "燕", "浦", "尚", "溫", "習", "向", "古",
+                    "易", "廖", "耿", "弘", "國", "文", "廣", "東", "歐"),
+                sex, randsex = ["先生", "小姐"][Math.floor(2 * Math.random())],
+                index = Math.floor(Math.random() * firstname.length),
+                minutes;
+            return `${Math.ceil(10*Math.random())}分鐘前${firstname[index]}${randsex}已完成肌膚檢測`
+        }
+
+        function startTest(e) {
+            e.disabled = !0;
+            var valiarr = testcontent.filter(item => null === item.checked || 0 === item.checked.length);
+            if ("qb" === testbox.dataset.more) {
+                var qbarr = qbquestion.filter(item => null === item.checked || 0 === item.checked.length);
+                valiarr = valiarr.concat(qbarr)
+            }
+            if (0 === valiarr.length) return loadingAlert(), sendResult(e);
+            wrongAlert(), valiarr.forEach(item => {
+                item.currentElement.querySelector(".question").classList.add("wrong")
+            }), e.disabled = !1
+        }
+
+        function sendResult(btn) {
+            var resobj = Object.create(null);
+            testcontent.forEach(item => {
+                var answerE = item.checked;
+                if(answerE===null)return;
+                if (Array.isArray(answerE)) {
+                    var title = answerE[0].parentNode.previousElementSibling.innerText,
+                        answer = [];
+                    return answerE.forEach((item, index) => {
+                        answer.push(item.innerText)
+                    }), void(resobj[title + "(多選)"] = answer)
+                }
+                var title = answerE.parentNode.previousElementSibling.innerText,
+                    answer = answerE.innerText;
+                resobj[title + "(單選)"] = [answer]
+            });
+            if(testbox.dataset.more === "qb") qbquestion.forEach(item => {
+                var answerE = item.checked;
+                if(answerE===null)return;
+                if (Array.isArray(answerE)) {
+                    var title = answerE[0].parentNode.previousElementSibling.innerText,
+                        answer = [];
+                    return answerE.forEach((item, index) => {
+                        answer.push(item.innerText)
+                    }), void(resobj[title + "(多選)"] = answer)
+                }
+                var title = answerE.parentNode.previousElementSibling.innerText,
+                    answer = answerE.innerText;
+                resobj[title + "(單選)"] = [answer]
+            });
+            var count = localStorage.getItem("sendcount");
+            if (count || (count = 0), count++, localStorage.setItem("sendcount", count), count > 10) {
+                var themsg = "Sorry！<br/>你的在線檢測次數已用完，請添加LINE免費檢測";
+                btn.disabled = !0;
+                var pE = document.querySelector(".codeText");
+                return pE.innerHTML = "你的檢測次數已用完，如需檢測，請聯繫客服", pE.style.display = "block", closeLoading(),
+                    void showResult(themsg)
+            }
+            console.log(resobj);
+            var conf = {
+                type: "POST",
+                url: "https://newworkbench.com/api/skintest",
+                data: {
+                    origin: location.host,
+                    paper: JSON.stringify(resobj)
+                },
+                success: function (res) {
+                    btn.disabled = !0, res = JSON.parse(res), setTimeout(() => {
+                        var code = res.code || "planttitle",
+                            themsg =
+                            `檢測成功!<br />你的檢測碼：<strong onclick="copyCode(this)" class="resultcode" data-clipboard-text="${code}">${code}</strong><small>（點擊複製）</small><br />請將此「檢測碼」傳送給LINE客服領取「檢測結果」與「私人保養方案」`;
+                        closeLoading(), showResult(themsg), btn.innerText = "已提交檢測", btn.style.color =
+                            "#007100";
+                        var pE = document.querySelector(".codeText");
+                        pE.innerHTML =
+                            `你的檢測碼：<strong class="resultcode" onclick="copyCode(this)" data-clipboard-text="${code}">${code}</strong><small>（點擊複製）</small><br/>請憑此「檢測碼」聯繫客服獲取結果!`,
+                            pE.style.display = "block"
+                    }, 1e3), console.log("successful test")
+                },
+                error: function (err) {
+                    console.log(err), setTimeout(() => {
+                        closeLoading(), showResult()
+                    }, 1e3), console.log("failed test"), btn.disabled = !1
+                }
+            };
+            $$.Ajax(conf)
+        }
+
+        function validate(item) {
+            if (initqbq(item), null !== item.checked && 0 !== item.checked.length) {
+                var quE = item.currentElement.querySelector(".question"); - 1 !== quE.className.indexOf("wrong") && quE
+                    .classList.remove("wrong")
+            }
+        }
+
+        function initqbq(item) {
+            var valiarr = testcontent.some(item => {
+                    var a = Array.isArray(item.checked) && item.checked.some(e => e.innerText.indexOf("斑") > -1),
+                        b = null !== item.checked && !Array.isArray(item.checked) && item.checked.innerText.indexOf(
+                            "斑") > -1;
+                    return a || b
+                }),
+                c = "qb" === testbox.dataset.more;
+            if (valiarr && !c && (testbox.dataset.more = "qb", insterAfter(TestPaper(qbquestion), item.currentElement)),
+                !valiarr && c) {
+                testbox.dataset.more = "noqb";
+                var qbE = testbox.querySelectorAll('[data-qb="qb"]');
+                if (0 === qbE.length) return;
+                qbE.forEach(el => {
+                    testbox.removeChild(el)
+                })
+            }
+        }
+
+        function copyCode(ele) {
+            if (document.querySelector(".resultcode")) {
+                var clipboard = new ClipboardJS(".resultcode");
+                clipboard.on("success", (function (e) {
+                    ele.style.color = "#007100", ele.nextElementSibling && (ele.nextElementSibling
+                        .innerText = "（複製成功）", ele.nextElementSibling.style.color = "red"), console.log(
+                        "successful copy"), e.clearSelection()
+                })), clipboard.on("error", (function (e) {
+                    ele.nextElementSibling && (ele.nextElementSibling.innerText = "（複製失敗，請長按複製）", ele
+                        .nextElementSibling.style.color = "red"), console.log("failed copy")
+                }))
+            }
+        }
+
+        function insterAfter(newElement, targetElement) {
+            var parent = targetElement.parentNode;
+            parent.lastChild == targetElement ? parent.appendChild(newElement) : parent.insertBefore(newElement,
+                targetElement.nextElementSibling)
+        }
+
+        function showResult(msg) {
+            msg && (result_msg.innerHTML = msg), result_box.style.display = "block", loading_bg.style.display = "block",
+                document.body.style.overflow = "hidden"
+        }
+
+        function closeResult() {
+            if (loading_bg.style.display = "none", document.body.style.overflow = "", $$ && $$.fadeIn) return $$.fadeIn(
+                result_box), void setTimeout(() => {
+                $$.goline()
+            }, 400);
+            setTimeout(() => {
+                result_box.style.display = "none"
+            }, 3e3), $$.goline()
+        }
+
+        var alertTimer = null;
+
+        function wrongAlert() {
+            if (alertTimer) {
+                clearTimeout(alertTimer);
+            }
+            alert_box.style.display = "block", alert_bg.style.display = "block", document.body.style.overflow = "hidden"
+            alertTimer = setTimeout(() => {
+                if (getComputedStyle(alert_box).display === 'none' && getComputedStyle(alert_bg).display !==
+                    'none') {
+                    alert_bg.style.display = "none";
+                    document.body.style.overflow = "";
+                }
+            }, 500)
+        }
+
+        function closeWrong() {
+            if (alert_bg.style.display = "none", document.body.style.overflow = "", $$ && $$.fadeIn) return $$.fadeIn(
+                alert_box);
+            alert_box.style.display = "none"
+        }
+
+        function loadingAlert() {
+            loading_box.style.display = "block", loading_bg.style.display = "block", document.body.style.overflow =
+                "hidden"
+        }
+
+        function closeLoading() {
+            loading_box.style.display = "none", loading_bg.style.display = "none", document.body.style.overflow = ""
+        }
+        testbox.appendChild(TestPaper(testcontent)), output_history();
+        function output_history() {
+            historylist.style.display = "none", historylist.innerHTML = "";
+            for (var fgE = document.createDocumentFragment(), i = 0; i < 80; i++) {
+                var liE = document.createElement("li");
+                liE.innerText = randomMsg(), fgE.appendChild(liE)
+            }
+            historylist.appendChild(fgE), historylist.style.display = "block", setTimeout(output_history, 55e3)
+        }
+        "hide" === helpButton.dataset.hide && (helpButton.dataset.hide = "", setTimeout(() => {
+            helpButton.style.display = "block"
+        }, 1e4));
+        var webconfig = {
+            addAlert: !1,
+            setBack: !1,
+            baseHost: location.host
+        };
+    </script>
+    <script src="//static.newworkbench.com/v4/licat.min.js?update=20210907"></script>
+</body>
+
+</html>

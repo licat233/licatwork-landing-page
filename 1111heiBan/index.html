@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport" />
+    <title>馬上2022年了，如果你臉上還有斑點，先別關閉網頁，這篇文章再忙也要看</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2756797_2hqeejusix7.css"/>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2888200_7ht81zqfxzx.css"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0; 
+            list-style: none;
+            font-family: '微軟正黑體';
+            letter-spacing: 1px;
+        }
+        
+        img {
+            width: 100%;
+            display: block;
+        }
+        
+        #bigBox {
+            max-width: 640px;
+            margin: auto;
+            padding: 1.125rem 0.875rem 1rem 0.875rem;
+        }
+        
+        h1 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        h1 span{
+            color:#f9004c;
+        }
+        
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            color: #353535;
+            line-height: 1.6;
+			/* text-align: center; */
+        }
+        
+        .article1 {
+            margin-top: 20px;
+			font-size: 1.3rem;
+        }
+		 
+		.article1 span {
+            color: #864fae;
+        }
+        
+        .article2 {
+            margin-top: 6px;
+			font-size: 1.3rem;
+			
+        }
+        
+        .article2 span {
+            color: #ff2020;
+        }
+        
+        .article3 {
+            text-align: center;
+            margin-top: 28px;
+            color: #2800f2;
+            font-size: 18px;
+        }
+        
+        .article5 {
+			font-size: 18px;
+            color: #f9004c;
+			text-align: center;
+        }
+        
+        .article6 {
+            margin-top: 6px;
+        }
+        
+        .article6 span {
+            color: #ff2020;
+        }
+        
+        .article7 {
+            margin-top: 18px;
+        }
+        
+        .article8 {
+            margin-top: 10px;
+        }
+        
+        .article9 {
+            color: blue;
+            margin: 16px 0 12px 0;
+			font-size: 20px;
+        }
+        
+        .article10 {
+            margin: 8px 0;
+			text-align: center;
+        }
+        
+        .article11 {
+            margin: 8px 0;
+			text-align: center;
+        }
+        
+        .article12 {
+            margin-top: 18px;
+			text-align: center;
+        }
+        
+        .article13 {
+            margin-top: 13px;
+			text-align: center;
+        }
+        
+        h2 {
+            color: #FF2020;
+            text-align: center;
+            margin-top: 18px;
+        }
+        
+        .article14 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        
+        .article15 {
+            box-sizing: border-box;
+            padding: 6px 0;
+            font-size: 17px;
+            text-align: center;
+            color: #fff;
+            background-color: rgb(147,112,219);
+            font-weight: 900;
+        }
+        
+        .article16 {
+            margin: 7px 0;
+            text-align: center;
+        }
+        
+        .article16 span{
+            color: #FFFFFF;
+			background-color: blue;
+			text-align: center;
+        }
+        
+        .article17 {
+            margin: 8px 0;
+			text-align: center;
+
+        }
+        .article17 span{
+			color: #ff2020;            
+			
+        }
+        h3 {
+            color: #ff2020;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .article18 span {
+            color: #ff2020;
+        }
+        
+        .article19 {
+            margin: 6px 0;
+        }
+        
+        .commentTop {
+            display: flex;
+            align-items: center;
+        }
+        
+        .userComment {
+            box-sizing: border-box;
+            margin-top: 20px;
+            /* border-bottom: 1px dashed #a3a3a3; */
+            padding-bottom: 14px;
+        }
+        
+        .userCommentTop {
+            display: flex;
+			margin-top: 20px;
+        }
+        
+        .userCommentTop img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        
+        .userCommentTop p {
+            margin-left: 20px;
+        }
+        
+        .userCommentBot img {
+            width: 50px;
+        }
+        
+        .userCommentCen {
+            margin-top: 10px;
+        }
+        .userCommentCen p{
+			margin-left: 20px;
+			text-align:left;
+		}
+		.userCommentCen img{
+			width: 90%;
+			margin-left: 20px;
+			margin-top: 15px;
+		}
+        .userCommentBot {
+            margin-top: 6px;
+        }
+        
+        .userCommentCen,
+        .userCommentBot {
+            box-sizing: border-box; 
+        }
+        .giveLike{
+            cursor: pointer;
+			margin-top: 15px;
+			margin-left: 20px;
+        }
+        .article-info{
+            width:100%;margin:0
+        }
+        .header-num{
+            display:-webkit-box;
+            display:-webkit-flex;
+            display:-moz-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack:justify;
+            -webkit-justify-content:space-between;
+            -moz-box-pack:justify;
+            -ms-flex-pack:justify;
+            justify-content:space-between;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+            -moz-box-align:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-sizing:border-box;
+            -moz-box-sizing:border-box;
+            box-sizing:border-box;
+            height:60px;color:#adb1b2;
+            font-size:13px
+            
+        }
+        .header-num_view{
+            color:#adb1b2;
+            font-size:13px
+        }
+        .header-num_view>span{
+            margin-left:5px
+        }
+        .likenum{
+            color:#fff;
+            background-color:#f80;
+            border-radius:3px;
+            padding:0 6px;
+            height:20px;
+            line-height:20px
+        }
+        .likenum.active:active{
+            -webkit-transform:scale(.9);
+            -moz-transform:scale(.9);
+            -ms-transform:scale(.9);
+            -o-transform:scale(.9);
+            transform:scale(.9);
+            color:#f80;
+            background-color:#fff
+        }
+        .likenum i{
+            line-height:20px
+        }
+        .likenum span{
+            margin:0 0 0 6px;
+            padding:0 4px 0 0;
+            line-height:20px
+        }
+        .fullnullbox{
+            width:100%;
+            height:68px
+            
+        }.article_header h1{
+            padding:0;
+            font-weight:400;
+            margin:10px 0 0;
+            font-size:24px;
+            font-family:NotoSansCJKtc-Regular,"Helvetica Neue",Helvetica,Verdana;
+            line-height:42px;
+            letter-spacing:1px;
+            color:#161717
+            }
+        .article_header.imgbackground h1{
+            font-size:24px;
+            font-weight:600;
+            text-shadow:2px 2px #e26535;
+            color:#fff;
+            line-height:1.5;
+            margin:10px 0 0
+        }
+        header{
+            height: 50px;
+            border-bottom: 1px solid #ededed;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #49b4e7;
+        }
+        header h2{
+            margin: 0;
+            font-size: 19.2px;
+            color: #fff;
+        }
+        header i{
+            font-size: 18px !important;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <i class="iconfont icon-zuojiantou"></i>
+        <h2>個人主頁</h2>
+        <i class="iconfont icon-santiaoxian"></i>
+    </header>
+    <div id="bigBox">
+        <h1>馬上2022年了，如果你臉上還有斑點，先別關閉網頁，這篇文章再忙也要看</h1>
+        <div class="article-info">
+            <div class="header-num">
+                <div class="likenum" onclick="likenum(this)"><i class="iconfont icon-zan"></i><span>讚</span>
+                    <count>1391</count>
+                </div>
+                <div class="header-num_view"><i class="iconfont icon-yuedu" style="font-style:unset"></i><span>46172</span></div>
+            </div>
+        </div>
+       <p class="article1">這樣做斑點居然真的<span>消失了？！</span></p>
+       <p class="article3">所有女人，看這裏，立刻！馬上！</p>
+       <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01yskJH92BlAxOnuQj2_!!917298378.jpg" style="margin-top: 8px;">
+       <p class="article4" style="margin-top: 16px;text-align: center;">女人過了30歲，肌膚狀態跟30歲之前的真的是一個天上、一個地下。。。</p>
+       <p class="article5" style="margin-top: 10px;">「明明都是35歲，為什麼她看起來比我年輕了10歲不止？」<span style="color: black;">我覺得這句話說的就是我。。。</span> </p>
+       <p style="margin-top: 10px;text-align: center;">1個月前的我是这个样子↓↓↓</p>
+       <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01a6wrVN2BlAxuAqTQX_!!917298378.jpg" />
+       <p style="margin-top: 10px;text-align: center;">因為自己總是跟風祛斑，所以在網上買了很多能祛斑的護膚品，保養品</p>
+       <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN012UlFxP2BlAwuA2u3Q_!!917298378.jpg" />
+       <p style="margin-top: 10px;">然而，這些東西，不但沒有把我臉上的斑點去掉，反而還讓我的斑點越來越嚴重，甚至把臉弄得紅腫，臉腫的沒法看</p>
+       <p style="margin-top: 10px;">臉紅腫成這樣真的嚇到我了，我連門也不敢出，只敢在家裏面待著，因為只要我出門，別人就會用異樣的眼神看我，我真的受不了那種眼神</p>
+       <p style="margin-top: 10px;">就這樣，我在家裏面渾渾噩噩的待了一個多月，不敢用任何的化妝品、護膚品，直到臉上的紅腫自然消除</p>
+       <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01ukXpDM2BlAxbxjSQS_!!917298378.jpg" style="margin-top: 10px;">
+       <p style="margin-top: 10px;">雖然現在臉上的紅腫已經消得差不多了，但是，斑點卻比以前還明顯，看到這樣的自己，真的很煩，也很後悔，後悔自己為什麼要跟風祛斑</p>
+       <p style="margin-top: 10px;">為了祛除臉上的斑點，我真的什麼方法都用了，偏方用了，醫美也去了，<span style="color: #FF2020;">去醫美是有效果，但是過一段時間就又反黑了，</span>看我下面這張是照片不是覺得我的斑點已經沒了，我當時也是這樣想的，但是才過了幾個月我就發現是我開心得太早了，因為斑點又長出來了。。。</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01yMdn1Q2BlAxuAq0JR_!!917298378.jpg"/>
+       <p style="margin-top: 10px;text-align: center;">下面這張就是去了醫美後面又長出來的斑點↓↓↓</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01qqK8zC2BlAxpNOV0U_!!917298378.jpg" />
+       <p style="margin-top: 10px;">因為臉上這個斑點，我已經花了<span style="color: #FF2020;">好幾萬了，花了這麼多錢，不但沒把斑點去掉，還差點毀容了</span>，我真的絕望了，也想放棄了</p>
+       <p class="article6" style="margin-top: 10px;">當我準備放棄的時候，我閨蜜來了，她告訴我：我的斑點有救了！我非常驚訝的看著她，等她繼續說，她說：她同事跟我一樣，臉上也是有很多斑點，也一直在想辦法祛斑，但是她的運氣比我的好，她的臉上現在已經沒有斑點了，说完还给我看照片↓↓↓（照片已獲得本人同意）</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01SbvgvS2BlAxpSiwPZ_!!917298378.jpg" />
+       <p style="margin-top: 10px;">看到這張照片我都驚呆了，因為她的同事我之前是見過的，臉上的斑點真的跟我的一樣多，甚至比我來你上的斑點還多，沒想到才幾個月不見她斑點就沒了</p>
+       <p style="margin-top: 10px;">我就問閨蜜她同事是怎麼把斑點去掉的，閨蜜跟我說:<span style="color: #FF2020">她同事就是通過網友的推薦加了一個老師，那老師對於祛斑有自己的一套方法，她才用了一個月就把臉上的斑點去掉了</span>,閨蜜就讓我試一試</p>
+       <p class="article7">看到閨蜜這樣說，我心想，那就試一下吧，大不了再像之前那樣臉腫得像豬頭，最後一次，再試最後一次，於是我就添加了那個老師的LINE,加了LINE以後才知道她叫Anna，知道她的名字以後我就去網上看她的一些評價，發現網友對她的評價都挺不錯的，大部分人都在說她<span style="color: #FF2020;">厲害，專業，方法很有效</span></p>
+       <p class="article8">我又繼續看Anna相關的信息，看到Anna是專門做護膚行業的<span style="font-size: 20px;color: #ff2020;">高級美容師，對於祛斑、祛痘這些有自己專研的一套秘方</span></p>
+       <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01Tbp8Ka2BlAxQjiKOw_!!917298378.png" style="margin-top: 8px;">
+       <p style="margin-top: 8px;">這下我就更有信心了，加了Anna以後，她先是徹底了解我的肌膚狀況，接著就為我制定了一套祛斑方案</p>
+       <p style="margin-top: 8px;text-align: center;">我就按照Anna說的去做，然後，我震驚了！！！</p>
+       <p style="margin-top: 10px;font-size: 18px;color: blue;text-align: center;">才第7天，臉上的紅腫基本消了，感覺肌膚有在變好</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01SKO8b02BlAxbHxwXS_!!917298378.jpg" />
+       <p style="margin-top: 20px;font-size: 18px;color: blue;text-align: center;">7-15天,鼻子跟額頭上的掉得差不多了，但是兩頰沒什麼太大的變化，感覺掉了的地方還是有色素沉澱</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01DDSvhD2BlAxQwO2gv_!!917298378.jpg" />
+       <p style="margin-top: 20px;font-size: 18px;color: blue;text-align: center;">21天,臉上基本上已經沒有斑了，但是還有一塊一塊黃色的，不知道是不是色素斑，打算問問老師，但是現在臉上真的好乾淨呀</p>
+       <img style="margin-top: 10px;" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01nYK6OM2BlAxbHvjJm_!!917298378.jpg" />
+       <p style="margin-top: 20px; font-size: 22px;color: red;text-align: center;">重點來了！！！</p>
+       <p style="font-size: 18px;color: blue;text-align: center;">第30天，現在臉上已經乾乾淨淨了，現在的狀態就是用i13自拍我也不怕了，嘿嘿！沒斑就是自信</p>
+        <p style="margin-top: 8px;text-align: center;">才過了一個多月，我的肌膚就像<span style="color: #FF2020;font-size: 20px;">重生</span>一樣！！！</p>
+       <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01DoQWqF2BlAxaFAgoC_!!917298378.jpg" />		
+       <p class="article9">下面這張是昨天剛拍的照片，化個妝，美美的出門</p>
+       <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01G1Vlhh2BlAxWpuYKN_!!917298378.jpg" />
+       <p class="article10">別懷疑我去醫美哦~</p>
+       <p class="article10">人家只是按照Anna所說的去做，然后就<span style="font-size: 20px; color: red">輕鬆的把斑點去掉了~~</span></p>
+       <p class="article10">跟你們坦白，Anna簡直不要太厲害</p>
+       <p class="article10">她會讓你覺得原來祛斑如此簡單</p>
+       <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01hOlx9B2BlAxWLcYd1_!!917298378.jpg" style="margin-top: 18px;">
+       <p class="article11">親自見識到Anna的厲害！！！</p>
+       <p class="article11">得到了Anna的同意後，我把她的LINE分享給大家：<line></line></p>
+       <p class="article11">Anna會經常在LINE分享一些<span style="font-size: 20px;color: #F9004C;">護膚小妙招</span></p>
+       <p class="article11">學到就是賺到哦~</p>
+       <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01aR83YK2BlAxX2XpvM_!!917298378.jpg">
+       <p class="article12">我還上網爬了一些和我一樣<span style="font-size: 20px; color: red;">祛斑成功</span></p>
+       <p class="article13"><span style="font-size: 20px; color: red;">並且可信度比較高</span>的介紹給妳們參考！</p>
+       <h2 class="article14">網友評價</h2>
+        <h3 class="article15">沒想到有朝一日我臉上的斑居然沒了！（30歲）</h3>
+        <div style="box-sizing:border-box;padding:0 10px;border:1px solid rgb(147,112,219)">
+            <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01nXp7tZ2BlAxUZmIw3_!!917298378.jpg" style="margin-top: 14px;">
+            <p class="article16">一開始是抱著試一試的心態加了Anna的LINE</p>
+            <p class="article16">沒想到真的有效果！好激動，堅持了一個月，我臉上的斑點就沒了</p>
+            <p class="article16" style="margin-bottom: 23px;"><span>Anna的方法確實比一般的保養產品要有效，可以不用去醫美花錢祛斑，真的好感動！</span></p>
+        </div>
+        <h3 class="article15">生小孩之後的妊娠斑終於消失了（42歲）</h3>
+        <div style="box-sizing:border-box;padding:0 10px;border:1px solid rgb(147,112,219)">
+             <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01gx1zfx2BlAxUZoBQs_!!917298378.jpg" style="margin-top: 14px;">
+        <p class="article17">女人懷孕真的很辛苦耶......身材走樣不說，各種各樣的斑點還接踵而來，讓人應接不暇！！！</p>
+        <p class="article17">平時要照顧小孩，小孩要花錢，根本滅有沒有多餘的時間跟錢去醫美，更何況醫生也說了，<span>打了雷射斑點還是會再長出來的，讓我有點絕望。。。</span></p>
+        <p class="article17">前段時間在網路上看到大家對這個老師的評價不錯，於是我就加了她的LINE</p>
+        <p class="article17"><span style="color: #FFFFFF;background-color: blue;">沒想到她這麼厲害，方法很有效！我臉上的斑點已經消了很多了</span></p>
+        <p class="article17">我已經把她的LINE推給身邊跟我有同樣煩惱的媽媽們了，希望大家都可以跟我一樣告別黃臉婆！！！</p>
+        </div>
+        
+        <h3 class="article15">愛美不分年齡，媽媽祛斑一個月的效果（56歲）</h3>
+        <div style="box-sizing:border-box;padding:0 10px;border:1px solid rgb(147,112,219)">
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Dcgs5X2BlAxHjhCQu_!!917298378.jpg" style="margin-top:14px;" />
+            <p class="article17">媽媽56歲了，臉上的斑點跟了她幾十年，心心念念的要把臉上的斑去掉，要變白一點，</p>
+			<p class="article17" style="color: red;">之前嘗試了很多辦法，最後都反黑了</p>
+			<p class="article17">後面還是同事給我推薦了Anna老師，Anna老師很厲害，</p>
+			<p class="article17"><span style="background-color: blue;color:#FFFFFF;">媽媽臉上的斑點才用了一個月就全部去掉了，肌膚也比以前白了不少</span>，媽媽現在每天看著鏡子裏的自己，開心壞了</p>
+		</div>
+        
+        
+        <h3 class="article15">女人，老了也不要放棄美麗（62歲）</h3>
+       <div style="box-sizing:border-box;padding:0 10px;border:1px solid rgb(147,112,219)">
+        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN017AKnNh2BlAxTR5y9e_!!917298378.jpg" style="margin-top: 14px;">
+        <p class="article17">隨著年齡的增長，臉上的斑點也越來越多，每天看著鏡子裏的自己，心裏面說不出的苦。。</p>
+        <p class="article17">雖然人到中年，但是愛美的我還是無法接受滿臉斑點的自己</p>
+        <p class="article17">女兒在網上看到Anna的好評於是幫我加了Anna的LINE</p>
+        <p class="article17"><span style="background-color: #0000FF;color: #FFFFFF;">沒想到才短短一個月，我臉上的斑點的斑點基本全沒了，肌膚也細膩了好多</span>，Anna真不愧是這方面的專家，真的很厲害</p>
+       </div> 
+        <h2>點擊領取祛斑秘方</h2>
+        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Msj6ES2BlAxQQRfP4_!!917298378.gif" style="width: 88px;height: 44px;margin: 20px auto;">
+        <a onclick="$$.goline()"><img class="addImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif" style="width: 200px;margin: 30px auto;"></a>
+        <p style="font-size: 20px;text-align: center;">Anna到底是怎麼讓斑點消失的呢？</p>
+        <p class="article18" style="margin-top: 10px;text-align: center;">針對斑點問題，<span style="font-size: 18px;">Anna聯合日本北海道权威生物医学研究室定制3大科学祛斑配方</span></p>
+        <video src="https://cloud.video.taobao.com//play/u/2505451590/p/2/e/6/t/1/266536515693.mp4" controls="controls" style="width: 100%;margin-top: 10px;"></video>
+        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01J0wyYo2BlAxOnx2xM_!!917298378.jpg"style="margin-top: 10px;">
+        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01wIXDg42BlAxFl8KH5_!!917298378.jpg" style="margin-top: 8px;">
+		<img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01JQqKSP2BlAxWLbPtd_!!917298378.jpg" style="margin-top: 14px;">
+        <p style="text-align: center;margin: 12px 0;font-size: 1.5rem;color: darkorange;">《臨床30天實驗報告》</p>
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Sx0ghy2BlAxbHx8do_!!917298378.jpg">
+		<p style="margin-top: 10px;"><span style="font-size: 20px;color: #FF2020;">本文結語：</span></p>
+        <p style="margin-top: 10px;color: #0000FF;">女人長斑的原因就是那幾個：</p>
+		<p>隨著年齡的增長，新陳代謝功能減慢，黑色素無法排出從而導致長斑；紫外線的照射；生活緊張，作息不規律等</p>
+		<p style="margin-top: 10px;">而對於預防長斑：<span style="color: #FF2020;">我們平時做好肌膚的清潔護理、出門做好防曬；適當運動，加快新陳代謝的循環；適當放鬆心情，減輕壓力等；</span><span style="color: #0000FF;">即使臉上長斑了，也不要驚慌，更不要病急亂投醫，那樣只會適得其反，最好去找祛斑專家，找對方法，祛斑並不難。</span></p>
+        <h2>點擊領取祛斑秘方</h2>
+        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Msj6ES2BlAxQQRfP4_!!917298378.gif" style="width: 88px;height: 44px;margin: 20px auto;">
+        <a onclick="$$.goline()"><img class="addImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif" style="width: 200px;margin: 30px auto;"></a>
+        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01tdV4po2BlAxM3bviJ_!!917298378.jpg" style="width: auto;margin-top: 10px;">
+
+        <!-- 评论 -->
+        <div class="comment">
+
+            <div class="commentTop">
+                <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01RP9eeb2BlAxFl6NcA_!!917298378.png" style="width: 40px;">
+                <p>15件回應</p>
+            </div>
+            
+            
+               <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01lfpRYx2BlAxRx2nha_!!917298378.jpg">
+                    <p>點點媽媽</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>生孩子之前，我的肌膚不說特別好，但是也沒有斑點這些，生完孩子以後，臉上這些斑點，感覺就像被激活了一樣，一茬接一茬的冒出來，明明我才三十幾，現在看著像四五十歲的大媽， 每天看著鏡子裏的自己真的很煩惱，老公看到我每天這樣，也是很頭疼，有一天他下班回來突然跟我說給我個好東西，讓我去試試看能不能把臉上的斑點去掉，我不想讓老公失望，所以就堅持了半個月，沒想到臉上的斑已經祛掉很多了，我想，再堅持一段時間我臉上的斑點也可以全沒了吧，期待那一天的到來</p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Ha43LB2BlAxVJkQjw_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+             <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01GixcH92BlAxWMvWVS_!!917298378.jpg">
+                    <p>肚子圆滚滚</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>使用了一段時間了，感覺效果還挺不錯的！
+                    </p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Gm8CkH2BlAxFl3hKW_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN014e7qIa2BlAxOpAhzY_!!917298378.jpg">
+                    <p>下一站是幸福</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>現在回頭去翻看以前的照片，發現差別真的蠻大的，斑點對一個女人的顏值影響真的很大</p>
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01qA0dlI2BlAxYMogvt_!!917298378.jpg" />
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01kiaD1f2BlAxMiBWjJ_!!917298378.jpg">
+                    <p>心若向陽</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>為了祛除臉上的這個斑點，我真的什麼辦法都用了，做雷射，買化妝品護膚品，看到什麼有效果就買什麼，最後臉就變成現在這樣了，簡直沒眼看，一次偶然的機會在網路上看到這個，又看到大家的對她的評價都挺高，我就抱著試一試的心態去加她了，沒想到她這麼厲害，現在我臉上的斑點基本上已經全沒了，挺開心的！</p>
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN018l96O62BlAxJXBcqR_!!917298378.jpg" />
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN014alJdD2BlAxMiAehW_!!917298378.jpg">
+                    <p>無限進步</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>一个月的成果，祛斑成功，nice！</p>
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01TFaS3l2BlAxTGLIvD_!!917298378.jpg" />
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01rtnRHT2BlAxUZk1Z7_!!917298378.jpg">
+                    <p>匿名用戶</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>看到這麼多人都祛斑成功，希望我臉上的斑點也能去掉，每天看著臉上的這些斑點真的太煩了，年紀輕輕臉上超多斑點</p>
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01cvSuSo2BlAxTR3xKF_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01sWJU0g2BlAxTSPPCn_!!917298378.jpg">
+                    <p>趋之若鹜</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>脸上有斑點真的很煩人，顯老不說，跟姐妹出門還總會被人盯著看，就真的很尷尬，花了一個多月的時間，我臉上的斑點已經沒有了，出門也能抬頭挺胸的走了，再也不怕被人盯著看了</p>
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01WZDqg22BlAxWjJi76_!!917298378.jpg" />
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01psB6bV2BlAxSx7Lsf_!!917298378.jpg">
+                    <p>晴天</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>這段時間看到媽媽在用，臉上有變化，看著她斑點一天天消失，心情一天天變好，挺替她高興的</p>
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01UFohqK2BlAxOszxu6_!!917298378.jpg">
+                    <p>檸檬</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>第一天感覺挺不錯的，Anna也挺有耐心， 給人的感覺也很專業，我感覺我臉上的斑點有救了，超級期待斑點全部消失的那一天</p>
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01dT3BxK2BlAxYOnXxp_!!917298378.jpg">
+                    <p>Kimi</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>跟了我幾十年的斑點終於沒了，我的自信心終於又回來了</p>
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01CH66cg2BlAxTR1oFR_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01cPc4bS2BlAxScW5rv_!!917298378.jpg">
+                    <p>何懼憂傷</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>有句話是這麽說的，一白遮白醜，一斑毀所有，這話說得真的一點錯都沒有，臉上長斑真的超級煩人，感謝Anna老師幫助我擺脫煩惱</p>
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01caNG9m2BlAxas0fkl_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01Zf2Xn32BlAxXHPNBn_!!917298378.jpg">
+                    <p>阿狸</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>真的這麼厲害，這麼有效嗎？我也想試試了</p>
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN014GmjYU2BlAxQUsEO0_!!917298378.jpg">
+                    <p>越努力越幸運</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>不得不說真的挺有效的，我是敏感肌，一般的化妝品護膚品我都不太敢用，沒想到這個敏感肌也能用，現在我臉上的斑點已經消了很多了，開心！！！</p>
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ebsQKe2BlAxO7GnuS_!!917298378.jpg">
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01P0h2DO2BlAxaCk6wM_!!917298378.jpg">
+                    <p>911005</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>看起來好厲害的樣子，有人添加了嗎？是不是真的這麼厲害？</p>
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+             <div class="userComment">
+                <div class="userCommentTop">
+                    <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01NLgk9U2BlAxZAJgAT_!!917298378.jpg">
+                    <p>餘生請多指教</p>
+                </div>
+                <div class="userCommentCen">
+                    <p>我的臉上一直有斑點，平時去上班也不太跟同事說話，比較自卑，使用了這個以後，我臉上的斑點慢慢去掉了，人也越來越自信了，昨天去上班，我同事都在問我是經歷了什麼，為什麼臉上的斑點越來越少了，人也越來越漂亮了，嘿嘿！</p>
+                </div>
+                <div class="userCommentBot">
+                    <img class="giveLike" src="">
+                </div>
+            </div>
+            
+            
+            
+            
+            <h2>點擊領取祛斑秘方</h2>
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Msj6ES2BlAxQQRfP4_!!917298378.gif" style="width: 88px;height: 44px;margin: 20px auto;">
+            <a onclick="$$.goline()"><img class="addImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif" style="width: 200px;margin: 30px auto;"></a>
+        </div>
+    </div>
+    
+    <script>
+    var webconfig = {
+        baseHost: location.host
+    }
+        var applyArr = [
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01IGAnbs2BlAxSvrPUa_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01dkuFfl2BlAxVTFzlp_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01IGAnbs2BlAxSvrPUa_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01dkuFfl2BlAxVTFzlp_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01IGAnbs2BlAxSvrPUa_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01dkuFfl2BlAxVTFzlp_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01rDvltb2BlAxQQPvDq_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01AVxyXz2BlAxVSLbY0_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01kin5yN2BlAxTR10Ks_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i1/917298378/O1CN01zTsAs82BlAxSQOjoR_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01kin5yN2BlAxTR10Ks_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i1/917298378/O1CN01zTsAs82BlAxSQOjoR_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01rDvltb2BlAxQQPvDq_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01AVxyXz2BlAxVSLbY0_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01FVorym2BlAxRvjIeK_!!917298378.png',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN011xa90P2BlAxRT1YWd_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01rDvltb2BlAxQQPvDq_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01AVxyXz2BlAxVSLbY0_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01fuRiGX2BlAxRvfsSs_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i1/917298378/O1CN01cBPWQj2BlAxSQNSnC_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01rDvltb2BlAxQQPvDq_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01AVxyXz2BlAxVSLbY0_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01FVorym2BlAxRvjIeK_!!917298378.png',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN011xa90P2BlAxRT1YWd_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i3/917298378/O1CN01rDvltb2BlAxQQPvDq_!!917298378.jpg',
+                    after:'https://img.alicdn.com/imgextra/i2/917298378/O1CN01AVxyXz2BlAxVSLbY0_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01FVorym2BlAxRvjIeK_!!917298378.png',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN011xa90P2BlAxRT1YWd_!!917298378.jpg'
+                },
+                {
+                    before:'https://img.alicdn.com/imgextra/i4/917298378/O1CN01FVorym2BlAxRvjIeK_!!917298378.png',
+                    after:'https://img.alicdn.com/imgextra/i3/917298378/O1CN011xa90P2BlAxRT1YWd_!!917298378.jpg'
+                }
+            ]
+        var oImg = document.querySelectorAll('.giveLike')
+        var imgLen = oImg.length
+        for(var i = 0;i < imgLen;i++){
+                oImg[i].src = applyArr[i].before
+        }
+        oImg.forEach(function(item,index){
+            item.onclick=function(){
+                item.src = applyArr[index].after
+            }
+        })
+        
+        
+        
+        function likenum(self) {
+            (localStorage.getItem("likenumstatus") ? localStorage.setItem("likenumstatus", "") : localStorage
+                .setItem("likenumstatus", "like"));
+            var liketatus = localStorage.getItem("likenumstatus");
+            var numE = self.querySelector("count");
+            var likeE = self.querySelector("span");
+            var num = numE.innerText;
+            likeE.innerText = liketatus ? "已讚" : "讚";
+            numE.innerText = liketatus ? Number(num) + 1 : window.articlelikenum;
+            setTimeout(() => {
+                self.classList.remove("active")
+            }, 400);
+        }
+        
+         (function () {
+            if (!window.localStorage) return;
+            var self = document.querySelector(".likenum");
+            var num = self.querySelector("count").innerText;
+            window.articlelikenum = parseInt(num);
+            self && likenum(self, true);
+        })()
+        
+    </script>
+<script src="https://static.newworkbench.com/v4/licat.min.js "></script>
+</body>
+
+</html>

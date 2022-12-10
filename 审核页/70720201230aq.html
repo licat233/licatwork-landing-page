@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>膠原修復面膜</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+
+        img {
+            max-width: 100%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #fff;
+            padding-bottom: 75px;
+            position: relative;
+        }
+
+        .header .top {
+            margin: 3%;
+            border-bottom: 1px dashed #d9d9d9;
+        }
+
+        .header .top h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .header .top p {
+            color: #fc8625;
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .header .bottom {
+            color: #5b5b5b;
+            margin: 0 3%;
+        }
+
+        .header .bottom .left {
+            float: left;
+        }
+
+        .header .bottom .left .price {
+            float: left;
+            color: #f61d4b;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .header .bottom .left .price span {
+            font-size: 3rem;
+        }
+
+        .header .bottom .left .discount {
+            float: left;
+            margin-left: 20px;
+            font-size: 1.5rem;
+        }
+
+        .header .bottom .left .discount .cost-price {
+            color: #b3b3b3;
+        }
+
+        .header .bottom .left .discount .cost-price span {
+            text-decoration: line-through;
+        }
+
+        .header .bottom .right {
+            float: right;
+        }
+
+        .header .bottom .right .icon {
+            font-size: 1.5rem;
+            padding-right: 10px;
+            border: 1px solid #f61d4b;
+        }
+
+        .header .bottom .right .icon img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 40px;
+        }
+
+        .header .bottom .right .time {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #f61d4b;
+        }
+
+        .header .bottom .tip {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            color: #666;
+            margin: 3% 0;
+        }
+
+        .header .bottom .tip img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .container {
+                padding-bottom: 50px;
+            }
+
+            .header .top h1 {
+                font-size: 1.5rem;
+            }
+
+            .header .top p {
+                font-size: 1rem;
+                margin: 10px 0;
+            }
+
+            .header .bottom .left .price {
+                font-size: 1.2rem;
+            }
+
+            .header .bottom .left .price span {
+                font-size: 2.4rem;
+            }
+
+            .header .bottom .left .discount {
+                margin-left: 5px;
+                font-size: 1rem;
+            }
+
+            .header .bottom .right .icon {
+                font-size: 1rem;
+            }
+
+            .header .bottom .right .icon img {
+                width: 30px;
+            }
+
+            .header .bottom .right .time {
+                font-size: 1rem;
+            }
+
+            .header .bottom .tip {
+                font-size: 1rem;
+                margin: 6% 0;
+            }
+
+            .header .bottom .tip img {
+                margin-right: 5px;
+                width: 20px;
+            }
+        }
+
+        @media screen and (max-width: 350px) {
+            .header .top h1 {
+                font-size: 1rem;
+            }
+
+            .header .top p {
+                font-size: .9rem;
+            }
+
+            .header .bottom .left .price {
+                font-size: 1rem;
+            }
+
+            .header .bottom .left .price span {
+                font-size: 1.5rem;
+            }
+
+            .header .bottom .left .discount {
+                font-size: .9rem;
+            }
+
+            .header .bottom .right .icon {
+                font-size: .9rem;
+            }
+
+            .header .bottom .right .icon img {
+                width: 25px;
+            }
+
+            .header .bottom .right .time {
+                font-size: .9rem;
+            }
+
+            .header .bottom .tip {
+                font-size: .9rem;
+                margin: 4% 0;
+            }
+        }
+
+        .notice {
+            font-size: 1.2rem;
+            color: #7D5521;
+            padding: 3%;
+        }
+
+        .notice .title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #7D5521;
+            letter-spacing: 2px;
+        }
+
+        .order {
+            background-image: url(../images/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 5%;
+            color: #7D5521;
+        }
+
+        .order p {
+            margin: 10px 0;
+        }
+
+        .order .logo {
+            font-size: 1.3rem;
+            margin: 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #7D5521;
+            letter-spacing: 2px;
+        }
+
+        .order .guige li {
+            text-align: center;
+            padding: 10px 0;
+            border: 1px solid #7D5521;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .order .guige .gg {
+            background: #7D5521;
+            color: #fff;
+        }
+
+        .order .list {
+            text-align: right;
+        }
+
+        .order .iut {
+            width: 98%;
+            height: 30px;
+            padding-left: 1%;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #7D5521;
+        }
+
+        .order .address {
+            margin-bottom: 10px;
+        }
+
+        .order .address .wfdqxl {
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #7D5521;
+        }
+
+        .order textarea {
+            width: 98%;
+            height: 60px;
+            padding-left: 1%;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #7D5521;
+        }
+
+        .order #mode {
+            padding: 8px;
+            border: 1px solid #7D5521;
+            margin: 10px 0;
+            font-size: .9rem;
+            cursor: pointer;
+        }
+
+        .order .gou {
+            display: inline-block;
+            background: #A42B1A;
+            color: #fff;
+            padding: 0 5px;
+            border-radius: 50px;
+            margin-right: 10px;
+        }
+
+        .order #orderbtn {
+            text-align: center;
+        }
+
+        .order .btn {
+            padding: 10px 60px;
+            background: #A42B1A;
+            color: #fff;
+            font-size: 1.3rem;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 4px;
+        }
+
+        #tsmsg {
+            display: none;
+            background-color: #000;
+            background-color: rgba(0, 0, 0, .6);
+            color: #fff;
+            border: none;
+            z-index: 1000;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            max-width: 200px;
+            max-height: 20px;
+            margin: auto;
+            position: fixed;
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .guild {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fc2e47;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .guild a {
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        .guild img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .notice {
+                font-size: .9rem;
+            }
+
+            .notice .title {
+                font-size: 1.2rem;
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+            }
+
+            .order p {
+                margin: 5px 0;
+            }
+
+            .order .logo {
+                font-size: 1.2rem;
+                margin-top: 10px;
+                padding: 6px 0;
+            }
+
+            .order .guige li {
+                font-size: .9rem;
+                padding: 10px 0;
+                margin-bottom: 10px;
+            }
+
+            .order #orderbtn {
+                margin-bottom: 10px;
+            }
+
+            .order .btn {
+                padding: 5px 30px;
+                font-size: 1.2rem;
+            }
+
+            .guild {
+                padding: 10px 0;
+            }
+
+            .guild a {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-img">
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01NLMrsR2BlAt9mFEaH_!!917298378.jpg" />
+            </div>
+            <div class="top">
+                <h1>膠原修復面膜</h1>
+                <p>抗皺美白，緊緻嫩膚，呵護肌膚，消除歲月痕跡，妳值得拥有</p>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="price">NT$<span>5500</span>
+                    </div>
+                    <div class="discount">
+                        <div class="cost-price">原價：<span>8000</span>
+                        </div>
+                        <div class="num">已搶1032盒</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="icon">
+                        <img
+                            src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01vqJzK62BlAt8g88cy_!!917298378.png">限時搶購
+                    </div>
+                    <div class="time">距結束 <span id="countdown">00:28:40</span>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="tip"> <span><img
+                            src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01tBhu1b2BlAt6GxHzo_!!917298378.png">品質保證</span>
+                    <span><img
+                            src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Wbn6VN2BlAt6Gx9gk_!!917298378.png">貨到付款</span>
+                    <span><img
+                            src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Q97foK2BlAt4UjTDS_!!917298378.png">免郵配送</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h2 style="text-align: center;border-bottom: 1px solid grey;">膠原修復面膜</h2>
+            <p style="font-size: 16px;line-height: 1.7;padding: 0 10px;">
+                一款來自日本技術的抗老逆齡面膜；<br />內含有豐滿的水解膠原蛋白層，可顯著增加肌膚緊密度、縮小毛孔，使肌膚更有彈性；<br />新一代煙酰胺加速肌膚新陳代謝，祛黃褪黑，自然美白提亮；<br />精華滲透性強，鎖住水分給予肌膚深層保濕、修護，有效防止出現皺紋。
+            </p>
+            <div class="product-desc">
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01Y1A2kp2BlAtCVYyta_!!917298378.jpg" alt="">
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01TGKuVM2BlAt4UAMUi_!!917298378.jpg" alt="">
+            </div>
+        </div>
+        <div class="notice" id="notice">
+            <div class="title">訂購須知</div>
+            <div>配送方式：
+                <br>- 貨到付款，暫只接受現金。
+                <br>- 免郵費! 支持黑貓宅配（推薦）、超商自取。
+                <br>- 訂購成功後，約4-7天内收到商品。
+                <br>*若遇星期天、國定假日到貨可能會延遲。</div>
+        </div>
+        <a name="dd"></a>
+        <iframe src="https://www.vxrag.com/wforder/wfdata/item/8e8850243be8079a.html" frameborder="0"
+            style="width: 100%;height: 550px;" scrolling="no"></iframe>
+        <div class="footer" style="margin: 10px;font-size: 14px;text-align: center;color: #aaaaaa;display:none">
+            <div>廣告托播:安晴國際集團有限公司</div>
+            <div>公司電話: 36112392</div>
+            <div>公司地址: 香港九龍彌敦道625號雅蘭中心辦公樓二期15樓1508室</div>
+        </div>
+        <div class="guild">
+            <a href="#dd" style="display: block">
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01DPhuUs2BlAt2kXCDW_!!917298378.png">立即訂購</a>
+        </div>
+    </div>
+    <script>
+        (function () {
+            if (document.body.querySelectorAll("#countdown").length === 0) return;
+            var countdown = document.getElementById("countdown");
+            var time = 1800;
+            setInterval(function () {
+                time = time - 1;
+                var minute = parseInt(time / 60);
+                var second = parseInt(time % 60);
+                countdown.innerHTML = '00:' + minute + ':' + second;
+            }, 1000);
+        })();
+    </script>
+</body>
+
+</html>

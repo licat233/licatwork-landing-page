@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>濕氣的原因？ 濕氣是什麼造成的？ 如何快速去除濕氣？</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            max-width: 700px;
+            margin: auto;
+            height: 50px;
+            border-bottom: 1px solid #ededed;
+            padding: 0 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcoral;
+        }
+
+        header i {
+            font-size: 18px !important;
+            color: #fff;
+        }
+
+        header h2 {
+            margin: 0;
+            font-size: 19.2px;
+            color: #fff;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .fixDiv {
+            max-width: 700px;
+            width: 100%;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            bottom: 0;
+            left:50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        .fixDivRight {
+            width: 74px;
+            height: 36px;
+            line-height: 28px;
+            background: #259dab;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 4px;
+        }
+
+        .fixDivLeft span {
+            color: red;
+        }
+
+        .articleIndent {
+            text-indent: 2rem;
+        }
+
+        .colorRed {
+            color: red !important;
+        }
+
+        .colorBlue {
+            color: rgb(2, 30, 170) !important;
+        }
+
+        .colorOrange {
+            color: #c74024
+        }
+
+        .marginTop28 {
+            margin-top: 28px !important;
+        }
+
+        .marginTop20 {
+            margin-top: 20px !important;
+        }
+
+        .marginTop15 {
+            margin-top: 15px !important;
+        }
+
+        .marginTop10 {
+            margin-top: 10px !important;
+        }
+
+        #bigBox {
+            padding: 20px 16px 0;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 22px;
+        }
+
+        #bigBox h1 {
+            color: #CC0000;
+            font-size: 22px;
+            line-height: 1.4;
+            margin-bottom: 14px;
+            font-weight: 400;
+            letter-spacing: .5px;
+        }
+
+        .articleInfo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .articleInfo div {
+            flex: 1;
+        }
+
+        .articleInfo p {
+            border: 1px solid #a7abac;
+            color: #a7abac;
+            width: 48px;
+            height: 24px;
+            text-align: center;
+            line-height: 22px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .articleInfo span {
+            margin-left: 6px;
+            color: #576b95;
+            font-size: 15px;
+        }
+
+        .list19_img1 {
+            margin: 14px auto;
+            position: relative;
+            width: 55%;
+            display: block;
+        }
+
+        .articleInfo i {
+            font-style: normal;
+            width: 120px;
+        }
+
+        .articleWord {
+            letter-spacing: 0.544px;
+            line-height: 28px;
+            font-family: '微软雅黑';
+        }
+
+        .articleWord1 {
+            font-family: '微软雅黑';
+            font-size: 17px;
+        }
+
+        .article-3,
+        .article-9,
+        .article-13,
+        .article-16,
+        .article-23 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-width: 1px 1px 1px 3px;
+            border-style: solid;
+            border-color: rgb(238, 238, 238) rgb(238, 238, 238) rgb(238, 238, 238) rgb(14, 87, 21);
+            border-radius: 3px;
+        }
+
+        .article-3 p,
+        .article-9 p,
+        .article-13 p,
+        .article-16 p,
+        .article-23 p {
+            font-size: 16px;
+            letter-spacing: 2px;
+            line-height: 1.75em;
+            color: rgb(14, 87, 21);
+            border-color: rgb(14, 87, 21);
+            font-weight: bold;
+            letter-spacing: 2px;
+            font-size: 17px;
+        }
+
+        .article-5 p {
+            line-height: 30px;
+        }
+
+        #bigBox h2 {
+            color: rgb(79, 97, 40);
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+            border-bottom-width: 2px;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(14, 91, 29);
+        }
+
+        .article-25 {
+            width: 100%;
+            background: #1861ae;
+            height: 40px;
+            text-align: center;
+            color: white;
+            line-height: 40px;
+        }
+
+        .article-26 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .article-27 {
+            text-align: center;
+        }
+
+        .article-28 {
+            margin: 10px 0;
+            font-size: 20px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        .article-28 span {
+            background: #c74024;
+            color: #fff;
+            padding: 4px;
+        }
+
+        .article-29 {
+            text-align: center;
+        }
+
+        .article-30,
+        .article-31 {
+            font-weight: bold;
+            color: #c74024;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .article-33 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .article-35 ul {
+            padding-left: 35px;
+            list-style: disc;
+        }
+
+        .article-35 ul li {
+            letter-spacing: 2px;
+            color: rgb(255, 76, 0);
+            margin-top: 15px;
+        }
+
+        .shadowDiv {
+            padding: 10px 0;
+            box-shadow: #ccc 3.2px 3.2px 8px;
+        }
+
+        .article-40 {
+            letter-spacing: 3.4px;
+            text-align: center;
+        }
+
+        .article-41 {
+            list-style: none;
+        }
+
+        .article-41 li {
+            margin-top: 15px;
+        }
+
+        .article-41 .uInfo {
+            margin: 1px 0;
+            color: #fff;
+            padding: 1px 10px;
+            background-color: #c74024;
+        }
+
+        .article-41 span {
+            font-weight: bold;
+            color: #c74024;
+        }
+
+        .article-42 {
+            text-align: center;
+        }
+
+        .article-42 span {
+            font-weight: 400;
+            font-size: 16px;
+            margin: 20px 0;
+            padding: 3px 5px;
+            background-color: #c74024;
+            letter-spacing: 3.4px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .article-47 {
+            text-align: center;
+        }
+
+        .article-47 span {
+            background: #c74024;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .article-48 {
+            text-align: center;
+        }
+
+        .articleComment h2 {
+            margin: 20px 0;
+            overflow: hidden;
+            font-weight: 400;
+        }
+
+        .articleComment ul li {
+            display: flex;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #ccc;
+            margin-top: 14px;
+        }
+
+
+        .commentLeft img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .commentRight {
+            flex: 1;
+            margin-left: 14px;
+        }
+
+        .uName {
+            color: chocolate;
+        }
+
+        .replyName {
+            border-left: 4px solid #008000;
+            padding-left: 5px;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .replyTime {
+            text-align: right;
+            color: #999;
+            font-size: 13px;
+            margin: 8px 0;
+        }
+    </style>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2888200_7ht81zqfxzx.css" />
+</head>
+
+<body>
+<div class="fixDiv">
+            <div class="fixDivLeft">
+                <p><span>添加LINE號諮詢老師</span></p>
+                <p>勇敢向濕氣永遠的說拜拜</p>
+            </div>
+            <div class="fixDivRight">
+                <a onclick="$$.goline()">添加LINE號</a>
+            </div>
+        </div>
+    <header>
+        <i class="iconfont icon-zuojiantou"></i>
+        <h2>醫者語錄</h2>
+        <i class="iconfont icon-santiaoxian"></i>
+    </header>
+    <div id="bigBox">
+        <h1>濕氣的原因？ 濕氣是什麼造成的？ 如何快速去除濕氣？</h1>
+        <div class="articleInfo">
+            <div style="display: flex;align-items: center;">
+                <p>原創</p>
+                <span>今天</span>
+            </div>
+            <i style="color:steelblue">閱讀：10000+</i>
+        </div>
+        <div class="articleContent marginTop28">
+            <p class="article-1 articleWord">
+                生活中經常聽人說“最近越來懶了，身體乏力，貪睡早晨又起不來，頭髮昏，打不起精神，感覺很累，怎麼睡都睡不够，刷牙的時候嗓子不舒服，口幹口苦，容顏憔悴，皮膚暗談無光..還經常大便溏稀不成形。
+            </p>
+            <p class="article-2 articleWord marginTop20">平時明明吃的不多，身體卻虛胖水腫，小肚腩越來越大，身上還偶爾冒出濕疹。 其實這些都是濕氣重的表現，從而影響人們的生活質量。
+            </p>
+            <div class="article-3">
+                <p>
+                    這究竟是因為什麼呢？
+                </p>
+                <p>究竟身體哪裡出現了毛病？</p>
+            </div>
+            <p class="article-4 articleWord">
+                這個時候，不妨照下鏡子，觀察下自己的舌頭，或者上廁所的時候觀察下自己的大便，如果出現了這兩種情况：
+            </p>
+            <div class="article-5 marginTop15">
+                <p class="articleWord1">
+                    <strong>
+                        1，舌頭：舌苔厚膩或者舌體胖大邊緣有鋸齒。
+                    </strong>
+                </p>
+                <p class="marginTop15 articleWord1 articleWord">
+                    <strong>
+                        2，大便：溏稀不成型，甚至便秘。
+                    </strong>
+                </p>
+            </div>
+            <img class="marginTop15"
+                src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01tuz3Sz2BlAzooZGlk_!!917298378.jpg">
+            <p class="article-6 articleWord1 articleWord">
+                <strong>
+                    一旦出現了其中一種症狀，你就應該引起警惕了，說明你體內濕氣太重了，這是因為：
+                </strong>
+            </p>
+            <p class="article-7 articleWord articleWord1 marginTop20">
+                健康的舌苔是這樣的：呈現淡粉顏色，表面清爽乾淨，不肥厚。 口腔內清潔無異味。 舌苔本身光潤，在其上表面上，沒有牙齒咬合的壓印。
+                而濕氣重的人，消化不良，水濕上泛，就會出現<strong>舌頭厚膩，舌體胖大。</strong>
+            </p>
+            <p class="article-8 articleWord articleWord1 marginTop20">
+                正常人的大便是金黃色的圓柱體，大便之後，不會粘連在馬桶壁上，用很少的水就能沖乾淨，很少的手紙就能擦乾淨屁股，如果上完廁所，
+                <strong>大便黏膩，粘在馬桶壁上沖不乾淨，那麼一定是體內濕氣很重。 如果遇上天熱，上火，消化不良，還可能伴隨著便秘。</strong>
+            </p>
+            <div class="article-9 marginTop20">
+                <p>濕氣會全面損傷人的健康</p>
+                <p>是很多疾病的誘因？</p>
+            </div>
+            <p class="article-10 articleWord articleWord1 marginTop20">
+                生活中一些常見的疾病：肥胖，便秘，關節炎，濕疹，婦科炎症…...
+            </p>
+            <p class="article-11 articleWord articleWord1 marginTop20">
+                同時濕氣也會對容貌造成損傷，原本健康白皙的皮膚會變的又黃又油，長滿黑頭，毛孔粗大，甚至出現痤瘡，頭髮油膩，佈滿頭皮屑，清晨醒來，眼屎增多，鼻頭紅赤，牙齒變黃，口中有异味，口氣重…
+            </p>
+            <p class="article-12 articleWord articleWord1 marginTop20">
+                按理來說，濕氣對人傷害如此之大，人們應該很注重祛濕才對，但是，事實上，很少有人能祛濕成功。 一些人使用的祛濕方法效果不大，隨著時間的加長，濕氣越來越嚴重，症狀越來越多。
+            </p>
+            <div class="article-13 marginTop20">
+                <p>這究竟是為什麼？</p>
+                <p>為什麼很多人？</p>
+                <p>怎麼祛濕都無法成功呢？</p>
+            </div>
+            <div class="article-14 articleWord articleWord1">
+                祛濕專家賈主任揭示了其中的原因，在主任看來，濕氣分兩種，有普通濕氣和頑固性濕氣的區別。 普通的濕氣，也稱沒有症狀的濕氣； 頑固性濕氣，也稱作有症狀的濕氣。
+            </div>
+            <p class="article-15 articleWord articleWord1 marginTop20">
+                面對頑固性濕氣，業餘的祛濕方法效果不大，還可能拖延病情，讓濕氣更加頑固。
+            </p>
+            <h2 class="marginTop20">
+                究竟什麼是頑固性濕氣呢？
+            </h2>
+            <p class="article-17 articleWord articleWord1 marginTop10">
+                <strong>頑固性濕氣的人會非常明顯的感覺到濕氣的各種症狀，這些症狀可能多達十幾種：</strong>
+            </p>
+            <img class="marginTop15"
+                src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01EDO0r12BlAzbfIP3u_!!917298378.jpg">
+
+            <p class="article-18 articleWord articleWord1 marginTop10">
+                <strong>花一分鐘時間對照上面的18種症狀，如果你符合2-3條以上，那麼說明你體內是頑固性濕氣，而不是普通的沒有症狀的濕氣。</strong>
+            </p>
+            <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01jLDv162BlAzgI6plZ_!!917298378.jpg">
+            <p class="article-15 articleWord articleWord1">
+                頑固性濕氣的人，可能體內的濕氣已經誘發某幾種疾病，比如頑固性肥胖，脂肪肝，口臭，慢性咽炎，前列腺炎，頑固性濕疹，慢性蕁麻疹，關節炎，婦科炎症，腳氣，反復咳嗽，頭暈失眠，痘痘，蝴蝶斑，高血壓高血脂，腎虛，糖尿病等等。
+            </p>
+
+            <div class="article-16 marginTop20">
+                <p>為什麼頑固性濕氣？</p>
+                <p>會出現這麼多症狀？</p>
+                <p>誘發這麼多疾病呢？</p>
+            </div>
+
+            <p class="article-17 articleWord articleWord1">
+                這是因為濕氣對人的傷害非常隱蔽而且緩慢，早期感覺不到症狀，經過數年，十幾年的發展，它侵害到皮膚，脾胃，腎，關節經絡，肺….. 最終誘發各種疾病。
+            </p>
+
+            <p class="article-18 articleWord articleWord1 marginTop20">
+                如果你已經是頑固性濕氣，身體出現了各種症狀，這個時候，你還在使用那些簡單業餘的祛濕方法，會拖延病情，讓濕氣更加頑固。
+            </p>
+
+            <p class="article-19 articleWord articleWord1 marginTop20">
+                <strong>濕氣重的時候，親戚朋友都來問我，有什麼祛濕妙招？ 為了對大家負責任，我還特意上網查了查，這才明白，是中醫院主任-賈豔豔根據患者病情親自配的中藥。</strong>
+            </p>
+
+            <p class="article-20 articleWord articleWord1 marginTop20">
+                <strong>憑良心說，要是你濕氣重，真的應該試試賈豔豔主任的中醫秘方，別沒試你就說不相信，效果確實好！ 要相信中醫，幾千年傳承，有病必醫。
+                    反正現在我的濕氣是徹底好了，以前隱隱約約有些眼看不清、爛脚、腎不好的併發症現在都沒有了。</strong>
+            </p>
+            <img class="marginTop20"
+                src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01EZEn9s2BlAzWHzzeB_!!917298378.jpg">
+            <p class="article-21 articleWord articleWord1 marginTop20">
+                賈豔豔主任說：
+                <strong>濕氣重百病生，濕氣是萬病之源。 濕“首調脾胃+內外結合=祛濕快、狠、准。”
+                    終於被濕氣患者普遍認可了，體內濕氣可以通過專業調理從根源祛濕，</strong>祛濕內：益腎宣肺、清心淨肝、促腸胃等調和五臟六腑； 在外：針對濕氣引發的錶症著手，短期消除錶症。
+                內外結合，真正做到祛濕快、狠、准。 祛濕不在是難題。
+            </p>
+
+            <p class="article-22 articleWord articleWord1 colorRed marginTop20">
+                <strong>
+                    “中醫調五臟祛濕有奇方”。 前無古人，後無來者，賈豔豔主任的中醫秘方創造了祛濕的奇迹。
+                </strong>
+            </p>
+
+            <div class="article-23 marginTop20">
+                <p>如何有效祛除身體頑固性濕氣？</p>
+                <p>那麼怎麼樣才能得到這個祛濕秘方呢？</p>
+            </div>
+
+            <p class="article-24 articleWord articleWord1">
+                為大家解决濕氣的問題。
+                賈豔豔主任-中醫世家出身-根據三代祖傳的秘方結合現代人體質和不同情况，花了幾年的時間研究出了一套特殊的熬制手法把中藥製造成多種功效的中藥包，純植物不含任何添加成分，只需要用開水泡開十分鐘即可服用了，非常方便。
+                無論你是濕氣重、失眠、虛寒、還是宮寒、脫髮、大肚腩等。 都能找到對應的調理管道方法。 如下圖展示！
+            </p>
+
+            <p class="article-25 marginTop20">30多種藥材，科學配製</p>
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01Pqh83W2BlAzdTlIhK_!!917298378.jpg">
+
+            <div class="shadowDiv">
+                <p class="article-26 colorRed">一對一諮詢，還可以貨到付款</p>
+
+                <p class="article-27 marginTop10">點擊諮詢開始調理好身體</p>
+
+                <img onclick="$$.goline()" class="list19_img1"
+                    src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01rvY5OO2BlAwTjqSg5_!!917298378.gif">
+
+                <p class="article-30 marginTop10">
+                    每天會在LINE主頁更新分享祛濕小知識
+                </p>
+
+                <p class="article-31 colorRed marginTop15">
+                    △ 如果您不相信，貨到付款都可以 △
+                </p>
+            </div>
+
+            <p class="article-32 marginTop20 articleWord articleWord1 colorRed">
+                <strong>中醫祛濕秘方這個配方是專門針對頑固性濕氣的，那些想一勞永逸祛除多年頑固濕氣或者使用業餘祛濕方法不見效的人群，這個配方產品是你不錯的選擇！</strong>
+            </p>
+
+            <p class="article-33 articleWord articleWord1 marginTop20">
+                ↓↓↓調理好的顧客送來的錦旗↓↓↓
+            </p>
+            <img class="marginTop20"
+                src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01GRrMfQ2BlAzTB8sWD_!!917298378.jpg">
+            <p class="article-34 marginTop20 articleWord articleWord1">
+                <strong>
+                    賈豔豔主任，一輩子和濕氣引起的疾病打交道，一生心系濕氣重的人疾苦，只要能幫助更多的朋友，早日走出濕氣和併發症的陰霾，更是責無旁貸。
+                    同時也是為了響應國家《“健康中國2030”規劃》貫徹執行黨中央，國務院推進的“互聯網+健康醫療”行動，率先開通了微信診療平臺，在網上接受患者諮詢。
+                </strong>
+            </p>
+
+            <div class="article-35 marginTop28 articleWord articleWord1">
+                <p>中醫祛濕古方這個配方對改善人體健康發揮了重大的作用，一旦你開始使用，你就能明顯的感覺到祛濕的效果。 它將遠遠超你的預期，例如：</p>
+
+                <ul>
+                    <li>當天使用，就能使大便通暢，你也知道，有濕氣的人，常常胃脹胃難受，想拉又拉不出來，但是，現在完全不用擔心這個問題，只需要使用一次，通常第二天，就能拉出成年的糞便，甚至會堵住馬桶……</li>
+                    <li>7天左右，口幹口苦，胸口悶，喉嚨有痰等症狀會消失……</li>
+                    <li>15天之後，精神狀態會明顯變好，你的朋友會發現你的變化，他們會吃驚問你，為什麼氣色變好了，為什麼會突然變得神采奕奕……</li>
+                    <li>20多天之後，你的皮膚會變的光滑細膩……相信我，這是真的，有很多人花費了很多錢，使用了無數的化妝品，想改善自己油膩的，粗燥的皮膚，但是效果都不大……但是使用這款產品祛濕之後，你的皮膚將顯著的改善……毛孔粗大，黑頭都會消失……
+                    </li>
+                    <li>一個月之後，美好的事情會發生，你會變瘦，體重會開始下降，這幾乎是百試百靈，肥胖的一個根源之一就是水濕太重，你能發現，經過一個月的堅持，你的小肚子會變的平坦，尤其是之前水腫的大腿會變細……
+                    </li>
+                    <li>反復發作的濕疹和尋麻疹會消失……過去你每天都需要吃藥，或者塗抹藥膏，現在你可能能間隔好久才吃一次藥，病情明顯減輕了……不要停……很快，他們會完全消失……</li>
+                    <li>痔瘡會減輕……有些想去手術的人，最後都不去了……那些只有輕微痔瘡的人群，痔瘡將完全不會發作了……</li>
+                </ul>
+            </div>
+
+            <p class="article-36 articleWord articleWord1 marginTop15">
+                去年夏天，老婆原本白皙的皮膚變得毛孔粗大，又黃又油膩，到今年春天長滿了粉刺痤瘡，皮膚上起了嚴重的濕疹，比他的情况還要嚴重。
+                我讓她堅持飲用，現在，她的舌苔恢復了正常，這是昨天拍下的圖片，你可以清晰的看到我老婆舌頭的變化，還有她嘴唇的顏色變得紅潤了很多，瞬間看起來年輕了很多。
+            </p>
+
+            <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01dJ5UT32BlAzbfI4Hh_!!917298378.jpg">
+            <p class="article-37 articleWord articleWord1 colorBlue">
+                <strong>
+                    最令人意外的是，她濕疹也好轉了，同樣拍下了照片，因為那段時間，她被濕氣折磨的痛不欲生，但是現在一切問題都解决了。
+                </strong>
+            </p>
+            <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01Olw3ZH2BlAzgNEBJ9_!!917298378.jpg">
+
+            <p class="article-38 articleWord articleWord1">
+                來自福建的劉女士，中了濕氣之後，她體重每一年都在增長，從98斤上升到128斤，過去的幾個月裡面，她一直飲用，終於體重降到了105斤，她完全找回了自己的自信，現在，<strong>她開始積極的養生，學習化妝，逛街，每一天都將自己打扮的美美的。</strong>
+            </p>
+
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01HZLJhl2BlAzdwKneQ_!!917298378.jpg">
+
+            <p class="article-39 articleWord articleWord1">
+                相信對絕大多數的濕氣患者都會有效，你完全可以相信他，為了這款祛濕產品傾注了他們全部的心血，當你堅持使用一個療程你會發現：這和你之前使用的祛濕方法不是一回事！ 你怎麼也祛不掉的濕氣被改善了！
+            </p>
+
+            <div class="shadowDiv marginTop20">
+                <p class="article-26 colorRed">一對一諮詢，還可以貨到付款</p>
+
+                <p class="article-27 marginTop10">點擊諮詢開始調理好身體</p>
+
+
+                <img onclick="$$.goline()" class="list19_img1"
+                    src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01rvY5OO2BlAwTjqSg5_!!917298378.gif">
+
+                <p class="article-30 marginTop10">
+                    每天會在LINE主頁更新分享祛濕小知識
+                </p>
+
+                <p class="article-31 colorRed marginTop15">
+                    △ 如果您不相信，貨到付款都可以 △
+                </p>
+            </div>
+
+            <p class="article-40 articleWord articleWord1 marginTop10">
+                專業問診，效果顯著
+            </p>
+
+            <ul class="article-41 articleWord articleWord1">
+                <li>
+                    <p class="uInfo">
+                        1、姓名：李俏，病因：臉色差、胃脹、打嗝
+                    </p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01KboMv52BlAzciiZbN_!!917298378.jpg">
+                    <p>
+                        <strong>病例：</strong> 李俏工作一忙起來就忘記了吃飯，長期的不良生活習慣導致：<span>臉色蠟黃、肚子大，打嗝、飯後胃酸、胃脹</span>
+                    </p>
+
+                    <p class="articleIndent marginTop15">
+                        經人介紹，她找到主任。 在主任瞭解了她的身體病情後，推薦他使用賈主任的濕方。
+                        使用一個療程之後，李俏發現之前突起的<span>小腹平了，胃再也沒有反酸、胃脹</span>，晨間大便後沖水發現<span>大便也不粘馬桶了。</span>
+                    </p>
+
+                    <p class="articleIndent colorRed marginTop15">
+                        <strong>
+                            案例分析：濕氣會影響一個人的脾胃，會封锁營養藥物的吸收，而且它是疾病的幫兇和誘因，讓有些疾病反復發作。
+                        </strong>
+                    </p>
+                </li>
+
+
+                <li>
+                    <p class="uInfo">
+                        2、姓名：趙曉，病因：咽炎、便秘、乏力、脫髮
+                    </p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01rWRAx42BlAzaiOjlg_!!917298378.jpg">
+                    <p>
+                        <strong>病例：</strong>趙曉體內濕氣特別嚴重，導致：<span>肥胖還伴有脫髮、乏力、慢性咽炎，大便秘結，頭髮油膩、頭皮屑較多，婦科病纏身，閉經潮熱等症狀。</span>
+                    </p>
+
+                    <p class="articleIndent marginTop10">
+                        找到主任，使用中醫祛濕方不到兩個週期，口苦、大便秘結均有好轉，而且嗓子竟然輕鬆了很多，喝水沒有那種刺痛感了，所以他開始天天堅持使用。 最後，<span>體重還下降了10多斤。</span>
+                    </p>
+
+                    <p class="articleIndent colorRed marginTop10">
+                        <strong>
+                            案例分析：人在年輕的時候，很容易忽視濕氣的危害，覺得沒有什麼大不了，但是事實卻很可怕。
+                        </strong>
+                    </p>
+                </li>
+
+
+                <li>
+                    <p class="uInfo">
+                        3、姓名：唐生，病因：風濕病痛風、失眠多夢，血糖偏高
+                    </p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01nb96Rj2BlAzaiPXeo_!!917298378.jpg">
+                    <p>
+                        <strong>病例：</strong>59歲唐先生脾虛腎虛折磨多年，風濕病痛風，失眠多夢，肝火旺免疫力低動不動就感冒，用了多種方法不見好，去醫院檢查，<span>尿酸、尿蛋白、血脂血糖都有點偏高，胸悶乏力盜汗</span>
+                    </p>
+
+                    <p class="articleIndent marginTop10">
+                        後來唐先生找到主任用純草本中. 藥配方“祛濕方”調理，主任說，唐先生的症狀，不能以來就用補藥，一旦用補藥則虛不受補，還會產生副作用。 飲食一定要清淡，作息規律，戒烟戒酒。
+                        用中性藥方先排毒祛瘀再溫陽健脾，疏泄肝膽，方能奏效！
+                    </p>
+
+                    <p class="articleIndent colorRed marginTop10">
+                        <strong>
+                            案例分析：用藥調理2個多月，現時體內濕氣已經祛除。 整個人看起來都年輕了10歲。
+                        </strong>
+                    </p>
+                </li>
+            </ul>
+
+
+            <div class="shadowDiv marginTop15">
+                <p class="article-26 colorRed">如果你想<span class="colorRed">獲取祛濕方案，</span></p>
+
+                <img onclick="$$.goline()" class="list19_img1"
+                    src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01rvY5OO2BlAwTjqSg5_!!917298378.gif">
+
+                <p class="article-29">
+                    【點擊添加主任的LINE進行諮詢】
+                </p>
+
+                <p class="article-30 marginTop10">
+                    每天會在LINE主頁更新分享祛濕小知識
+                </p>
+
+                <p class="article-31 colorRed marginTop15">
+                    △ 如果您不相信，貨到付款都可以 △
+                </p>
+            </div>
+
+            <p class="article-42 marginTop20">
+                <span>溫馨提示</span>
+            </p>
+
+            <p class="article-43 articleWord articleWord1 marginTop15">中醫有一個很重要的原則是：<strong
+                    class="colorOrange">“養生之前先祛濕”</strong></p>
+
+            <p class="article-44 articleWord articleWord1 marginTop15">
+                建議腎虛人群、婦科疾病人群、减肥人群、脫髮人群、長痘人群，一定要先檢查下自己是否有濕氣，有就一定要添加微信，諮詢主任。
+                <strong class="colorOrange">祛濕之後，你身上的那些煩惱才有消除的可能</strong>
+            </p>
+
+            <p class="article-45 articleWord  articleWord1 marginTop15">
+                中醫認為<strong class="colorOrange">濕氣是萬病之源</strong> ，會惡化和誘發很多惡性疾病，絕非虛言。
+            </p>
+
+            <p class="article-46 articleWord articleWord1 marginTop15">
+                以上就是我成功祛濕的經驗分享，朋友們，我強烈建議你不要放弃，試試這個好方案。 点击添加賈豔豔主任中醫祛濕團隊LINE號，獲取中醫祛濕方案【親測有效】：
+            </p>
+
+            <img onclick="$$.goline()" class="list19_img1"
+                src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01rvY5OO2BlAwTjqSg5_!!917298378.gif">
+
+        </div>
+        <div class="articleComment">
+            <h2>精彩評論</h2>
+            <ul>
+            </ul>
+        </div>
+
+        
+    </div>
+</body>
+
+<script>
+    let commentBox = document.querySelector('.articleComment ul')
+    let commentArr = [{
+        name: "美神 MISS",
+        img: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01c47kZY2BlAzdKKl6v_!!917298378.png",
+        content: "看起來很不錯的樣子，先添加微信了！ 希望主任能幫到我",
+        replyFlag: true,
+        replyContent: "沒錯，專門看濕氣的，可靠！ 趕快加微信吧！ 他有問必答，態度特好！",
+        replyTime: "剛剛"
+    }, {
+        name: "初夏微凉",
+        img: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01NW2yXl2BlAzaZ3A9I_!!917298378.png",
+        content: "看到一半，就默默的已經添加了，身體調理要趁早。",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "1分鐘前"
+    }, {
+        name: "笑看人生花開花落",
+        img: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01BEseXK2BlAzZcpHRE_!!917298378.png",
+        content: "遇到貴人了，主任是高手，救救我啊！",
+        replyFlag: true,
+        replyContent: "添加主任的微信，相信對你會有很大幫助的。",
+        replyTime: "1分鐘前"
+    }, {
+        name: "檬檬",
+        img: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01Z7qtvO2BlAzbLwgho_!!917298378.png",
+        content: "~~感謝樓主分享，月經不調這事困擾好多年了，先去瞭解一下",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "2分钟前"
+    }, {
+        name: "奶茶妹子",
+        img: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01ttPTgc2BlAzdKJ10H_!!917298378.png",
+        content: "如果管用，我給樓主發個大紅包！",
+        replyFlag: true,
+        replyContent: "我想問，你打算發多大的？ 小的就別發了，哈哈，其實我紅包已經接到手軟了！",
+        replyTime: "4分鐘前"
+    }, {
+        name: "路人甲",
+        img: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01BGBte72BlAzbLxlEC_!!917298378.jpg",
+        content: "祖國中醫博大精深，絕對有價值的好文章，收藏了~",
+        replyFlag: true,
+        replyContent: "快添加微信，問問主任吧，有病千萬別耽誤！",
+        replyTime: "4分鐘前"
+    }, {
+        name: "雁南飛",
+        img: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01jUCPn52BlAzXsTCWt_!!917298378.png",
+        content: "果斷加了。 我以前去過很多醫院都沒看好，沒想到主任給我開的這個中醫去濕氣方子，效果真的挺好，臉上的斑都沒了，月經也正常了，好東西，大家分享呀。",
+        replyFlag: true,
+        replyContent: "嗯，對，好東西別藏著掖著。",
+        replyTime: "6分鐘前"
+    }, {
+        name: "北方漢子",
+        img: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01PxjL7r2BlAzW2XVjP_!!917298378.jpg",
+        content: "為了幫媳婦問問，昨天已經添加了，嘿，服務態度超好，還給了兩個方案！",
+        replyFlag: true,
+        replyContent: "主任真妙手仁心，真好啊。",
+        replyTime: "7分鐘前"
+    }, {
+        name: "萌妹紙",
+        img: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01GSqGZ32BlAzaZ1Q3N_!!917298378.jpg",
+        content: "這麼神奇，我也要試試",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "9分鐘前"
+    }, {
+        name: "樂樂",
+        img: "https://img.alicdn.com/imgextra/i4/917298378/O1CN015k2xAw2BlAzbLxYlU_!!917298378.png",
+        content: "先加LINE了，得病半年了，好想快點好起來。",
+        replyFlag: true,
+        replyContent: "沒錯，專門看濕氣的，趕快加LINE吧！",
+        replyTime: "11分鐘前"
+    }, {
+        name: "奉賢",
+        img: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01ISZsya2BlAzW2W6Sj_!!917298378.png",
+        content: "你們說的這個主任，我早就知道了，我們同事群裏很多人都在這調理過。 純中藥綠色療法，一人一方，效果很好，可以推薦的。",
+        replyFlag: true,
+        replyContent: "是的，康復的朋友非常多！",
+        replyTime: "15分鐘前"
+    }, {
+        name: "飛鴻一別",
+        img: "https://img.alicdn.com/imgextra/i1/917298378/O1CN010dL9cj2BlAyvASH5u_!!917298378.jpg",
+        content: "我當時也是半信半疑，但是想著主任還是專業從事這個研究的，就抱著試試的態度。 按照方案調理完，效果非常好，現在基本上也沒有復發了，主任還在LINE主頁分享很多養生知識，感覺挺好，你加他LINE試試吧！",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "15分鐘前"
+    }, {
+        name: "玫瑰",
+        img: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01gZZx2S2BlAzTiuKuG_!!917298378.png",
+        content: "很多人體內濕氣重，會影響情志，就是讓自己變得疑神疑鬼，心理非常大。 我也是在主任這調理的，可以向大家保證，不是托，效果真的好。 就一頓飯，一件衣服的錢，早調理早受益！",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "16分鐘前"
+    }, {
+        name: "大志哥",
+        img: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01kyIaJA2BlAzYL8efY_!!917298378.png",
+        content: "我也是網上搜到這個主任的，調理不錯，腎好，你好，我好，ta也好，哈哈。 腎不好的男同胞，趕緊搞起啊！",
+        replyFlag: false,
+        replyContent: "中醫祛濕有很悠久的歷史，很成熟的方案，這個是真的可以治的，朋友！",
+        replyTime: "18分鐘前"
+    }, {
+        name: "夢飛",
+        img: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01F47xed2BlAzT1lYzk_!!917298378.png",
+        content: "體內濕氣感覺沒有頭緒，也能治療？",
+        replyFlag: true,
+        replyContent: "中醫祛濕有很悠久的歷史，很成熟的方案，這個是真的可以治的，朋友！",
+        replyTime: "26分鐘前"
+    }, {
+        name: "胡漢三",
+        img: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01YQfm2t2BlAzXsUsSn_!!917298378.png",
+        content: "天天看養生節目，不如實際調一調，在家弄啥食療，不專業，還耽誤病情，趕緊調理吧。",
+        replyFlag: false,
+        replyContent: "",
+        replyTime: "27分鐘前"
+    }]
+    commentBox.innerHTML = commentArr.reduce((acc, curr, index) => {
+        return acc += `
+                <li>
+                    <div class="commentLeft">
+                        <img src="${curr.img}">
+                    </div>
+
+                    <div class="commentRight">
+                        <p class="uName">${curr.name}</p>
+                        <p class="uComment marginTop10">${curr.content}</p>
+                        <div class="commentReply">    
+
+                        ${curr.replyFlag?`<p class="replyName">作者回復</p>
+                            <p class="replyConment">${curr.replyContent}</p>`:""}
+                            
+                            <p class="replyTime">${curr.replyTime}</p>
+                        </div>
+                    </div>
+                </li>
+        `
+    }, "")
+</script>
+<script src="https://static.newworkbench.com/v4/licat.min.js?update=20220428"></script>
+<script>
+    var webconfig = {
+        baseHost: location.host,
+    }
+</script>
+
+</html>

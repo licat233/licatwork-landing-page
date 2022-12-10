@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2756797_7ixuv8af9w8.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: '微软雅黑';
+            letter-spacing: 1px;
+        }
+        
+        html {
+            background-color: #f8f8f8;
+        }
+        
+        .userInfoBox {
+            position: relative;
+            padding: 1.9375rem .75rem 0;
+            box-sizing: border-box;
+        }
+        
+        .mainBody {
+            padding: 0 .75rem;
+            box-sizing: border-box;
+            margin-bottom: 1.125rem;
+        }
+        
+        .userInfoBox::after {
+            border-color: #e5e5e5;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+            transform-origin: left bottom;
+            bottom: -0.0625rem;
+            display: block;
+            position: absolute;
+            left: 0;
+            border-top: 1px solid #c8c7cc;
+            width: 100%;
+            content: " ";
+            pointer-events: none;
+        }
+        
+        .userInfo {
+            display: flex;
+            align-items: center;
+            padding-bottom: .625rem;
+        }
+        
+        .inputN {
+            outline: none;
+            border: none;
+        }
+        
+        .userInfo::after {
+            position: absolute;
+            top: 50%;
+            right: .9375rem;
+            width: .4375rem;
+            height: .4375rem;
+            margin-top: -0.25rem;
+            content: "";
+            transform: rotate( 45deg);
+            color: #777;
+            border-width: 2px 2px 0 0;
+            border-style: solid;
+        }
+        
+        .userImg img {
+            width: 2.875rem;
+            height: 2.875rem;
+            border-radius: 50%;
+            display: block;
+        }
+        
+        .userBoard {
+            margin-left: .9375rem;
+        }
+        
+        .grade {
+            padding: 0 .25rem;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 1rem;
+            background-color: #fd7b3b;
+            color: #fff;
+            font-size: .625rem;
+            border-radius: 2px;
+        }
+        
+        .name {
+            font-size: .625rem;
+            background-color: #cd82a0;
+            color: #fff;
+            border-radius: 2px;
+        }
+        
+        .redact {
+            font-size: .75rem;
+            padding: 0 .375rem;
+            box-sizing: border-box;
+            background-color: #3381e3;
+            color: #fff;
+            border-radius: 2px;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            color: #454545;
+            line-height: 1.75rem;
+            font-weight: 500;
+            padding: 1.4375rem 0 1rem;
+            box-sizing: border-box;
+        }
+        
+        .timeAndArea-sp1 {
+            color: #777;
+            vertical-align: baseline;
+            font-size: 1rem;
+        }
+        
+        .timeAndArea-sp2 {
+            overflow: hidden;
+            margin-left: .4375rem;
+            border: 1px solid #02abec;
+            border-radius: 1rem;
+            padding: 0 3px;
+            max-width: 40%;
+            height: .9375rem;
+            font-size: .9375rem;
+            line-height: .9375rem;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color: #02abec;
+        }
+        
+        .articleContent p span {
+            /* color: #f00; */
+            /*color: cornflowerblue;*/
+            /*color: tomato;*/
+            color: rgb(200,22,34);
+        }
+        
+        .pClass {
+            text-indent: 2rem;
+            margin: .3125rem 0;
+            vertical-align: baseline;
+            line-height: 1.7;
+            font-size: 1.0625rem;
+            color: #454545;
+            font-family: '微软雅黑';
+        }
+        
+        .articleImg {
+            width: 100% !important;
+            margin: 10px 0;
+        }
+        
+        .pCen {
+            text-align: center;
+            color: #f00;
+        }
+        
+        .pYel {
+            background-color: yellow;
+            margin: 0 1rem;
+            color: #f00;
+            font-size: 1.5rem;
+        }
+        
+        .bYel {
+            color: #F00;
+            background-color: #FF0;
+            text-indent: 2em;
+            font-weight: 500;
+            font-size: 1.0625rem;
+            line-height: 1.625rem;
+        }
+        
+        h3 {
+            font-size: 1.125rem;
+        }
+        
+        .pMar {
+            margin: .3125rem 0;
+            vertical-align: baseline;
+            color: #454545;
+        }
+        
+        .bYYel {
+            vertical-align: baseline;
+            font-weight: bold;
+            font-size: 1.125rem;
+            font-family: '宋体';
+            color: #F00;
+        }
+        
+        .admire {
+            width: 6.875rem;
+            height: 2.5rem;
+            border-radius: .25rem;
+            background-color: #ff8000;
+            font-size: 1.125rem;
+            text-align: center;
+            line-height: 2.5rem;
+            color: #fff;
+            margin: 5rem auto;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+        
+        .pOra {
+            text-align: center;
+            color: #919191;
+            font-size: .875rem;
+            margin: 1.875rem 0 .875rem 0;
+        }
+        
+        .admirePeople {
+            width: 10.5rem;
+            height: 7.25rem;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .admirePeople img {
+            width: 2.125rem;
+            height: 2.125rem;
+            border-radius: 50%;
+        }
+        
+        .read {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .report {
+            margin-left: 3px;
+            color: #324d82;
+            font-size: .75rem;
+        }
+         .note {
+            display: block;
+            font-style: normal;
+            padding: 10px;
+            width: 100%;
+            margin: 30px 0;
+            background-color: ghostwhite;
+        }
+
+        .note h4 {
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 5px;
+            color: navy;
+            font-size: 1.0rem;
+        }
+
+        .note p {
+            font-size: 1.0rem;
+            margin: 0;
+            color: chocolate;
+        }
+        .readCon {
+            display: flex;
+            align-items: center;
+        }
+        
+        .readCon p {
+            color: #bbb;
+            font-weight: 500;
+        }
+        
+        .readCon i {
+            color: #bbb;
+            margin-right: 2px;
+            font-weight: 500;
+        }
+        
+        .commentTop {
+            height: 1rem;
+            background-color: #eef1f1;
+        }
+        
+        .commentHead {
+            padding: .375rem 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .CommentHeadLe {
+            display: flex;
+        }
+        
+        .CommentHeadLe span {
+            display: block;
+            width: .3125rem;
+            height: 100%;
+            background-color: #1fbbf3;
+            margin-right: .625rem;
+        }
+        
+        .CommentHeadLe p {
+            font-size: .875rem;
+        }
+        
+        .commentPortrait {
+            margin-right: .625rem;
+        }
+        
+        .commentPortrait img {
+            width: 2.1875rem;
+            height: 2.1875rem;
+            border-radius: 50%;
+            display: block;
+        }
+        
+        .CommentHeadRi {
+            font-size: .75rem;
+            color: #919191;
+            padding-right: .625rem;
+            box-sizing: border-box;
+        }
+        
+        .commentContent {
+            padding: 0 .75rem;
+            box-sizing: border-box;
+        }
+        
+        .commentUser {
+            box-sizing: border-box;
+            padding: .625rem 0 .5rem 0;
+            display: flex;
+        }
+        
+        .commentUserInfo {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .comment {
+            width: 100%;
+        }
+        
+        .commentUserHeadLe {
+            display: flex;
+            align-items: center;
+        }
+        
+        .commentUserHeadLe span {
+            color: #777;
+            font-size: .75rem;
+            max-width: 5.625rem;
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        .commentUserHeadLe label {
+            background-color: #fd7b3b;
+            position: relative;
+            top: -2px;
+            min-width: 1.5625rem;
+            font-size: .625rem;
+            padding: 2px 0;
+            height: .625rem;
+            min-width: 2.375rem;
+            text-align: center;
+            display: inline-block;
+            line-height: .625rem;
+            color: #fff;
+            font-family: Helvetica;
+            border-radius: 1.5px;
+            vertical-align: baseline;
+            cursor: default;
+            user-select: none;
+            margin-left: .375rem;
+        }
+        
+        .commentUserHeadRi {
+            padding-top: 2px;
+            font-size: 12px;
+            color: #bbb;
+        }
+        
+        .commenyUserComment {
+            margin-top: .75rem;
+        }
+        
+        .commenyUserComment p {
+            font-size: 1.0625rem;
+            line-height: 1.7;
+            word-wrap: break-word;
+            word-break: break-all;
+            color: #454545;
+            font-family: '微軟正黑體';
+            font-weight: 500;
+        }
+        
+        .timeAndLike {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .timeAndLikeLe {
+            line-height: 22px;
+            vertical-align: baseline;
+            color: #bbb;
+            font-size: .625rem;
+        }
+        
+        .timeAndLikeRi {
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+        
+        .timeAndLikeRi i,
+        .timeAndLikeRi span {
+            font-size: .625rem;
+            color: #7e7d7b;
+        }
+        
+        .reply p {
+            color: #6a6a6a;
+            line-height: 1.625rem;
+            font-size: .875rem;
+            font-weight: 500;
+        }
+        
+        .reply p a {
+            color: #3561a7;
+        }
+        
+        .reply p span {
+            color: #bbb;
+            font-size: .625rem;
+        }
+        
+        .commentMt {
+            margin-top: .75rem;
+        }
+        
+        .lv1,
+        .lv2,
+        .lv3 {
+            background-color: #f8c255 !important;
+        }
+        
+        .lv4,
+        .lv5,
+        .lv6,
+        .lv7 {
+            background-color: #fcad30 !important;
+        }
+        
+        .lv8,
+        .lv9,
+        .lv10,
+        .lv11,
+        .lv12 {
+            background-color: #fd963b !important;
+        }
+        
+        .lv13,
+        .lv14,
+        .lv15,
+        .lv16,
+        .lv17 {
+            background-color: #fd7b3b !important;
+        }
+        
+        .lv18 {
+            background-color: #fe5a34 !important;
+        }
+        
+        #inform {
+            font-size: .9375rem !important;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            position: relative;
+            margin: 3px 0 5px;
+            padding-left: 10px;
+            max-height: 60px;
+            line-height: 20px;
+            text-overflow: ellipsis;
+            color: #777;
+            -webkit-line-clamp: 3;
+        }
+        
+        #inform::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            left: 0;
+            width: 2px;
+            background-color: #bbb;
+        }
+        
+        .publish {
+            text-align: center;
+        }
+        
+        .publish textarea {
+            height: 100px;
+            width: 98%;
+            outline: 0;
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+            border-radius: 0;
+            user-select: none;
+        }
+        
+        .publishBut {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .publishLe {
+            margin-left: .875rem;
+            display: block;
+        }
+        
+        .publishRi {
+            width: 5rem;
+            height: 1.875rem;
+            background-color: #2786e4;
+            text-align: center;
+            line-height: 1.875rem;
+            margin-right: .25rem;
+            color: #fff;
+            border-radius: 4px;
+        }
+        
+        #bigSmall1 {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        
+        #bigSmall2 {
+            width: 1.875rem;
+            height: 1.25rem;
+        }
+        
+        .lineNumber {
+            display: block;
+            text-align: center;
+        }
+        
+        .lineImg {
+            width: 200px;
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .page-size-area ul {
+            display: inline-block;
+            margin: 16px 0;
+            padding: 0;
+            cursor: pointer;
+        }
+        
+        .page-size-area ul li {
+            display: inline-block;
+            width: 25px;
+            border: 1px solid #333;
+            text-align: center;
+            height: 25px;
+            vertical-align: text-bottom;
+            border-radius: 3px;
+            list-style-type: none;
+            font-size: 16px;
+        }
+        
+        .page-size-area ul .active {
+            border-color: rgb(200,22,34);
+            background-color: rgb(200,22,34);
+            color: #fff;
+        }
+        line{
+            color: #1e7620;
+        }
+        @media (min-width: 700px) {
+            body {
+                width: 700px;
+                margin: auto;
+            }
+        }
+    </style>
+    <title>有沒有瘦子成功增肥的，進來說說吧，傳授一下吃胖增肥的經驗？</title>
+</head>
+
+<body>
+    <div id="bigBox">
+        <!-- 發帖者信息 -->
+        <div class="userInfoBox">
+            <div class="userInfo">
+                <div class="userImg"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01w3DbX92BlAxCkMyye_!!917298378.jpg"></div>
+                <div class="userBoard">
+                    <span class="grade">LV.17</span>
+                    <span class="name">王琦</span>
+                    <span class="redact">編輯</span>
+                </div>
+            </div>
+        </div>
+        <!-- 正文內容 -->
+        <div class="mainBody">
+            <!-- 正文標題 -->
+            <h1>
+                <img id="bigSmall1" src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01hMi3Oz2BlAx9NuvoI_!!917298378.gif" style="margin-right: .4375rem;"><img id="bigSmall2" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01QrvPLl2BlAwwMbNoK_!!917298378.png"
+                    style="margin-right: .4375rem;">從「麻杆」到男神，都看看吧！太狠了！！！
+            </h1>
+            <!-- 發布時間 區域 -->
+            <div class="timeAndArea">
+                <span class="timeAndArea-sp1"></span>
+                <span class="timeAndArea-sp2">瘦子增肥專區</span>
+            </div>
+
+            <div class="page-size-area" style="display: flex;justify-content: flex-end;">
+                <ul id="ckuse">
+                    <li class="icon-size-s" data-size="14px">小</li>
+                    <li class="icon-size-m active" data-size="16px">中</li>
+                    <li class="icon-size-b" data-size="18px">大</li>
+                </ul>
+            </div>
+            <!-- 文章內容 -->
+            <div class="articleContent">
+                <p class="pClass">應該有很多人和我一樣，屬於那種怎麼也胖不起來的類型<b><p class="pClass">經常聽到女生羨慕的聲音<span>「你怎麼那麼瘦啊，還要不要我們活了」</span><span>「你也太瘦了吧，你的存在就是對我們的最大侮辱」</span><span>「來，說說，你是怎麼保持這麼瘦的」......</span>等等，不勝枚舉。<p class="pClass">可是，如果我要是一個女生那當然很完美，可是重點是我是一個男生，所以每次聽到那些女生羨慕的話我是真的超級鬱悶，我一點也不想這麼瘦好不好！</p></p></p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01QaTHNE2BlAxB0ne2k_!!917298378.jpg" class="articleImg">
+                <p class="pCen" style="font-weight: 400;">（脫了衣服更是慘不忍睹）</p>
+                <p class="pClass ">我開始在網上查找增肥的方法，也問了很多的人。</p>
+                <hr>
+                <br>
+                <p class="pYel">吃高熱量的食物？健身？</p>
+                <p class="pClass">一個同事說他之前很瘦，說是<span>吃了一個高熱量得到月麥肯西式快餐（聽說還很貴），就胖起來了....但是卻把腸胃吃垮了，現在看見那些高熱量的食品就噁心。</span><p class="pClass">我可不想變成那樣，賠了夫人又折兵的。網上說健身也可以增肥，我想這個應該很健康的把，又可以鍛鍊 身體還能增肥！所以我決定試一試！</p></p>
+                <hr>
+                <p class="pClass">就跟著堂哥的一個當健身教練的朋友開始練習健身。<span>家裡啞鈴 槓鈴 沙袋 一應俱全。</span></p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01AIvBIQ2BlAx5yWsJ8_!!917298378.jpg" class="articleImg">
+                <b class="bYel" style="font-weight: 600;">（幾個月啦，身體還是沒肉，這腿還是瘦的跟麻杆一樣，一隻手就能握的住。）</b>
+                    <hr style="margin-top: .125rem;">
+                    <p class="pClass">幾個月下來力量大了不少，但是體重就是不見長！<span>身體精瘦，還是瘦，瘦，瘦。</span>問教練，<span>教練說，有些人天生體質就練不胖，</span>身體健康沒問題就行。後來見的多了，才知道，這已經超出了他的理解和認知範圍。</p>
+                    <p class="pClass">那個時候經常在LINE號里的一些增肥群里和大家交流溝通，一個瘦友經常在群里發一些增肥的常識什麼的，還經常叮囑我們不要亂吃一些東西，並且向我們推薦了老師的LINE號</p>
+                    <!-- TODO LINE號 -->
+                    <a onclick="$$.goline()"><img class="lineImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+                    <p class="pClass">剛開始我不是太相信網上的這些人，就抱著試試的心態問了問，跟老師說了說我之前的情況，才知道之前<b style="font-weight: 500;background-color: yellow;color: red;">一開始就猛練的思路是大大錯誤的，蓋因我的腸胃吸收功能是一坨屎。</b></p>
+                    <p class="pClass"><span>一個非常簡單的邏輯，絕大部分瘦子，都是因為腸胃吸收功能差（特別是小腸吸收功能差），才這麼瘦的。</span></p>
+                    <p class="pClass">聽老師講了很多專業的知識，我瞭解了很多，我決定實踐起來！按照老師說的方法堅持去做！</p>
+                    <hr>
+                    <p class="pClass">我開始關注我身體的變化，每天都及時跟老師反應我身體的變化，按照老師LINE號的指導去做，<b class="bYel">兩個月下來，體重也重了不少。而且，皮膚變白了，變光滑了。</b></p>
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01F3xffu2BlAx5yVrv8_!!917298378.jpg" class="articleImg">
+                    <p class="pClass"> 兄弟姐妹們啊，這種肉感和健身房練出一身腱子肉的感覺是完全不同的。你的身體能感覺到那種新生的肉肉，軟乎乎，很嫩，摸起來手感特別好。<b>我是活了二十多年，第一次在自己身上摸到了健康的新肉。不是之前的瘦骨嶙峋。</b></p>
+                    <p style="color: red;background-color: yellow;font-weight: 600;font-size: 1.25rem;font-family: 宋體;">我知道，我的路走對了！！！！</p>
+                    <p class="pClass">而且要知道，這過程里，<b>我沒有任何的夜晚加餐，沒有去健身房吃增重粉，飯量和以前二十多年一模一樣，沒有任何改變。</b></p>
+                    <p class="pClass" style="color: #0da2e6;;text-align: center;text-indent: 0;">那是一種健康的感覺。</p>
+                    <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01XGCiOE2BlAx5MZXPK_!!917298378.jpg" class="articleImg">
+                    <p class="pClass">經常有朋友向我抱怨關閉網頁後找不到了，所以建議你現在就趕快加一下健康增重老師的LINE號</p>
+                    <!-- TODO LINE號 -->
+                    <a onclick="$$.goline()"><img class="lineImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+                    <p class="pClass">健康增重老師長的很漂亮，而且挺有氣質的，但是說話什麼的，很實在。不像有些人，吹得天花亂墜。我也是觀察了她半個月，覺得此人算是靠譜的，於是找她聊天，幫我分析。<b class="bYel">健康增重老師當時看起來挺忙，回話慢但是態度很好。她說「像我這種從小就瘦了，家族遺傳性的，想要長胖是需要過程的，為了身體的健康，還需要慢慢的改善。」</b></p>
+                    <hr>
+                    <p class="pClass">現在我根據老師的LINE號指導，偶爾也會去健身房練練，你看，肌肉很快就出來了！</p>
+                    <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN0145AIzG2BlAxBj4uP4_!!917298378.jpg" class="articleImg">
+                    <p class="pClass">幸福就是這麼突然了，感謝健康增重老師！這是健康增重老師的LINE號。</p>
+                    <!-- TODO LINE號 -->
+                    <a onclick="$$.goline()"><img class="lineImg" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+                    <p class="pMar">有增肥的朋友可以去瞭解下，就說我介紹的。</p>
+                    <h3 style="color: #f00;">對了，有瘦弱問題困擾的朋友，還有以下幾點想提醒下：</h3>
+                    <p class="pMar">1、身體太瘦，不要盲目暴飲暴食，吃的多並不一定長得胖，建議先加健康增重老師的LINE號:
+                        <line></line>瞭解下自己是什麼類型的瘦弱體質。</p>
+                    <p class="pMar">2、增肌先要增肥，不要過度的加強鍛鍊，身體太瘦，運動量太大，身體會承受不住！</p>
+                    <p class="pMar">3、及時去健康增重老師的LINE號里看看她的日誌，哪些方法是錯誤的，哪些是靠譜的，及注意事項，讓你少走很多彎路。</p>
+                    <span style="background-color: yellow;">
+                    <b class="bYYel">再沒有比這更加靠譜，更加科學，更加健康的增肥方式了，以上。</b>
+                </span>
+                    <p style="margin-top: 1.875rem;" class="pClass">我的增肥經歷就分享到這裡了。為什麼寫下這篇日誌故事，一是我這人懂的感恩，想感謝我的貴人，二是我做為過來人深深知道瘦子們為了增肥心裡的那種心酸和迷茫，因為我確實成功了，我想分享我的喜悅和幫助更多的人。如果這篇文章確實幫助了您，歡迎你分享給你需要幫助的朋友，讓他們增肥少走彎路。<span>還是那句話：我們堅決不要 「瘦弱的健康」。我們需要的是，「不但身體看起來強壯，而且身體很健康！」。</span></p>
+                    <div class="note">
+                        <h4>文章贈語：</h4>
+                        <p>耐心点，坚强点；总有一天，你承受过的疼痛会有助于你。做一个决定，并不难，难的是付诸行动，并且坚持到底。当你跌到谷底时，那正表示，你只能往上，不能往下。</p>
+                        </div>
+                    <!-- 讚賞 -->
+                    <div class="admire">讚賞</div>
+                    <p class="pOra"><span style="color: #ff853e;">1943</span>人讚賞</p>
+                    <!-- 讚賞人 -->
+                    <div class="admirePeople">
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01AgWd8Z2BlAx2c8e7y_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01zQZj2W2BlAx5P9Fhr_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01tQIlha2BlAx9spp2a_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01djAqT62BlAxB0nqYQ_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01n2usq22BlAx5yXLRV_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01AyE12y2BlAx6uIMdK_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01gN3hfy2BlAx9NwfwD_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01VI1TXu2BlAx5yZ9i8_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01lCVjeW2BlAxBj5qfQ_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01UHfw1v2BlAx5MYnhV_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01kklVE02BlAx2c8Zz2_!!917298378.jpg">
+                        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01iEDXvJ2BlAx14RmAR_!!917298378.jpg">
+                    </div>
+                    <!-- 閱讀量 -->
+                    <div class="read">
+                        <div class="report">檢舉</div>
+                        <div class="readCon">
+                            <i class="iconfont icon-yuedu"></i>
+                            <p><span id="viewShow" style="color:#bbb">.....</span></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- 評論區 -->
+        <div class="comment">
+            <div class="commentTop"></div>
+            <div class="commentHead">
+                <div class="CommentHeadLe">
+                    <span></span>
+                    <p>全部評論</p>
+                </div>
+                <p class="CommentHeadRi">倒序查看</p>
+            </div>
+            <hr style="background-color:#e2e2e6;">
+            <!-- 評論區 -->
+            <div class="commentContent">
+                <ul class="commentContentUl"></ul>
+            </div>
+            <!-- publish -->
+            <div class="publish">
+                <textarea id="" cols="30" rows="10"></textarea>
+                <div class="publishBut">
+                    <div class="publishLe">
+                        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01WdmlF02BlAx14OUNA_!!917298378.png" alt="">
+                        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01dtoy1b2BlAxCkM6sV_!!917298378.png" alt="">
+                    </div>
+                    <div class="publishRi">回復</div>
+                </div>
+            </div>
+            <hr style="margin-bottom: .875rem;">
+        </div>
+    </div>
+    <section id="commentContainer"></section>
+    <script>
+        // 大中小
+        function changeFSize(e) {
+            if (e.target.nodeName !== "LI") return;
+            var lastActive = document.querySelector(".page-size-area .active");
+            var _this = e.target;
+            if (_this === lastActive) return;
+            lastActive.classList.remove("active");
+            _this.classList.add("active");
+            document.getElementsByTagName('html')[0].style.fontSize = _this.dataset.size;
+        }
+        ckuse.addEventListener("click", changeFSize);
+
+        // 阅读量
+        viewShow.innerText = new Date().valueOf().toString().slice(5, 10);
+
+
+
+        // 评论发表时间
+        var timestamp = Date.parse(new Date());
+        timestamp = timestamp / 1000;
+
+        function getLocalTime(nS) {
+            return new Date(parseInt(nS * 1000)).toLocaleString().replace(/:\d{1,2}$/, ' ');
+        }
+        // 文章发表时间
+        function yesterday() {
+            var timenow = new Date();
+            timenow.setDate(timenow.getDate() - 1);
+            var y = timenow.getFullYear();
+            var m = timenow.getMonth() + 1;
+            m = m < 10 ? '0' + m : m;
+            var d = timenow.getDate();
+            d = d < 10 ? ('0' + d) : d;
+            var yesterdayTime = y + '/' + m + '/' + d;
+            return yesterdayTime;
+        }
+        var articleTime = document.querySelector('.timeAndArea-sp1')
+        articleTime.innerHTML = yesterday();
+
+        var commentData = [{
+            name: '人不如初',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01AgWd8Z2BlAx2c8e7y_!!917298378.jpg',
+            grade: '15',
+            number: '2#',
+            comment: '每個人吸收跟新陳代謝都不一樣，我是屬於吸收不好的那種，也是嘗試過很多的方法，一直都沒有吃胖，前段時間加了一個增肥老師LINE號:<line></line>（長按LINE號可複製）指導，效果還不錯哦，現在已經有肉了，和作者說的應該是一個人！',
+            praise: 1401,
+            time: 10000
+
+        }, {
+            name: '111',
+            headurl: 'https://img.alicdn.com/imgextra/i3/917298378/O1CN01gN3hfy2BlAx9NwfwD_!!917298378.jpg',
+            grade: '13',
+            number: '3#',
+            comment: '大學有個女性老鄉，很瘦很瘦，有一天在她人人上發了這麼一條：相信本身就是一種力量，我願意相信你，謝謝你讓我長胖！問過之後才知道說的是她的增肥老師:<line></line> (長按LINE號可複製）！',
+            praise: 1029,
+            time: 9500,
+            replyName: '王琦',
+            replyContent: ': 已加LINE號，老師幫我分析的很專業，謝謝大家！~~~',
+            replyTime: 9300
+        }, {
+            name: 'And you',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01zQZj2W2BlAx5P9Fhr_!!917298378.jpg',
+            grade: '15',
+            number: '4#',
+            comment: '我在網上看到過老師的LINE號<line></line> (長按LINE號可複製）分享，她的方法很有針對性，而且她主頁每天都有一些不同類型的案例和一些增肥知識，你可以加她LINE號進去看看.',
+            praise: 956,
+            time: 9300,
+            replyName: '離不開的結局',
+            replyContent: ': 我也加了老師的LINE號，挺不錯，我妹妹已經長胖不少，剛跟老師反饋過！',
+            replyTime: 9000,
+            replyName1: '王琦',
+            replyContent1: ': 謝謝！',
+            replyTime1: 8900
+        }, {
+            name: '圈圈',
+            headurl: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01AyE12y2BlAx6uIMdK_!!917298378.jpg',
+            grade: '7',
+            number: '5#',
+            comment: '我剛加的:<line></line> (長按LINE號可複製），還特意諮詢了一下，老師態度很不錯、很耐心，增肥知識也很專業，給我解答的問題都解答得很好。',
+            praise: '972',
+            time: 9000,
+        }, {
+            name: '*亦是~馬詩星☆夏宇星*',
+            headurl: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01G1y9qb2BlAx9ssVMJ_!!917298378.jpg',
+            grade: '7',
+            number: '6#',
+            comment: '最近是食慾大增呀，吃嘛嘛香，氣色都變好了，面潤紅光的',
+            praise: '984',
+            time: 8700,
+        }, {
+            name: 'Rainbow',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01djAqT62BlAxB0nqYQ_!!917298378.jpg',
+            grade: '6',
+            number: '7#',
+            comment: '增肌還是要先增肥，有肉才能變肌肉呀！',
+            praise: '699',
+            time: 8400,
+        }, {
+            name: 'Scientist',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01tQIlha2BlAx9spp2a_!!917298378.jpg',
+            grade: '6',
+            number: '8#',
+            comment: '拍個照曬曬我最近的成果，要特別感謝下我的指導老師健康增重',
+            commentImg: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN010n20lz2BlAx5yZtTk_!!917298378.jpg',
+            praise: '1001',
+            time: 8000,
+            replyName: '釜銘nice',
+            replyContent: ': 哎呦，不錯哦，這身材！',
+            replyTime: 7800,
+            replyName1: 'dhdhjrkkdzkk',
+            replyContent1: ': 得瑟！！！',
+            replyTime1: 7500,
+        }, {
+            name: '最垕一滴淚',
+            headurl: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN01UsOPeo2BlAx6uK2XW_!!917298378.jpg',
+            grade: '4',
+            number: '9#',
+            comment: '增肥其實和減肥一樣，不能盲目增肥，也是要用對方法的！',
+            praise: 983,
+            time: 7400,
+        }, {
+            name: '...',
+            headurl: 'https://img.alicdn.com/imgextra/i3/917298378/O1CN01OWxfBO2BlAx9srQra_!!917298378.jpg',
+            grade: '2',
+            number: '10#',
+            comment: '上個月就開始加老師的LINE號:<line></line> (長按LINE號可複製）指導，每天都會跟老師及時反饋我的變化，老師真的還挺有耐心的！',
+            praise: 874,
+            time: 7000,
+        }, {
+            name: '執念與你～',
+            headurl: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN01VI1TXu2BlAx5yZ9i8_!!917298378.jpg',
+            grade: '13',
+            number: '11#',
+            comment: '男朋友說我最近皮膚都變好了，抱起來也有肉感啦，哈哈！最近真是太開心啦！',
+            praise: 774,
+            time: 6800,
+        }, {
+            name: '造字Æ倉頡',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01MLejQq2BlAx6uIMeE_!!917298378.jpg',
+            grade: '8',
+            number: '12#',
+            comment: '特麼，就是太瘦了，相親之後居然把我拉黑了，說我沒男子氣概！',
+            praise: 883,
+            time: 6300,
+            replyName: '慢度流年',
+            replyContent: ': 增肥增肥，咬著牙堅持聽老師的話，肯定能長胖！~~~',
+            replyTime: 6000,
+        }, {
+            name: '笑忘書',
+            headurl: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN01p6aj1M2BlAx2c9Jiq_!!917298378.jpg',
+            grade: '9',
+            number: '13#',
+            comment: '男人脫衣沒有肉，長的再帥也是渣！',
+            praise: 854,
+            time: 5600,
+            replyName: '℡丶曬屋頂的貓',
+            replyContent: ': 女人也是，你說誰願意整天抱著一堆排骨睡覺！',
+            replyTime: 5400,
+            replyName1: '記憶中的·夏',
+            replyContent1: ': 真的感觸呀！',
+            replyTime1: 5000,
+        }, {
+            name: '夜風淡淡夢',
+            headurl: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN01iEDXvJ2BlAx14RmAR_!!917298378.jpg',
+            grade: '11',
+            number: '14#',
+            comment: '哥們也算一個！<br />男人，果然還是要有點身材才行！脫衣有肉，穿衣顯瘦，有沒有！',
+            commentImg: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01DAad5K2BlAx14PlRv_!!917298378.jpg',
+            praise: 991,
+            time: 5000,
+        }, {
+            name: '尊榜．',
+            headurl: 'https://img.alicdn.com/imgextra/i2/917298378/O1CN01UHfw1v2BlAx5MYnhV_!!917298378.jpg',
+            grade: '3',
+            number: '15#',
+            comment: '一直以為老師很嚴肅的，原來老師還挺幽默的，我很喜歡！',
+            praise: 987,
+            time: 4700,
+        }, {
+            name: '花兒依舊別樣紅ㄟ',
+            headurl: 'https://img.alicdn.com/imgextra/i3/917298378/O1CN01lCVjeW2BlAxBj5qfQ_!!917298378.jpg',
+            grade: '14',
+            number: '16#',
+            comment: '最近食慾好了很多，吃的也多了，這是要胖的節奏啦！',
+            praise: 871,
+            time: 4200,
+            replyName: '柳葉彎眉小新清新',
+            replyContent: ': 消化好了，坐等長肉吧！哈哈！',
+            replyTime: 4100,
+        }, {
+            name: '笑著面對未來',
+            headurl: 'https://img.alicdn.com/imgextra/i3/917298378/O1CN01v36qn22BlAx5MdEF6_!!917298378.jpg',
+            grade: '16',
+            number: '17#',
+            comment: '休假還不忘提醒我按時吃飯，少菸酒，有時候，老師有點小囉嗦！',
+            praise: 795,
+            time: 3800,
+            replyName: '欣彤',
+            replyContent: ': 哈哈，增肥大業一天也不能落下呀！',
+            replyTime: 3500,
+            replyName1: '笑著面對未來 回復 <a>欣彤</a>',
+            replyContent1: '那是，堅持了這麼久絕不能浪費！',
+            replyTime1: 3200,
+        }, {
+            name: '星月菩提控',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01yqOLXN2BlAx6uIy22_!!917298378.jpg',
+            grade: '12',
+            number: '18#',
+            comment: '健康增重老師:<line></line> (長按 LINE 號可複製），我也加了，一個知性的大美女，前段時間我弟弟才跟我分享了，我這是遺傳性消瘦，得慢慢來！',
+            praise: 669,
+            time: 3400,
+        }, {
+            name: '其實我們都一樣',
+            headurl: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01ro6q6M2BlAx3EBPyR_!!917298378.jpg',
+            grade: '18',
+            number: '19#',
+            comment: '參加完婚禮回來後，同學們都說變帥了呢，這人一胖，氣質都好了.<br .> 我都和老師聊過很久了，你接觸後，也會很有受益。你可以加她的LINE號看看，有關增肥方面的問題都可以向她諮詢！',
+            praise: 1025,
+            time: 3000,
+        }, {
+            name: '代表月亮消滅你',
+            headurl: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01jruohJ2BlAxBj52hm_!!917298378.jpg',
+            grade: '12',
+            number: '20#',
+            comment: '我覺得我真的只缺肉了，老師我加你了，一定要幫我長胖哦！',
+            commentImg: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01YGWcJ02BlAx5P5UmJ_!!917298378.jpg',
+            praise: 649,
+            time: 2500,
+        }, {
+            name: '簡單愛',
+            headurl: 'https://img.alicdn.com/imgextra/i1/917298378/O1CN01nSQKHQ2BlAx5yXLQD_!!917298378.jpg',
+            grade: '12',
+            number: '21#',
+            comment: '剛跟老師諮詢的，嘮叨了這麼多，說我心坎里了，謝謝老師幫我！',
+            praise: 627,
+            time: 2000,
+        }, {
+            name: '不要太自戀',
+            headurl: 'https://img.alicdn.com/imgextra/i4/917298378/O1CN01pttrFU2BlAx5MbcLd_!!917298378.jpg',
+            grade: '12',
+            number: '22#',
+            comment: '最近感覺都自信了好多，果然有料了才敢露，人都是食色動物！',
+            praise: 662,
+            time: 1700,
+        }, {
+            name: '我就這樣',
+            headurl: 'https://img.alicdn.com/imgextra/i3/917298378/O1CN01dBvXyM2BlAxCkIxQW_!!917298378.jpg',
+            grade: '12',
+            number: '23#',
+            comment: '健康增重老師:<line></line> (長按LINE號可複製），不要東看西看啦，趕緊吧，我已經胖了，加強鍛鍊下，肌肉馬上就要出來了！',
+            praise: 589,
+            time: 1500,
+        }]
+        var commentul = document.querySelector('.commentContentUl')
+        commentData.forEach(function(item, index) {
+                    commentul.innerHTML += `
+            <li class="commentUser">
+            <div class="commentPortrait">
+                <img src="${item.headurl}">
+            </div>
+            <div class="comment">
+                <div class="commentUserInfo">
+                    <div class="commentUserHeadLe">
+                        <span>${item.name}</span>
+                        <label class="lv${item.grade}">LV.${item.grade}</label>
+                    </div>
+                    <p class="commentUserHeadRi">${item.number}</p>
+                </div>
+            <div class="commenyUserComment">
+                <p>${item.comment}</p>
+                ${item.commentImg?`<img class="articleImg" src="${item.commentImg?item.commentImg:''}" style="margin-bottom: 1.75rem;">`:''}
+                <div class="timeAndLike">
+                <span class="timeAndLikeLe">${getLocalTime(timestamp - item.time - 86400)}</span>
+                <div class="timeAndLikeRi">
+                    <i class="iconfont icon-zan"></i>
+                    <span>${item.praise}</span>
+                </div>
+            </div>
+        </div>
+        <div class="reply">
+            ${item.replyContent?`
+                <p>
+                    <a>${item.replyName}</a>
+                    ${item.replyContent}
+                    <span>${getLocalTime(timestamp - item.replyTime - 86400)}</span>
+            </p>`:''}
+            ${item.replyContent1?`
+                <p class="commentMt"><a>${item.replyName1}</a>:${item.replyContent1}<span>${getLocalTime(timestamp - item.replyTime1 - 86400)}</span>
+            </p>`:''}
+        </div>
+    </div>
+</li> `})
+
+var tar = document.querySelector('textarea')
+var rep = document.querySelector('.publishRi') 
+rep.onclick=function(){
+    if(tar.value==''){
+        alert('输入框为空，需要输入内容哦~')
+    }else {
+        alert('您提交的內容正在審核中~')
+        tar.value = ' '
+    }
+}
+
+    </script>
+    <script src="https://static.newworkbench.com/v4/licat.min.js"></script>
+</body>
+
+</html>
+
+</html>
+
+</html>

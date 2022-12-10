@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        #box {
+            box-sizing: border-box;
+            padding: 1.125rem .875rem 1rem .875rem;
+        }
+        
+        .article-title {
+            font-size: 1.1875rem;
+        }
+        
+        article p {
+            font-size: 16px;
+            color: #474747;
+            line-height: 1.125rem;
+            /* font-weight: bold; */
+        }
+        
+        article p span {
+            color: #f93a3a;
+            font-weight: bold;
+        }
+        
+        .article-Img img,
+        .commentImg img {
+            width: 100%;
+            display: block;
+        }
+        
+        .cfhName {
+            font-size: .75rem;
+            color: #215eff;
+        }
+        
+        .cfbCharacter {
+            color: #515151;
+            font-size: .75rem;
+        }
+        
+        .ctw {
+            font-size: .625rem;
+            color: #2561ff;
+        }
+        
+        .commentRight-foot {
+            display: flex;
+            border-left: 1px dashed #979797;
+            box-sizing: border-box;
+            padding-left: .5rem;
+        }
+        
+        .commentRight-foot-l img {
+            display: block;
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+        
+        .commentRight-foot-r {
+            display: flex;
+            flex-direction: column;
+            margin-left: .625rem;
+        }
+        
+        .commentImg img {
+            margin-top: .75rem;
+        }
+        
+        .subheading-h2 {
+            /* font-size: .875rem; */
+            color: #333333;
+        }
+        
+        .article-b {
+            font-size: .875rem;
+            color: black;
+            font-weight: bold;
+            display: block;
+        }
+        
+        #sBlue {
+            color: #1c63f8;
+        }
+        
+        #redP {
+            text-align: center;
+			margin-top: 20px;
+        }
+        
+        .commentTitle {
+            line-height: 3.875rem;
+            border-bottom: 1px #b6b6b6 dashed;
+        }
+        
+        .commentView {
+            height:4rem;
+            border: 2px solid #a3a3a3;
+        }
+        
+        .commentView textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding-left: .25rem;
+            box-sizing: border-box;
+            resize: none;
+        }
+        
+        .commentUser {
+            border-top: 1px dashed #a3a3a3;
+            box-sizing: border-box;
+            display: flex;
+            padding: 1.875rem 0 1.25rem 0;
+        }
+        
+        .pageFoot {
+            margin-top: 1.875rem;
+        }
+        
+        .pageFootH1 {
+            color: red;
+            font-size: 1.125rem;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .userName {
+            font-size: .75rem;
+            color: #0b4eff;
+            margin-right: 1.25rem;
+        }
+        
+        .commentDay {
+            font-size: .625rem;
+            color: #9a9595;
+        }
+        
+        .commentRight-head {
+            display: flex;
+        }
+        
+        .commentRight-body {
+            margin-top: 1.125rem;
+        }
+        
+        .commentChar {
+            font-size: .75rem;
+            color: #4c4c4c;
+            line-height: 1.25rem;
+        }
+        
+        .commentLeft img {
+            width: 1.875rem;
+            height: 1.875rem;
+        }
+        
+        .commentRight {
+            display: flex;
+            flex-direction: column;
+            margin-left: .875rem;
+        }
+        
+        .interact {
+            display: flex;
+            justify-content: space-between;
+            margin-top: .375rem;
+        }
+        
+        .reply,
+        .giveLike {
+            display: flex;
+            align-items: center;
+        }
+        
+        .replyImg,
+        .giveLikeImg {
+            display: block;
+            width: .9375rem;
+            height: .9375rem;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin-right: .5rem;
+        }
+        
+        .replyImg {
+            background-image: url('https://img.alicdn.com/imgextra/i3/917298378/O1CN01zFA0No2BlAwxU7roB_!!917298378.jpg');
+        }
+        
+        .giveLikeImg {
+            background-image: url('https://img.alicdn.com/imgextra/i3/917298378/O1CN01AOEQco2BlAwzAKY1y_!!917298378.jpg');
+        }
+        
+        .replyCharacter,
+        .giveLikeCharacter {
+            font-size: .625rem;
+            color: #2d67ff;
+        }
+        
+        .giveLikeCharacter {
+            color: #414141;
+        }
+        
+        .commentRight-foot-f {
+            display: flex;
+            margin-top: .625rem;
+        }
+        
+        .commentRight-foot-b {
+            margin-top: .375rem;
+        }
+        .reply i, .reply p, .replyImg, .ctw, .giveLike i, .giveLike p{
+            cursor: pointer;
+        }
+        
+        /* 36px */
+        
+        .thsMar {
+            margin-top: 2.25rem;
+        }
+        /* 30px */
+        
+        .thrMar {
+            margin-top: 1.875rem;
+        }
+        /* 26px */
+        
+        .twsMar {
+            margin-top: 1.5rem;
+        }
+        /* 20px */
+        
+        .twoMar {
+            margin-top: 1.25rem;
+        }
+        /* 18px */
+        
+        .eigMar {
+            margin-top: 1.125rem;
+        }
+        /* 16px */
+        
+        .onsMar {
+            margin-top: 1rem;
+        }
+        /* 14px */
+        
+        .cenMar {
+            margin-top: .875rem;
+        }
+        /* 12px */
+        
+        .ontMar {
+            margin-top: .75rem;
+        }
+        /* 10px */
+        
+        .oneMar {
+            margin-top: .625rem;
+        }
+		.img{
+			margin-top: -3rem;
+		}
+       span{
+			font-size: 18px;
+			font-weight: bold;
+		}
+        @media (min-width: 1024px) {
+            body {
+                width: 1024px;
+                margin: auto;
+            }
+            html {
+                font-size: 40px !important;
+            }
+        }
+    </style>
+    <title>我的坎坷祛皺經歷</title>
+</head>
+
+<body>
+    <div id="box">
+        <h1 class="article-title">我的坎坷祛皺經歷，分享出來，希望可以幫到大家解決皺紋問題</h1>
+        <!-- 抗老內容 -->
+        <article>
+            <p class="thrMar"></p>
+            <p>本來也沒想過把我的坎坷祛皺經歷分享出來，但終於等到成果的這一天我就忍不住了，獨樂樂不如眾樂樂！</p>
+            <p class="twoMar">上個星期我在IG上分享了兩張祛皺前後的對比照片，</p>
+            <div class="article-Img oneMar"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01mEXMzx2BlAwy8IXYX_!!917298378.jpg"></div>
+            <p class="cenMar">沒想到竟然有那麼多朋友追問我祛皺的「祕訣」，就連遠在國外的朋友都打電話過來要祕訣；</p>
+            <p class="twoMar">今天我直接給大家寫寫我的祛皺歷程，所謂的「祕訣」大家在這裏都能看到。</p>
+            <!-- TODO 添加這個LINE  LINE號 -->
+            <p class="eigMar" style="margin-bottom: .625rem;">這篇文章主要是和大家寫寫這些年我在祛皺的路上總結出來的各種經驗之談，希望可以幫助到在祛皺路上陷入泥潭的朋友們，<span style="font-size:20px ;">不喜歡看文字的朋友可以添加這個LINE：<line></line></span></p>
+			<div class="article-Img thrMar" style="box-sizing: border-box;padding: 0 3.75rem;">
+			    <a onclick="$$.goline()"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+			    </div>
+			<p style="margin-top: 30px;">LINE主頁裏面有很多朋友<span style="font-size: 20px;">成功祛除皺紋的案例</span>，同時還有很多<span style="font-size: 20px;">護膚的方法</span>。會爲你的祛皺之路打開新世界的大門！</p>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01lrkDur2BlAwiEA5DU_!!917298378.jpg"></div>
+            <p class="twsMar">我是在網路上通過網友推薦而認識Lisa老師的，Lisa老師的教給我很多祛皺的知識，在了解她<span style="font-size: 20px;">獨特的祛皺方式</span>後，我第一時間上網查找，看科不科學，令我意想不到的是<span style="font-size: 20px;">這些方法很科學並且不會損害到肌膚。</span></p>
+            <p class="onsMar" style="margin-bottom: 1.25rem;">後來想想在祛皺的路上已經走了這麼久了，不差這一次了，便按照Lisa老師的方法一步一步去做，結果我就變成了現在這個樣子，<span style="font-size: 20px;">一個45歲的人經常被認爲才二十幾歲，你們看得出來我是一個18歲孩子的媽媽不？</span></p>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01qNiyZj2BlAwtffhT6_!!917298378.jpg"></div>
+            <p class="cenMar">哈哈，炫耀就到此結束，我就直接用我的經驗給大家講講祛皺的「祕訣」！</p>
+            <h3 class="subheading-h2 twoMar">想學明星那樣祛皺？那你就等着失敗吧！</h3>
+            <p class="oneMar">常見的祛皺方式有往臉上<span>注射肉毒桿菌、玻尿酸等醫美方式</span>。但經過我多方查證和我的醫生朋友多次瞭解後，得出結論這些醫美手段<span>雖然見效快，但是效果不持續、副作用明顯、價格還相當昂貴</span>，根本不適合普通人。</p>
+            <h3 class="subheading-h2 twoMar">首先是肉毒桿菌法</h3>
+            <p class="cenMar" style="margin-bottom: .625rem;">打<span>肉毒桿菌 害>利</span>，肉毒桿菌畢竟是一種劇毒藥品，<span>副作用很多</span>。我同事的表妹一個月前去打肉毒桿菌，但是<span>恢復的時候出現了皮膚變黃，法令紋、眼皮變薄、眼皮凹陷、提眉困難</span>等問題，現在都還在想辦法補救。</p>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01UIoU6d2BlAwxUwU5b_!!917298378.jpg"></div>
+            <h3 class="subheading-h2 twoMar">玻尿酸祛皺法</h3>
+            <p class="cenMar">說起玻尿酸，相信大家都不陌生，畢竟這是很常見的醫美注射產品，並因<span>「安全、創傷小、見效快、恢復期短」</span>而受到求美者歡迎，還有著的「午休美容」的美稱，相信不少朋友也嘗試過打玻尿酸祛皺，結果<span>臉紅腫變形。</span></p>
+            <p style="margin-bottom: .875rem; color: red;">我在網路上認識的一個網友的妹妹就去打了額頭，結果額頭都變形了，現在悔恨不已。</p>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01yKir1T2BlAwmvzCf9_!!917298378.jpg"></div>
+            <h3 class="subheading-h2 thrMar">既然慣用的祛皺方式不行，那麼民間偏方呢？</h3>
+            <p class="ontMar">相信經常在網路上諮詢祛皺的網友都會接觸到一些民間小偏方。</p>
+            <span class="article-b onsMar">例如：維生素、營養品抹臉祛皺法</span>
+            <p class="onsMar">這個我通過網路知識了解到，<span>食用的維生素和各種營養品沒有通過提煉和加工，是不能直接塗抹在肌膚上的</span>，肌膚對於營養品不能直接吸收。<span>隨意塗抹營養成分會促成脂肪粒的生長，起到相反的效果</span>。可惜了解得太遲，親身嘗試過，結果皺紋沒除，皮膚還搞得敏感了。</p>
+			<div class="article-Img cenMar"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01GdEveq2BlAwzxSMOK_!!917298378.jpg"></div>
+			<h3 class="subheading-h2 thrMar">這些瓶瓶罐罐的祛皺產品真的有效嗎？</h3>
+            <p class="oneMar">現在各種祛皺產品層出不窮，霜、水、膏、面膜...國內國外的我都買了不少，盡管有的是打著品牌的口號，可是效果都不盡人意，不僅貴，還刺激肌膚。</p>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN012UlFxP2BlAwuA2u3Q_!!917298378.jpg"></div>
+            <h3 class="subheading-h2 twsMar">不用擔心，找到方法後，祛皺真心不難</h3>
+            <p class="onsMar">很多網友看到這裏可能會感到很絕望，這種方法有風險，那種方法有副作用，爲什麼祛皺就這麼難？但是<span>作爲一個抗皺10年、失敗過無數次的人，我只想說一句，抗皺路上最重要的就是不要失去信心，敢於嘗試一切的可能性</span>，除非你安於做那個別人口中的<span id="sBlue">「黃臉婆」，「中年婦女」</span>。</p>
+            <p class="onsMar">正是因爲這個信念，我一直通過各種途徑尋找不同的抗皺方式，最終我遇到了我祛皺路上的大貴人————Lisa老師。</p>
+            <div class="article-Img cenMar"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01eBoDNG2BlAwvAKsOZ_!!917298378.jpg"></div>
+            <p style="margin-top: 15px;">Lisa<span id="sBlue">利用生物科技技術提取微生物「發酵產物」、生物活體多肽、酵母抽提物等</span>研發出一套能<span style="font-size: 20px;">讓肌膚快速吸收，有效緩解肌膚技能衰退，緊緻肌膚，提升皮膚彈性的抗衰老保養方案。</span></p>
+            <h2 id="redP">天然成分，適用於所有肌膚</h2>
+            <div class="article-Img"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01ikxu3k2BlAwp39fSC_!!917298378.jpg"></div>
+            <div class="article-Img" ><img class="img" src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01iaQoMF2BlAwuA1d2j_!!917298378.jpg"></div>
+            <h2 id="redP" >祛皺效果強大、適用人羣廣</h>
+            <div class="article-Img"><img style="margin-top: 20px;" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01jzF1gx2BlAwrmuT7o_!!917298378.jpg"></div>
+            <!-- TODO LINE號 -->
+            <h4 class="subheading-h2 thsMar" style="color: red;">如果大家想像我一樣祛皺成功，直接添加Lisa老師的LINE：<line></line></<h4></h4>
+			<div class="article-Img thrMar" style="box-sizing: border-box;padding: 0 3.75rem;">
+			    <a onclick="$$.goline()"><img style="margin-top: -15px;" src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+			</div>
+            <p class="eigMar"><b>最後：</b>Lisa老師<span>從事美容行業已經有十幾個年頭了，努力專研美容專業理論知識，具有較強的美容專業能力</span>，爲姐妹們解決皮膚難題，對於保養皮膚很有個人心得和方法，還
+                <span>榮獲過高級美容資格證</span>;</p>
+				<p style="margin: 10px 0;">老師還告訴我，原來<span style="color:#1c63f8">吃鹽過多、化妝品使用不對、精神緊張等等生活中不被我們注意的細節都會加劇皺紋的產生。</span></p>
+            <!-- TODO LINE號 -->
+            <p style="font-size: 20px; color: red;margin: 20px 0;font-weight: bold;">還有更多知識，可以直接添加Lisa老師的LINE：<line></line>，</p>
+            <p>她會爲大家一一解答,哈哈，和我不同，Lisa老師是個有耐心的人，大家的疑問她肯定會耐心解答的，這就是我傾囊相授的祕訣啦，希望大家順利祛皺！</p>
+        </article>
+        <div class="comment onsMar">
+            <p class="commentTitle">105Comments</p>
+            <div class="commentView eigMar">
+                <textarea placeholder="Add a comments.."></textarea>
+            </div>
+            <div class="commentComtent twoMar">
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01BCCGsY2BlAwxUDIxb_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">李研晨</p>
+                            <p class="commentDay">3天前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">以前的我一笑，眼角的魚尾紋就很多，後面就不敢再像以前那樣了，偶然看到這篇文章，看作者把Lisa說的那麼厲害，就抱着試一試的心態加了Lisa的LINE，沒想到Lisa給了我那麼大的驚喜，魚尾紋消失了很多，才花了半個月，感覺整個人年輕了10歲不止！！！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01N91YCZ2BlAwrBwE5n_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">1991</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentRight-foot eigMar">
+                            <div class="commentRight-foot-l"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01xnkIjF2BlAwoSX79c_!!917298378.jpg"></div>
+                            <div class="commentRight-foot-r">
+                                <div class="commentRight-foot-h">
+                                    <p class="cfhName">方蘭月</p>
+                                </div>
+                                <div class="commentRight-foot-b">
+                                    <p class="cfbCharacter">Lisa真的這麼厲害嗎？她的方法真的很有效嗎？我之前也看了很多祛皺的方法，自己也親身實踐了，但是都沒有什麼用，你說的這個方法真的能這麼快見效嗎？</p>
+                                </div>
+                                <div class="commentRight-foot-f">
+                                    <i class="replyImg"></i>
+                                    <p class="ctw">回復</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN010a1YOm2BlAwoSZSbg_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">白安茹</p>
+                            <p class="commentDay">1天前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">老師真的是我見過最有耐心的人了，加了她的LINE以後，第一次使用的時候她很耐心的在給我介紹，使用過程中有問題問她，她也是第一時間給我回答，本來是抱着試一試的心態，沒想到老師這麼好，方法這麼有效，現在我的魚尾紋已經沒有了，肌膚也比以前好多了，開心！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN013lK2IB2BlAwt0OLnJ_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">1005</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentRight-foot eigMar">
+                            <div class="commentRight-foot-l"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01jDtt5X2BlAwp3DMTl_!!917298378.jpg"></div>
+                            <div class="commentRight-foot-r">
+                                <div class="commentRight-foot-h">
+                                    <p class="cfhName">周慧心</p>
+                                </div>
+                                <div class="commentRight-foot-b">
+                                    <p class="cfbCharacter">OMG，你這照片前後真的是同一個人嗎？後面這張肌膚狀態也比前面這張好太多了吧，皺紋也沒了，我現在也在使用，希望能達到你這樣的效果，期待！</p>
+                                </div>
+                                <div class="commentRight-foot-f">
+                                    <i class="replyImg"></i>
+                                    <p class="ctw">回復</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN010taWUL2BlAwzAQK2U_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">盧欣琳</p>
+                            <p class="commentDay">8小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">我的肌膚屬於敏感肌，之前嘗試了很多祛皺的方法，可是皺紋不但沒去掉，肌膚還變得更差了，這次我真的是抱着豁出去的心態試一試了，沒想到這個方法這麼有效，現在皺紋沒了，看了Lisa主頁的保養方法，我現在還比以前白了好多，真的很感謝Lisa。</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01xwAElZ2BlAwuA3m97_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">956</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="commentRight-foot eigMar">
+                            <div class="commentRight-foot-l"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01oFtPBV2BlAwt0VrsE_!!917298378.jpg"></div>
+                            <div class="commentRight-foot-r">
+                                <div class="commentRight-foot-h">
+                                    <p class="cfhName">小麥</p>
+                                </div>
+                                <div class="commentRight-foot-b">
+                                    <p class="cfbCharacter">這個方法真的這麼嗎？看得我也想試一試了！</p>
+                                </div>
+                                <div class="commentRight-foot-f">
+                                    <i class="replyImg"></i>
+                                    <p class="ctw">回復</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01oPD0hL2BlAwrED0fM_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">顧溪兒</p>
+                            <p class="commentDay">6小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">加了老師的LINE，按照老師說的做了半個月了，現在皺紋消失了不少，肌膚狀態也比以前好了很多，給老師點個贊！</div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">888</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01StGYXD2BlAwuA9gS2_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">李盼盼</p>
+                            <p class="commentDay">5小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">抱着試一試的心態加了老師的LINE，真的沒想到會給我這麼大的驚喜，用了一個星期，皺紋淡了不少，過幾天我再來補發照片，給大家看看效果！ </div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">789</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01qWS48O2BlAwzAPBJm_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">李海儀</p>
+                            <p class="commentDay">3小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">效果真的很不錯，才使用了半個月，法令紋就比之前淡了好多，脸也比以前好看不少，期待我的法令紋全沒的那一天！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01AhDrou2BlAwySkmwW_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">700</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01UcrlvO2BlAwmw21d7_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">黎朵兒</p>
+                            <p class="commentDay">2小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">猶豫了好久，最後還加了老師的LINE，現在法令紋淡了好多，效果很讚！十分慶幸我加了老師的LINE，不然我要後悔一輩子！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01IenHf02BlAwp39OlE_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">666</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01dKHNgq2BlAwzAQ3OV_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">馮雅萍</p>
+                            <p class="commentDay">2小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">八個字：效果真讚，加LINE不虧！！！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01QeBT3X2BlAwoSSodL_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">550</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01WCXySP2BlAwxUGj2Q_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">矢之無甜</p>
+                            <p class="commentDay">1小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">效果挺不錯的，皺紋比之前淡了很多</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01xZzus02BlAwzAJoIQ_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">499</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01vt3kpb2BlAwiEGKJ5_!!917298378.png"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">顧若蘭</p>
+                            <p class="commentDay">1小時前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">這個方法真的這麼有效嗎？擡頭紋能去掉嗎？</div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">300</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commentUser" style="border-bottom: 1px dashed #a3a3a3;">
+                    <div class="commentLeft"><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01KFRUHR2BlAwxUEe6W_!!917298378.jpg"></div>
+                    <div class="commentRight">
+                        <div class="commentRight-head">
+                            <p class="userName">李安然</p>
+                            <p class="commentDay">30分鐘前</p>
+                        </div>
+                        <div class="commentRight-body">
+                            <div class="commentChar">本來是沒抱太大的希望的，沒想到效果這麼好，皺紋沒了，整個人年輕了好多！</div>
+                            <div class="commentImg"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN017HOO3y2BlAwrBxptf_!!917298378.jpg"></div>
+                            <div class="interact">
+                                <div class="reply">
+                                    <i class="replyImg"></i>
+                                    <p class="replyCharacter">回復</p>
+                                </div>
+                                <div class="giveLike">
+                                    <i class="giveLikeImg"></i>
+                                    <p class="giveLikeCharacter">199</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="pageFoot">
+            <h1 class="pageFootH1">快速領取祛皺祕方</h1>
+            <div class="article-Img twoMar"><img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01IZXqvK2BlAwiE9DG0_!!917298378.png"></div>
+            <div class="article-Img thrMar" style="box-sizing: border-box;padding: 0 3.75rem;">
+                <a onclick="$$.goline()"><img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01ELrPEV2BlAwoSU1SN_!!917298378.gif"></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        //得到手机屏幕的宽度
+        let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+        //得到html的Dom元素
+        let htmlDom = document.getElementsByTagName('html')[0];
+        //设置根元素字体大小
+        htmlDom.style.fontSize = htmlWidth / 20 + 'px';
+        var webconfig = {
+            baseHost: location.host,
+        }
+    </script>
+    <script src="https://static.newworkbench.com/v4/licat.min.js"></script>
+</body>
+
+</html>

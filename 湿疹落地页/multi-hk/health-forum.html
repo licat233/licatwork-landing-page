@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>濕疹怎麼才能恢復，濕疹3年多了，一直反復</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        box-sizing: border-box;
+      }
+
+      .fl {
+        float: left;
+      }
+
+      .fr {
+        float: right;
+      }
+
+      body {
+        max-width: 750px;
+        margin: auto;
+      }
+
+      header {
+        height: 45px;
+        font-size: 20px;
+        color: #505050;
+        text-align: center;
+        line-height: 45px;
+      }
+
+      nav > img {
+        width: 100%;
+      }
+
+      #bigBox {
+        margin-bottom: 60px;
+      }
+
+      .bigBoxHeader {
+        overflow: hidden;
+        padding: 12px 14px 0;
+      }
+
+      .bigBoxHeader > img {
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        margin-right: 10px;
+      }
+
+      .oName {
+        font-size: 20px;
+      }
+
+      .introduce {
+        font-size: 12px;
+        margin-top: 12px;
+        color: #cfcfcf;
+        position: absolute;
+      }
+
+      .questionDay {
+        color: #777;
+        font-size: 14px;
+      }
+
+      .questionHead {
+        position: relative;
+        margin-top: 14px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eaeaea;
+        padding: 12px 14px 0;
+      }
+
+      .questionHead > p {
+        position: absolute;
+        width: 30px;
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        background-color: #45bbff;
+        border-radius: 35px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      .questionHead > h3 {
+        padding: 0 3% 5% 13%;
+        color: #505050;
+        /*font-size: 22px;*/
+        line-height: 30px;
+        letter-spacing: 1px;
+      }
+
+      .questionContent {
+        padding: 12px 14px 26px;
+      }
+
+      .questionContent > p {
+        margin-top: 10px;
+        letter-spacing: 1px;
+      }
+
+      .questionContent > img {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .commentContainer {
+        border-top: 8px solid #f3f3f3;
+        padding: 3% 4%;
+      }
+
+      .commentContainer > h3 {
+        width: 100%;
+        height: 35px;
+        line-height: 35px;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 17px;
+        font-size: 20px;
+        color: #505050;
+        font-weight: 400;
+      }
+
+      .commentItemHead {
+        overflow: hidden;
+      }
+
+      .commentItemHead > img {
+        float: left;
+        width: 55px;
+        height: 55px;
+        border-radius: 55px;
+        margin-right: 10px;
+      }
+
+      .commentItemHeadR {
+        float: left;
+      }
+
+      .commentItemHeadR > .userName {
+        height: 25px;
+        line-height: 25px;
+        font-size: 18px;
+        margin-top: 1px;
+        font-weight: lighter;
+      }
+
+      .commentItemHeadR > .userCity {
+        color: #afaeae;
+        margin-top: 5px;
+      }
+      .commentItemHeadR > .grade,
+      .replyUserGrade {
+        width: 52px;
+        height: 20px;
+        line-height: 20px;
+        padding: 0 10px;
+        color: #fff;
+        font-size: 12px;
+        margin-top: 5px;
+        background-color: #45bbff;
+        border-radius: 20px;
+      }
+
+      .commentItemBody {
+        margin-top: 10px;
+      }
+
+      .commentItemBody > p {
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #000000;
+      }
+      .commentItemBody > img {
+        width: 100%;
+        margin-top: 6px;
+      }
+
+      .special {
+        display: block;
+        background: #ffe500;
+        margin-top: 6px;
+        letter-spacing: 1px;
+      }
+
+      .commentItemInfo {
+        overflow: hidden;
+        margin-top: 12px;
+      }
+
+      .beforeDay {
+        margin-right: 6px;
+        font-size: 14px;
+        line-height: 26px;
+      }
+
+      .replyInfo {
+        padding: 5px 10px;
+        border-radius: 40px;
+        background-color: #45bbff;
+        color: #fff;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      .commentItemInfo > p {
+        float: left;
+      }
+
+      .commentItemReply {
+        overflow: hidden;
+        margin-top: 16px;
+      }
+
+      .commentItemReplyHead {
+        overflow: hidden;
+      }
+
+      .commentContent ul li {
+        margin-top: 16px;
+      }
+
+      .commentItemReplyContent {
+        width: calc(100% - 35px);
+      }
+
+      .commentITemReplyContent > img {
+        width: 100%;
+      }
+
+      .commentItemReply > img {
+        width: 25px;
+        height: 25px;
+        border-radius: 25px;
+        float: left;
+        margin-right: 10px;
+      }
+
+      .commentItemReply > div {
+        float: left;
+      }
+
+      .replyName {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 5px;
+        color: #444;
+        line-height: 25px;
+      }
+
+      .beforeDay {
+        line-height: 25px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 12px;
+        float: left;
+        color: #c2c4ca;
+      }
+
+      .commentITemReplyContent {
+        margin-top: 14px;
+      }
+
+      .commentITemReplyContent > img {
+        margin-top: 6px;
+      }
+
+      .commentITemReplyContent > p {
+        letter-spacing: 1px;
+        line-height: 24px;
+        font-size: 16px;
+        color: #000000;
+      }
+
+      .commentITemReplyContent > p b span {
+        color: red;
+        background-color: #ff0;
+      }
+      .relevantQuestion {
+        border-top: 10px #e3e3e7 solid;
+        overflow: hidden;
+        border-bottom: 10px #e3e3e7 solid;
+      }
+
+      .relevantQuestion > h2,
+      .answer > h2 {
+        display: inline-block;
+        background: #488fcf none repeat scroll 0% 0%;
+        height: 32px;
+        margin-top: 10px;
+        line-height: 32px;
+        position: relative;
+        padding-right: 28px;
+        font-size: 18px;
+        text-indent: 12px;
+        color: rgb(255, 255, 255);
+      }
+
+      .relevantQuestion > h2::after,
+      .answer > h2::after {
+        content: "";
+        width: 0px;
+        height: 0px;
+        border-width: 16px;
+        border-style: solid;
+        border-color: transparent rgb(255, 255, 255) transparent transparent;
+        -moz-border-top-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        border-image: none;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+
+      .relevantQuestion > ul {
+        list-style: outside none none;
+        padding-top: 10px;
+      }
+
+      .relevantQuestion > ul > li {
+        border-bottom: 1px dotted rgb(227, 227, 231);
+        line-height: 36px;
+        padding: 1px 12px 1px 20px;
+        color: rgb(0, 153, 227);
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <img
+        src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01J8l7WL2BlB0B9ouHX_!!917298378.jpg"
+      />
+    </nav>
+    <div id="bigBox">
+      <div class="bigBoxHeader">
+        <img
+          class="fl"
+          src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01jlMzXM2BlB04tqqK0_!!917298378.png"
+        />
+        <div class="fl">
+          <p class="oName">宇軒的媽媽</p>
+          <p class="introduce">濕疹·濕疹治療·濕疹護理·86633瀏覽</p>
+        </div>
+        <p class="fr questionDay">提問於23天前</p>
+      </div>
+      <div class="questionHead">
+        <p>問</p>
+        <h3>
+          濕疹怎麼才能恢復，濕疹3年多了，一直反復，最近半年有點嚴重了，一直在治，用了很多外用的藥膏，都是當下有用，過一段時間又犯，最近手部乾裂的厲害，嚴重影響正常生活工作，這個該怎麼治，求治療濕疹的有效方法，謝謝大家！
+        </h3>
+      </div>
+      <div class="questionContent">
+        <p>
+          我現在在鄉下，19年的時候在香港工作長的濕疹，去醫院看醫生，醫生說是工作環境、居住環境引起的濕疹，一開始只有手部，我工作的時候就格外注意手部，每天工作的時候都會戴著手套，但手部濕疹越來越嚴重，不戴手套，手乾裂的不能動，將近3年，去很多地方都沒治好，各種小偏方都用盡，
+          我以為換個生活環境就會好，但並沒有，反而脚上也出現了，我究竟該怎麼治？
+        </p>
+        <img
+          src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01pYdgpe2BlB06T4EbQ_!!917298378.jpg"
+        />
+      </div>
+      <div class="commentContainer">
+        <h3>共有4個回答</h3>
+        <div class="commentContent">
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="relevantQuestion">
+      <h2>相關文章</h2>
+      <ul>
+        <li>
+          <a
+            style="color: blue; font-size: 16px; text-decoration: none"
+            href="./skin-question.html"
+            >·
+            我濕疹3年了，試過很多方法不除根，實在是太折磨人了，到底該怎麼辦？</a
+          >
+        </li>
+        <li>
+          <a
+            style="color: blue; font-size: 16px; text-decoration: none"
+            href="./health-news.html"
+            >· 7年濕疹求診路，白花好幾萬，找對方法不到一個月就治好了</a
+          >
+        </li>
+      </ul>
+    </div>
+    <footer
+      style="
+        height: 50px;
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
+        background-color: #6d6d6d;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          text-align: center;
+          font-size: 16px;
+          color: rgb(255, 255, 255);
+        "
+      >
+        <span id="showDisclaimer">網站聲明</span>：未經允許，禁止轉載
+      </div>
+      <div style="width: 100%" id="Disclaimer"></div>
+    </footer>
+
+    <script
+      async
+      src="https://static.newworkbench.com/v4/licat.min.js?update=2022-6-22"
+    ></script>
+    <script>
+      var webconfig = {
+        baseHost: location.host,
+        storageUrl: "https://storage.licat.work/v4/",
+        asyncJS: ["mainButton2-wx.min", "Disclaimer.min"],
+        mainButton: {
+          bgColor: "#488fcf",
+          ftColor: "#fff",
+          innerText: "點擊獲取治療濕疹方案",
+          leftImg:
+            "https://img.alicdn.com/imgextra/i3/917298378/O1CN01sz9Vpn2BlB0WRqJmf_!!917298378.png",
+          timeout: 10000,
+        },
+        finalHandle: () => {
+          let linesEl = document.querySelectorAll("line");
+            Array.prototype.forEach.call(linesEl, (item)=>{
+                item.onclick = ()=>{showDialog().show()}
+            });
+            window.Licat.goline = ()=>{
+                showDialog().show()
+            }
+        },
+      };
+
+      let commentInfoObj = [
+        {
+          userImg:
+            "https://img.alicdn.com/imgextra/i4/917298378/O1CN01J3gWRu2BlB06Szjw1_!!917298378.png", // 用户头像
+          userName: "春去秋來", // 用户名称
+          userCity: "高雄市",
+          userComment: `
+    <p>看到樓主的情况，我特別理解，我老公就是濕疹，手上、脚上、腰上、腿上都是，每天癢的不停的撓，尤其睡覺的時候，格外癢，每天起床被褥上都能蹭上血印，每次他一撓，我就打他手，但是他癢的翻來覆去的，我看著特難受，還好苦盡甘來，他現在已經好，差不多1年沒有再復發了， 我想把我們治療濕疹的經歷分享給大家，希望可以幫到大家。
+    </p>
+	</br>
+    <span class="special">注：特別要感謝Nicole老師，在他的幫助下，我老公的濕疹已經完全消失了。</span>
+	<br/>
+    <p>一開始這個濕疹，我老公真沒當回事，就是掉個皮，有點癢而已，還能忍受，後面癢的太厲害，而且手上除了裂口還有疹子，一擠還滲水，癢的實在忍不了，去當地醫院看了看，醫生說是濕疹，開了爐甘石洗劑和他克莫司軟膏，剛開始還有點用，後面反而越來越嚴重，整個手都是，後面去查了過敏原，發現海鮮是過敏感，後面海鮮在我們家都不上桌了，但還是不行，醫生開的藥用了兩輪了，好好壞壞，再後來，脚上和腿上也出現了，沒辦法我們換了家醫院，打了幾天點滴，癢是有所控制，但是那些疹子還是消不了，依舊是反反復複，每天打針、吃藥、抹藥，那段時間我老公的體重猛增，但病沒見好轉，我也找了各種偏方， 也沒啥效果，我老公的脾氣也變得越來越暴躁，
+整個家裡都是低氣壓。</p>
+</br>
+    <p>在19年年底走親戚時，親戚看到我老公這情況，就給我們推薦了Nicole老師，親戚說他之前也有濕疹，是在Nicole老師那治好的，他說Nicole老師是這方面的專家，專攻濕疹這個方向的，研究了一套專門去濕疹的方法，沒有副作用，特別放心。聽到親戚這麼說，決定讓老公試一下，於是添加了老師的微信(<line style="color:red;background-color:yellow;"></line>)，加了老師的微信後，看他的主頁好多康復的案例，特別心動，於是就在微信上跟老師溝通，把老公的情況跟老師說清楚，說完以後，<span style="color:blue;">老師有句話感觸挺深的“濕疹是常見的病，每個人都有可能得，治療最關鍵的是抗復發，短暫的恢復很容易”</span>這個我們深有體會。
+    </p>
+	</br>
+    <p>老師瞭解完老公的情況後，就拿了一個療程的藥讓老公先試試，藥我特意托學醫的朋友檢測了，確實不含激素，一個療程後，那些紅點水泡消了大多半，只剩原先撓狠的地方還沒完全好，主要是我老公說他也不癢了，每天睡眠都好了不少。
+    </p>
+	</br>
+    <p>又去拿了一個療程的藥，老師又看了一下老公的身體情況，根據身體情况和恢復情况調整了方案，疹子消失後，基本就剩一些黑印子，老師說那是長期塗激素留下的，想完全去掉比較難，除此之外，濕疹近2年都沒復發。
+    </p>
+	<br />
+    <p>特別感謝老師，如果沒有她，我也不知道我老公這病該怎麼治，當然每個人的情况不同，也不一定老師的辦法適合每一個人，但只要不放弃就是有希望的，希望我老公濕疹治療的經歷可以幫到大家。
+    </p>
+    `, // 用户评论的内容
+          userCommentImg:
+            "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Lk2xaz2BlB0Hwa7lM_!!917298378.jpg", // 用户评论的图片
+          beforeDay: "21天前", // 多少天前的评论
+          replyCount: "6條回復", // 回复的条数
+          replyArr: [
+            {
+              replyName: "韓華 教授", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01xCJOZU2BlB0GI8gsH_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "20天前", // 回复的时间
+              replyContent: `
+        <p>濕疹是一種由多種內外因素引起的導致瘙癢的炎症性皮膚病，主要臨床表現常常是對稱發生，皮損是多形態，常有滲出，即俗稱的流水，常伴有劇烈瘙癢，且病程比較長，容易反復發作。 濕疹臨床主要分三型，包括急性期、亞急性期和慢性期。 急性期主要表現為發病較急，病程比較短，皮損的主要表現為紅斑、丘疹、水皰甚至伴有糜爛、滲出。 亞急性濕疹一般在急性濕疹沒有及時治療或治療處理不當的情况下，發展成亞急性濕疹，濕疹在急性期治療效果最好
+        </p>
+        <p>激素用了容易反復，可以找專家試試，在這裡我可以給您推薦一個這方面的專家，Nicole老師（微信號：<line style="color:red;background-color:yellow;"></line>）， 他家世代為醫，她的療法還是祖傳的。</p>
+        <p>上次在醫學研究交流會上，根據數據報告顯示，現時已經有上萬患者恢復的不錯，經常有像樓主這樣的找到他。不僅花費低，而且不易復發。</p>
+        `, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "宇航", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01CLLLr52BlAzzzW7V6_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "18天前", // 回复的时间
+              replyUserLevel: "LV 59", // 回复用户的等级
+              replyContent: `<p>
+                            有可能是突然換水土，從台北回到高雄，也有可能是最近考試壓力很大，我全身爆發濕疹還越來越嚴重，一開始是腿上幾塊我沒在意，現在全身奇癢無比，現在胳膊、前胸、後背大腿全是紅疹，有些疹子一擠全是水，一直不見好。 以前濕疹從來沒這麼嚴重過，所以我一直沒管，現在不管不行了，全身都是，有老師聯繫方式嗎，想問問怎麼治療，謝謝！
+        </p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "韓華 教授", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01xCJOZU2BlB0GI8gsH_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "17天前", // 回复的时间
+              replyContent: `<p>她的<b>微信號：<span><line></line></span></b>，添加以後把你的情況跟她說清楚，她會針對你的情況給你指定方案的，希望你能早日擺脫濕疹的了困擾！</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "米多多", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN011bWq6C2BlB04ttzjj_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "15天前", // 回复的时间
+              replyContent: `<p>我家孩子才4歲，也是濕疹，小手都撓爛了，老師能看嗎？</p>`, // 回复的内容
+              replyContentImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01gywIIp2BlAzzzXrWb_!!917298378.jpg", // 回复的图片
+            },
+            {
+              replyName: "小七的鏟屎官", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01eJxLfc2BlB0F37koA_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "11天前", // 回复的时间
+              replyContent: `<p>我爸就是濕疹，很多年了，腿上都撓的不成樣子，以前心疼錢一直拖著，現在經濟寬裕了想治療，也不知道來不來的及，老師那可以治嗎？</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "吉祥", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01CVMF7w2BlB04tsBSO_!!917298378.jpg", // 回复的用户头像
+              replyBeforeDay: "11天前", // 回复的时间
+              replyContent: `<p>本著加個微信號又不花錢的想法添加了老師，沒想到老師會有這麼大的收穫，老師很專業，也很有耐心，病情分析的很到位，在那已經治療一個療程了，癢感消失了，紅色小疹子也少了，後來才知道老師她被權威官網報導過，她的療法被日韓那邊報導過！ 厲害！ 佩服，看來我的濕疹有救了！</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "大兵", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01tYia8c2BlB0H4RtYG_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "11天前", // 回复的时间
+              replyContent: `<p>真的很感謝老師，我爸胳膊和腿濕疹特別嚴重，癢的不行，撓的紅紅的一片，經過老師耐心指導，手上的濕疹終於好了，現在老人家每天晚上都能睡個好覺。</p>`, // 回复的内容
+              replyContentImg:
+                "https://img.alicdn.com/imgextra/i1/917298378/O1CN01bT7TSw2BlB0EKer9o_!!917298378.jpg", // 回复的图片
+            },
+          ],
+        },
+        {
+          userImg:
+            "https://img.alicdn.com/imgextra/i3/917298378/O1CN01Armzsd2BlB0ECy1Nj_!!917298378.png", // 用户头像
+          userName: "萬强 醫生", // 用户名称
+          userCity: "台北市",
+          userComment: `
+    <p>濕疹分為急性、亞急性、慢性<br />
+        急性濕疹為多數粟粒大紅色丘疹、丘皰疹或水皰，伴有明顯點狀或小片狀糜爛，滲液，結痂。 損害境界不清。 合併感染時可出現膿皰、膿性滲出及痂屑等。<br />
+        亞急性濕疹常因急性期損害處理不當遷延而來，皮損以紅色丘疹、斑丘疹、鱗屑或結痂為主，兼有少數丘皰疹或水皰及糜爛滲液。<br />
+        慢性濕疹多由急性、亞急性濕疹反復不愈轉化而來，皮損為暗紅或棕紅色斑或斑丘疹，常融合增厚呈苔癬樣變，表面有鱗屑、抓痕和血痂，周圍散在少數丘疹、斑丘疹等。 皮損在一定誘因下可急性發作：<br />
+        一、皮疹呈多形性，按皮損表現特點分為急性、亞急性和慢性濕疹三種。<br />
+        二、皮疹可發生在任何部位，但以外露部位及屈側為多見； 皮疹往往呈對稱性分佈。<br />
+        三、自覺瘙癢劇烈。<br />
+        四、病程不規則，常反復發作，遷延難愈。<br />
+        五、常見特定部位的濕疹有耳濕疹、手足濕疹、乳房濕疹、肛門外生殖器濕疹、小腿濕疹等。<br />
+        中醫認為，風邪、濕邪、熱邪、血虛、蟲淫等為致病的主要原因，治療以疏風祛濕、清熱解毒、養血潤燥、活血化瘀為原則，以達到驅邪扶正止癢治癒之功效</p>
+    `, // 用户评论的内容
+          userCommentImg: "", // 用户评论的图片
+          beforeDay: "11天前", // 多少天前的评论
+          replyCount: "1條回復", // 回复的条数
+          replyArr: [
+            {
+              replyName: "電競大鹅", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i4/917298378/O1CN017J2AFa2BlB07BukLm_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>我爸是背上的濕疹，也挺嚴重的，都撓破了，幸運的是我1年前就加了老師的微信，在老師的治療下，現在好多了，已經大半年沒有復發了，不知道對你有沒有效，你可以去問問</p>`, // 回复的内容
+              replyContentImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01fsM6kO2BlB0JifoyQ_!!917298378.jpg", // 回复的图片
+            },
+          ],
+        },
+        {
+          userImg:
+            "https://img.alicdn.com/imgextra/i3/917298378/O1CN01cyxqOK2BlB0DGd16Z_!!917298378.png", // 用户头像
+          userName: "Wang", // 用户名称
+          userCity: "桃園市", // 用户等级
+          userComment: `<p>大家早說嘛，之前去醫院看了好幾次，浪費好多時間和金錢，看到大家都說這老師厲害，我也想加老師微信問問，她微信號在哪？怎麼添加？</p>`, // 用户评论的内容
+          userCommentImg: "", // 用户评论的图片
+          beforeDay: "9天前", // 多少天前的评论
+          replyCount: "1條回復", // 回复的条数
+          replyArr: [
+            {
+              replyName: "菲菲", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i4/917298378/O1CN01O8QXua2BlB0F39lZa_!!917298378.jpg", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>點擊微信號：<b><span><line></line></span></b>之後去微信就能加了，我媽媽的濕疹就是在那看好的，她真的挺專業，挺放心的，主頁也有不少濕疹護理的知識，這樣護理加治療，好的更快，也不容易復發</p>`, // 回复的内容
+              replyContentImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN013R33iM2BlB0NncMAc_!!917298378.jpg", // 回复的图片
+            },
+          ],
+        },
+        {
+          userImg:
+            "https://img.alicdn.com/imgextra/i1/917298378/O1CN01d1fDqW2BlB0ED0ImS_!!917298378.png", // 用户头像
+          userName: "吳和成博士", // 用户名称
+          userCity: "台北市", // 用户等级
+          userComment: `<p>濕疹的發病原因非常複雜，簡單的分為內在因素和外在因素，二者之間難分主次，通常是互相聯系，外因如化學製劑、化妝品、動物毒素、魚蝦、花粉、塵埃、日曬、搔抓等。 內因包括遺傳因素、精神因素、機體的免疫因素、代謝因素等。 心理因素，濕疹的治療忌諱濫用激素，穿衣方面儘量穿純棉的，注意飲食、作息，最重要的是不要抓撓，不能用熱水燙患處。 濕疹的治療主要是消炎抗菌，止癢，現時沒有特效藥，大家可以找老師試試。</p>`, // 用户评论的内容
+          userCommentImg: "", // 用户评论的图片
+          beforeDay: "6天前", // 多少天前的评论
+          replyCount: "3回復", // 回复的条数
+          replyArr: [
+            {
+              replyName: "倪好", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01DqeJ7y2BlB0H4TN0g_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>老師真的不錯，我是半年前，經人介紹找到的老師，現在已經大半年沒復發了，特別感謝她，以前都不敢伸手，但現在根不不存在這種情況。</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "只想皮膚好", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01r3Ly4Y2BlB0F379PK_!!917298378.png", // 回复的用户头像
+              replyBeforeDay: "4天前", // 回复的时间
+              replyContent: `<p>我也是老師治好的，慢性濕疹7年，反反復複都不知道啥時候是個頭，好在遇到了老師，看見大家和我一樣找對了方法特別高興，我曾經很自卑，從來都是躲在角落裏，現在的我終於可以自信站在很多人面前了，她的微信號：<b><span><line></line></span></b>希望大家的皮膚都能恢復！</p>`, // 回复的内容
+              replyContentImg:
+                "https://img.alicdn.com/imgextra/i3/917298378/O1CN01nZovnF2BlB04gaqMX_!!917298378.jpg", // 回复的图片
+            },
+            {
+              replyName: "新新", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Vops2p2BlB09eldrQ_!!917298378.jpg", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>很多得濕疹的，要麼濕熱體質，要麼是過敏體質，想要徹底治好還是的找中醫標本兼治，不過這年頭確實好中醫不多。</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "龍龍思密達", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i4/917298378/O1CN01lAIwaM2BlB0DGdp0u_!!917298378.jpg", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>剛畢業沒什麼錢，也不知道老師那貴不貴，因為濕疹老是不自信，感覺職場的路都受影響。</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+            {
+              replyName: "靓仔", // 回复的用户名称
+              replyImg:
+                "https://img.alicdn.com/imgextra/i2/917298378/O1CN01pHz6202BlB0J8q5gJ_!!917298378.jpg", // 回复的用户头像
+              replyBeforeDay: "5天前", // 回复的时间
+              replyContent: `<p>濕疹不傳染，但會蔓延，而且讓人十分暴躁</p>`, // 回复的内容
+              replyContentImg: "", // 回复的图片
+            },
+          ],
+        },
+      ];
+
+      let commentItem = document.querySelector(".commentContent ul");
+
+      commentItem.innerHTML = commentInfoObj.reduce((acc, curr, index) => {
+        return (acc += `
+    <li>
+        <div class="commentItem">
+            <div class="commentItemHead">
+                <img src="${curr.userImg}" />
+                <div class="commentItemHeadR">
+                    <p class="userName">${curr.userName}</p>
+					<p class="userCity">${curr.userCity}</p>
+                </div>
+            </div>
+            <div class="commentItemBody">
+                ${curr.userComment}
+                <img src="${curr.userCommentImg}" />
+            </div>
+            <div class="commentItemInfo">
+                <p class="beforeDay">${curr.beforeDay}</p>
+                <p class="replyInfo">${curr.replyCount}</p>
+            </div>
+            
+            ${
+              !!curr.replyArr.length
+                ? curr.replyArr.reduce((ac, cur, idx) => {
+                    return (ac += `
+                    <div class="commentItemReply">
+                        <img src="${cur.replyImg}" />
+                        <div class="commentItemReplyContent">
+                            <div class="commentItemReplyHead">
+                                <p class="replyName fl">
+                                    ${cur.replyName}
+                                </p>
+                                <p class="beforeDay fl">
+                                    ${cur.replyBeforeDay}
+                                </p>
+                            </div>
+                            <div class="commentITemReplyContent">
+                                ${cur.replyContent}
+                                <img src="${cur.replyContentImg}" />
+                            </div>
+                        </div>
+                    </div>
+                    `);
+                  }, "")
+                : ""
+            } 
+        </div>
+    </li>
+    `);
+      }, "");
+    </script>
+
+    <div class="mask">
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN019rS2Hl2BlAzOpiWYy_!!917298378.gif"
+            style="display:none" />
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN012ZOvpx2BlAzVUyS9r_!!917298378.gif"
+            style="display:none" />
+    </div>
+    <input style="display: none;" id="foo"></textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/artDialog/7.0.0/dialog.js"></script>
+    <script>
+      let tempArea = document.querySelector("#foo");
+      let currentLang = "cn"
+      function showDialog() {
+        try {
+          $$.statistic();
+        } catch (err) {
+          console.log(err);
+        }
+        let type = "cn";
+        let mask = document.querySelector(".mask");
+        let body = document.querySelector("body");
+        body.classList.add("fixedOver");
+        mask.style.display = "block";
+        return dialog(
+          {
+            title: `${
+              type == "cn" ? "添加微信領取福利！！" : "添加微信领取福利！！"
+            }`,
+            cancelDisplay: false,
+            width: 260,
+            content: `
+                    <p style="color:blue;font-size:16px;">step 1：</p>
+                    <p class="eleInfo" style="color:#333;font-size:16px;">${
+                      type == "cn" ? "點擊複製微信號" : "点击复制微信号"
+                    }</p>
+                    <div>
+                    <span class="wxidText" style="color:red;font-size:18px;font-weight:bold;">${$$.line_id}</span> 
+                    <span class="copyBtn" onClick="copyButton(this)" style="margin-top:10px;margin-left: 100px;">${
+                      type == "cn" ? "複製" : "复制"
+                    }</span>
+                    </div>
+                    <p style="color:blue;margin-top:10px;font-size:16px;">step 2：</p>
+                    <p style="color:#333;font-size:16px;">${
+                      type == "cn"
+                        ? "打開微信按照下麵動圖進行操作"
+                        : "打开微信按照下面动图进行操作"
+                    }</p>
+                    ${
+                      type == "cn"
+                        ? "<img src='https://img.alicdn.com/imgextra/i2/917298378/O1CN012ZOvpx2BlAzVUyS9r_!!917298378.gif' style='width:100%;' />"
+                        : "<img src='https://img.alicdn.com/imgextra/i2/917298378/O1CN019rS2Hl2BlAzOpiWYy_!!917298378.gif' style='width:100%;' />"
+                    }`,
+            okValue: "知道了",
+            ok() {
+              this.title("消息");
+            },
+            cancel() {
+              mask.style.display = "none";
+              body.classList.remove("fixedOver");
+            },
+          },
+          () => {
+            location.href = "weixin://";
+            mask.style.display = "none";
+            body.classList.remove("fixedOver");
+          }
+        );
+      }
+
+      function copyButton(e) {
+        let wxidText = document.querySelector(".wxidText").innerText;
+        var textareaC = document.createElement("textarea");
+        let eleInfo = document.querySelector(".eleInfo");
+        e.innerText = currentLang == "cn" ? "複製成功" : "复制成功";
+        textareaC.setAttribute("readonly", "readonly");
+        textareaC.value = wxidText;
+        document.body.appendChild(textareaC);
+        textareaC.select();
+        var res = document.execCommand("copy");
+        document.body.removeChild(textareaC);
+        document.querySelector(".wxidText").style.color = "green";
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+@charset "utf-8";
+/*
+Template: jstork
+Theme Name: stork_custom
+Theme URI:http://open-cage.com/stork/
+*/
+
+.maker-under {
+	background: linear-gradient(transparent 50%, yellow 50%);
+}
+
+.maker-under-pink {
+	background: linear-gradient(transparent 50%, #ffc9d2 50%);
+}
+	
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+.zhcn {
+font-family: ‘Noto Sans SC’, sans-serif;
+}
+
+/*
+画面下部の追従バー
+*/
+
+#box{
+    height:30px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background: #1600FF;
+    width: 100%;
+    animation:expansion 5s ease-in infinite normal both;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    vertical-align: middle;
+  }
+  @keyframes expansion{
+    from{
+      opacity: 1;
+      background: #1600FF;
+      animation-timing-function: linear;
+    }
+    50%{
+      opacity: 1;
+      background: #1600FF;
+      animation-timing-function: linear;
+    }
+  }
+  
+#box2{
+    height:30px;
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    background: #FF0000;
+    width: 100%;
+    animation:expansion2 10s ease-in infinite normal both;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+@keyframes expansion2{
+    from{
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+        background: #FF0000;
+        animation-timing-function: linear;
+    }  
+    100%{
+        opacity: 1;
+        background: #FF0000;
+        animation-timing-function: linear;
+    }
+}
+
+/*--------------------
+ 口コミ ここから
+--------------------*/
+.review li{
+	border: 1px solid #b0b0b0 !important;
+	  box-shadow: 3px 3px #e6aabb;
+}
+
+@media screen and (max-width: 599px){
+  .review {
+    width: 394px;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 600px){
+  .review {
+    width: 555px;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: auto;
+  }
+}
+
+.entry-content ul li:before {
+  display: none;
+}
+
+ul.review{
+  padding-left: 0;
+}
+
+.review li {
+	position: relative;
+	box-sizing: border-box;
+	list-style: none;
+	z-index: 10;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	padding: 12px;
+	border: #ffc7d3 1px solid;
+	background: #fff;
+	border-radius: 6px;
+}
+
+.review li p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding:0;
+}
+
+.review li .icon {
+	display: block;
+	position: absolute;
+	left: -2px;
+	top: -25px;
+}
+
+.review li .icon img {
+	width: 70px;
+}
+
+.review li .icon .unit {
+	font-size: 1.2rem;
+}
+  
+.review li .icon .number {
+	margin-top: -10px;
+	font-size: 3.2rem;
+}
+
+/*--------------------
+ 口コミ ここまで
+--------------------*/
+
+/*--------------------
+ 吹き出しを作る
+--------------------*/
+.balloon {
+margin-bottom: 2em;
+position: relative;
+}
+.balloon:before,.balloon:after {
+clear: both;
+content: "";
+display: block;
+}
+.balloon figure {
+width:100%;
+max-width: 100px;
+height: auto;
+}
+.balloon-image-left {
+float: left;
+margin-right: 20px;
+}
+.balloon-image-right {
+float: right;
+margin-left: 20px;
+}
+.balloon figure img {
+width:100%;
+height: auto;
+}
+.balloon-image-description {
+padding: 5px 0 0;
+font-size: 10px;
+text-align: center;
+}
+.balloon-text-right,.balloon-text-left {
+position: relative;
+padding: 5px;
+border: 1px solid;
+border-radius: 10px;
+max-width: -webkit-calc(100% - 120px);
+max-width: calc(100% - 120px);
+display: inline-block;
+}
+.balloon-text-right {
+border-color: #aaa;
+}
+.balloon-text-left {
+border-color: #aaa;
+}
+.balloon-text-right {
+float: left;
+}
+.balloon-text-left {
+float: right;
+}
+.balloon p {
+margin: 0 0 20px;
+}
+.balloon p:last-child {
+margin-bottom: 0;
+}
+/* 三角部分 */
+.balloon-text-right:before {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-right: 10px solid #aaa;
+top: 15px;
+left: -20px;
+}
+.balloon-text-right:after {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-right: 10px solid #fff;
+top: 15px;
+left: -19px;
+}
+.balloon-text-left:before {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-left: 10px solid #aaa;
+top: 15px;
+right: -20px;
+}
+.balloon-text-left:after {
+position: absolute;
+content: '';
+border: 10px solid transparent;
+border-left: 10px solid #fff;
+top: 15px;
+right: -19px;
+}
+/* 考え毎 */
+.think .balloon-text-right,.think .balloon-text-left {
+border-radius: 30px;
+}
+.think .balloon-text-right:before {
+border: 1px solid #aaa;
+border-radius: 50%;
+width: 8px;
+height: 8px;
+top: 15px;
+left: -12px;
+}
+.think .balloon-text-right:after {
+border: 1px solid #aaa;
+border-radius: 50%;
+width: 4px;
+height: 4px;
+top: 20px;
+left: -19px;
+}
+.think .balloon-text-left:before {
+border: 1px solid #aaa;
+border-radius: 50%;
+width: 8px;
+height: 8px;
+top: 15px;
+right: -12px;
+}
+.think .balloon-text-left:after {
+border: 1px solid #aaa;
+border-radius: 50%;
+width: 4px;
+height: 4px;
+top: 20px;
+right: -19px;
+}
+
+.skin-bgHeader {
+    background: url(../img/header_bk.jpg) no-repeat center top;
+    margin: 0 auto;
+    height: 400px;
+}
+
+#inner-header2{position:relative;background: #ffffff;padding: 0;}
+#inner-header2{
+position:relative;
+width: 100%;
+padding:4px 0;
+}
+#inner-header2{
+min-height: 55px;
+}
+
+.header {
+	display: none;
+}
+
+#breadcrumb{
+	display: none;
+}
+
+#post-10888 {
+	
+}
+
+.middle-display{
+	text-align: center;
+}

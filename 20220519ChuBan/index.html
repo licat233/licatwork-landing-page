@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>「一個差點被斑點毀掉的人生」，臉上有斑的你這篇文章再忙也要看</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3392837_ttdmh3a9qt8.css">
+    <link rel="shortcut icon"
+        href="https://img.alicdn.com/imgextra/i3/917298378/O1CN01Tm1Yi82BlAzh5hWct_!!917298378.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        .crumbs {
+            font-size: 13px;
+            color: #ccc;
+            cursor: pointer;
+            margin-left: 6px;
+        }
+
+        .rollAngle {
+            background-color: #a7e1f3;
+            position: relative;
+            overflow: hidden;
+            padding: 0 20px 74px;
+            margin: 20px 10px;
+        }
+
+
+        .corner .cornerRoll {
+            background: linear-gradient(-45deg, #7faadf 45%, #fff 55%, #fff);
+            width: 66px;
+            height: 90px;
+            transform: rotate(-90deg);
+            position: absolute;
+            left: -15px;
+            bottom: -17px;
+            overflow: hidden;
+        }
+
+        .corner .cornerZindex {
+            width: 66px;
+            height: 90px;
+            position: absolute;
+            left: -26px;
+            bottom: -36px;
+            transform: rotate(-225deg);
+        }
+
+
+        .corner div {
+            background-image: url("https://img.alicdn.com/imgextra/i3/917298378/O1CN01Oi5xY02BlAzecB0JC_!!917298378.jpg");
+        }
+
+
+        .article7 {
+            background-image: url("https://img.alicdn.com/imgextra/i3/917298378/O1CN01Oi5xY02BlAzecB0JC_!!917298378.jpg");
+            padding: 1px 0;
+            margin-top: 15px;
+        }
+
+        .crumbs span {
+            color: #00c4ff;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 19.2px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 50px;
+        }
+
+        body {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .marTop10 {
+            margin-top: 10px;
+        }
+
+        .marTop20 {
+            margin-top: 20px;
+        }
+
+        .marTop21 {
+            margin-top: 21px;
+        }
+
+        main {
+            padding: 10px 16px 0;
+            width: 100%;
+        }
+
+        main img {
+            display: block;
+            width: 100%;
+            margin: 14px 0;
+        }
+
+        main h1 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+
+        .articleTitle {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .articleTitle p {
+            color: #6cb7e9;
+            border-radius: 6px;
+            border: 1px solid #6cb7e9;
+            padding: 4px;
+        }
+
+        .articleTitle span {
+            color: #b8bebf;
+            margin-left: 16px;
+        }
+
+        .articleIntroduce {
+            padding-left: 20px;
+        }
+
+        .articleIntroduce ul {
+            display: flex;
+            height: 170px;
+        }
+
+        .mainLi {
+            display: flex;
+            padding: 8px 4px 0 10px;
+        }
+
+        .mainLi .introduceL img {
+            display: block;
+            width: 40px;
+        }
+
+        .introduceR {
+            margin-left: 6px;
+            font-size: 12px;
+        }
+
+        .introduceR p {
+            font-weight: 400;
+        }
+
+        .introduceR p span {
+            font-size: 14px;
+            color: red;
+        }
+
+        .articleIntroduce ul li {
+            position: absolute;
+            width: 280px;
+            height: 140px;
+            border-radius: 6px;
+            border: 1px solid #c5c5c5;
+
+        }
+
+        .zIndex1 {
+            z-index: -1;
+            transform: translate(4px, 4px);
+            border-top: none !important;
+            border-left: none !important;
+        }
+
+        .zIndex2 {
+            z-index: -2;
+            transform: translate(8px, 8px);
+            border-top: none !important;
+            border-left: none !important;
+        }
+
+        .article {
+            font-size: 16px;
+            color: #515151;
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+
+        .article i {
+            display: block;
+            visibility: hidden;
+        }
+
+        .article p {
+            color: blue;
+            font-weight: 550;
+        }
+
+        .characterIntroduction {
+            background-color: #a7e1f3;
+            padding: 10px;
+        }
+
+        .characterIntroduction ul li {
+            margin-top: 4px;
+        }
+
+        .article5 {
+            margin: 22px 0;
+        }
+
+        .article6 {
+            margin: 15px 0;
+        }
+
+        .article8 {
+            color: #ff5a92;
+            font-weight: 600;
+        }
+
+        .article9 h4 {
+            color: #ec651c;
+            font-size: 16px;
+        }
+
+        .commentBox {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+        }
+
+        .userComment {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .commentBox textarea {
+            width: 100%;
+            padding: 10px;
+            resize: none;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        .userComment button {
+            outline: none;
+            border: none;
+            width: 80px;
+            height: 40px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: #169BD5;
+            color: #fff;
+        }
+
+        .commentContent {
+            border-top: 1px dashed #ccc;
+        }
+
+        .commentContent ul {
+            margin-top: 20px;
+        }
+
+        .commentContent ul li {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .commentContent ul li .userPhoto {
+            width: 40px;
+            height: 40px !important;
+            display: block;
+            margin-right: 20px;
+            margin-top: 0px;
+        }
+
+        .commentUserMsg {
+            flex: 1;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgb(243, 243, 243);
+        }
+
+        .commentUserHead {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .uNament {
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        .commentUserFoot i {
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        .commentUserBody {
+            margin-top: 10px;
+        }
+
+        .commentImgClass {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .commentUserFoot {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .commentUserFoot span {
+            color: #0063F0;
+            cursor: pointer;
+        }
+
+        .commentTime {
+            color: #AAA8A8;
+        }
+
+        .commentBoxP {
+            font-size: 16px;
+            color: #B2B0A8;
+        }
+
+        .replyNone {
+            display: none !important;
+        }
+
+        .replyContentBox {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .replyContentL img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            margin-top: 0;
+        }
+
+        footer .foo1 {
+            font-size: 16px;
+            margin-top: 20px;
+            color: #fff;
+            background-color: #6cb7e9;
+            padding: 3%;
+            text-align: center;
+        }
+
+        footer .footSpan {
+            padding: 3%;
+            cursor: pointer;
+        }
+
+        footer .foo1 div {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .comm_header {
+            width: 100%;
+        }
+
+        .comm_header_top {
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+
+        .comm_header_top .comm_header_logo {
+            margin: auto 0 auto 15px;
+        }
+
+        .comm_header_top .comm_header_logo>img {
+            width: auto;
+            height: 64px;
+        }
+
+        .navIcon {
+            display: none;
+            margin-right: 14px;
+        }
+
+        .comm_header_nav {
+            position: relative;
+            margin-bottom: 15px;
+            height: 45px;
+            width: 100%;
+            background-color: #6cb7e9;
+            font-family: 微軟儷黑體, 微軟正黑體, Arial, Helvetica, Microsoft JhengHei;
+            overflow: hidden;
+        }
+
+        .comm_header_nav_child {
+            width: 210px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #fff;
+        }
+
+        #headermenu .comm_header_nav_child p {
+            height: 45px;
+            margin: 0;
+            line-height: 45px;
+            padding-right: 8px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .crumbs {
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+            color: #549e9b;
+        }
+
+        .crumbs i {
+            font-style: normal;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .navIcon {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="wmheaderContainer">
+        <div class="comm_header">
+            <div class="comm_header_top">
+                <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01BH9bKw2BlAzh0r69R_!!917298378.png">
+                <div class="navIcon">
+                    <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01OCPFeM2BlAzfVrbK2_!!917298378.png"
+                        style="width: 30px;margin-top:10px;" />
+                </div>
+            </div>
+
+            <div class="comm_header_nav" id="headermenu">
+                <div class="comm_header_nav_child">
+                    <p>我要投稿！分享保養tips</p>
+                    <p>加入LINE，看更多保養秘笈</p>
+                    <p>加入LINE限時領取除斑秘笈</p>
+                    <p>我要投稿！分享保養tips</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <p class="crumbs marTop10">首頁 > 關於肌膚 > <span>淡斑情報</span></p>
+    <main>
+        <h1>「一個差點被斑點毀掉的人生」，臉上有斑的你這篇文章再忙也要看</h1>
+        <div class="articleTitle marTop15" style="margin-top: 30px;">
+            <p>原創文章</p>
+            <span>今天</span>
+        </div>
+        <div class="articleIntroduce marTop15" style="margin-top: 20px;">
+            <ul>
+                <li class="mainLi">
+                    <div class="introduceL">
+                        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN018xMt9e2BlAzkWoXCR_!!917298378.png">
+                    </div>
+                    <div class="introduceR">
+                        <p style="font-size: 16px;">一個差點被斑點毀掉的人生</p>
+                        <p class="marTop15" style="margin-top: 15px;">
+                            一個35歲的女人，<span>在1個月的時間裏“重獲新生”，</span>真的很不可思議，斑點沒了，一下子年輕好幾歲。</p>
+                        <p>看到她現在的樣子，說她差點被斑點現在幸福的人生，你相信嗎？</p>
+                    </div>
+                </li>
+                <li class="zIndex1"></li>
+                <li class="zIndex2"></li>
+            </ul>
+        </div>
+
+        <article class="article article1">
+            <span>孩子三歲那年，我發現老公出軌了，當時整個人猶如晴天霹靂，也慌了，不知道該怎麼辦，整個人都是懵的，緩了好久才緩過來，緩過來以後也在認真思考這段婚姻要不要再繼續下去。</span>
+            <!-- <i>1</i> -->
+            <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01DY84KC2BlAzraeFs8_!!917298378.jpg" />
+            <span>
+                想了很久，也想了很多，最後還是決定挽回這段婚姻，畢竟我們還有一個女兒，不為自己也要為女兒考慮一下，不想女兒變單親家庭，
+                於是我給婆婆發訊息，讓婆婆幫忙勸一下老公，因為平時我跟婆婆相處
+                得還挺好的。
+            </span>
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01jiIYdl2BlAznI6RSW_!!917298378.jpg" />
+            <span>讓我沒想到的是我等了一天也沒等到婆婆回我的訊息。直到第二天傍晚婆婆才來我家，跟我聊了很久，也讓我知道了婆婆的立場，我以為婆婆會站在我這邊，但是她沒有，她偏向了她的兒子，反而把錯都推給我，說<span
+                    style="font-weight: 600;">“你不照照鏡子看看你自己，哪個男人喜歡天天看著一臉斑
+                    的女兒，要怪就怪你自己的臉不爭氣，別怪我兒子”。</span></span>
+            <i>1</i>
+            <span>
+                想到老公的出軌，再想到婆婆的態度，我對這個家徹底絕望了，跟老公提出了離婚，只提了一個要求：帶著女兒走，他說：你自己說的，別後悔！就這樣，我離婚了。我也開始討厭滿臉斑點的自己了
+            </span>
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01NDvipf2BlAzuO3u1w_!!917298378.png" />
+            <span>離婚後我備受打擊，自己被折騰出一身的病：失眠、自卑、狂躁......我在想，是從什麼時候開始發生變化的呢？應該是在28歲那年吧</span>
+            <i>1</i>
+            說起來女人最幸福的事情之一莫過於當媽媽了吧，當時得知自己懷孕後，滿心歡喜，老公也很開心，自己想吃什麼老公就給買什麼，過得像個皇太后一樣,臉上也乾乾淨淨的，當時覺得自己真的好幸福！
+            <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01DU92Dr2BlAzoLiwIy_!!917298378.jpg" />
+            <span style="font-weight: 600;">
+                但是懷孕到後期發現臉上開始長斑了，在網路上查詢後說是妊娠斑，生完孩子就好了</span>，也沒有在意，知道後來生孩子後才知道什麼叫衰老；首先是睡不好，因為得半夜起來餵奶，我的身體又不太好，整夜的睡不著，孩子三個月的時候看了一下自己，真的衰老了很多，<span
+                style="color: red;font-weight: 600
+		   ;">皮膚鬆弛暗淡無光，而且還長了很多斑點</span>，老公還說，他終於知道什麼叫<span style="font-weight: 600;">“黃臉婆”</span>了，老公應該是從這個時候就開始嫌棄滿臉斑點的我了吧。
+        </article>
+        <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01G7WLNB2BlAzVhbaFc_!!917298378.jpg">
+        <article class="article article2">
+            後來隨著孩子的長大，臉上的斑點並沒有像網上說的那樣自行消退，還有加大的趨勢，每天早上在鏡子裏看到自己滿臉斑點，心情就很煩躁，我開始<span
+                style="font-weight: 600;">嘗試各種有祛斑抗衰的護膚品，那些國際大牌的各種水乳、面霜、精華真的貴到離譜，但我還是咬咬牙買了，面膜也有天天敷，但是效果真的微乎其微。</span>
+        </article>
+        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01O6DqPB2BlAzh1farI_!!917298378.jpg">
+        <article class="article article3">
+            但是我還不死心，天天<span
+                style="color:red;">在網路上搜索有什麼好方法可以祛斑，後來得知可以去醫美，問了醫生，醫生說做了雷射以後也很難保證不反黑。後來又看到有人說純中藥面膜，我又買來敷，最後不是反彈就是沒效果，</span>我已經麻木了，面對一臉的斑點有點絕望，我似乎看到了自己的後半生。
+            <i>1</i>
+            老公對我也很冷淡了，每天都回家很晚，不想跟我說話，經常跟我吵架，對我惡言相向，經常說<span style="font-weight: 600;">說看到我這張臉就倒胃口</span>一類的話。
+            <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01mIq9py2BlAzqLfnr9_!!917298378.jpg" />
+            回想自己的這幾年，挺諷刺的，感覺像個笑話，自己單方面的努力，而別人根本就不在乎，我花了很長一段時間才走出來，為了女兒，也為了自己，我要振作起來，我又開始了工作，開始了規律的生活。
+        </article>
+        <article class="article article4">
+            <i>1</i>
+            離婚兩年後，我遇到了現在的他，說起來也挺巧的，我們兩個是在一次聚會上認識的，他是退伍軍人，女兒也很喜歡他，他不止一次表達過感情，但是我覺得<span
+                style="font-weight: 600;">自己臉上有斑，還離過婚，帶著個女兒，配不上他，</span>可是他沒有放棄，堅持了快一年，對我跟女兒很照顧，有空就會
+            載我跟女兒出去玩，最終我被他的真誠打敗了。
+            <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01mEoWxT2BlAzoXTLzo_!!917298378.jpg">
+            <i>1</i>
+            後來跟他回家經父母，<span style="font-weight: 600;">滿心歡喜的去卻傷心而歸，</span>我聽到他媽媽在廚房小聲說道：“這姑娘人不錯，二婚我跟你爸也不是很在意，雖然說<span
+                style="font-weight: 600;">她才大你兩歲，但是那一臉的斑......看起來太顯老了，你和她在一起別人指不定在背後怎麼說你呢......”。</span>
+            <i>1</i>
+            從他家回來的路上我跟他說要不我們還是算了吧，但他不同意，說不就是斑點嗎？我就不信去不掉，然後到處幫我找祛斑的方法跟產品。 <span style="color: red;">
+                有一天他興奮的跑回家，讓我感覺把手機拿出來加這個LINE:<LINE></LINE></span>
+            <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01bZ3Z1h2BlAzoXRwf2_!!917298378.gif"
+                style="width: 80%;margin: auto;" onclick="$$.goline()" />
+            <span>說這是他戰友老婆所在的<span
+                    style="color: red;">研究所的肌膚研究專家Anna老師，是個高級美容師，在祛斑這一塊有自己的一套祛斑方法，很有效，</span>很多人都是在她的幫助下成功祛斑的</span>。為了讓我看到效果，還給我看了在Anna的幫助下成功祛斑的網友。
+            <i>1</i>
+            她們分別是26的琪琪、36歲的Ada和49歲的邱阿姨：
+        </article>
+        <div class="characterIntroduction marTop20">
+            <ul style="letter-spacing:.7px">
+                <li><i>琪琪：敏感肌，下眼瞼和臉頰有小雀斑</i></li>
+                <li><i>Ada：中性皮膚，顴骨色斑明顯</i></li>
+                <li><i>邱阿姨：混油皮，兩邊蘋果肌有黃褐斑</i></li>
+            </ul>
+        </div>
+        <video autoplay="" loop="" muted="" x5-video-player-fullscreen="true" x5-playsinline="" playsinline=""
+            webkit-playsinline="" width="100%" height="auto" class="mt24">
+            <source src="https://cloud.video.taobao.com//play/u/917298378/p/1/e/6/t/1/351834375331.mp4"
+                type="video/mp4">
+        </video>
+        <p class="article article5">
+            看到她們現在這個樣子，我簡直不敢相信下面這是她們曾經的樣子？
+        </p>
+        <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01xfC48Z2BlAzllJaIX_!!917298378.gif" />
+        <p class="article article6">
+            看到這些祛斑成功的網友，再看他滿臉興奮和期待，我決定試試，但是沒抱太大的希望。<span style="color: red;">
+
+                有時候真的是有心栽花花不開，無心插柳柳成蔭，我加了Anna老師的LINE：<LINE></LINE></span>
+
+        </p>
+        <p style="font-size: 20px;color:#ffae00">在Anna老師的指導下，我開啟了我的祛斑之旅:</p>
+        <article class="article article7">
+            <div class="rollAngle">
+                <p style="margin-top:15px">使用7天：感覺沒什麼效果，看著跟之前沒什麼區別，我有點想放棄了，但是他讓我別急著放棄，再等等</p>
+                <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01iJmiMd2BlAzkbMMAA_!!917298378.jpg" />
+                <div class="corner">
+                    <div class="cornerRoll"></div>
+                    <div class="cornerZindex"></div>
+                </div>
+            </div>
+            <div class="rollAngle marTop21">
+                <p style="margin-top:10px">使用15天：還好沒有放棄，這個時候看著臉上的斑點沒有之前那麼多了，那些比較淡的色斑基本已經沒了</p>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01pTmbZq2BlAzXVSZAG_!!917298378.jpg" />
+                <div class="corner">
+                    <div class="cornerRoll">
+                    </div>
+                    <div class="cornerZindex"></div>
+                </div>
+            </div>
+            <div class="rollAngle">
+                <p style="margin-top:10px">
+                    使用30天：這個時候臉上的斑點基本上已經沒有了，就只有鼻樑周圍跟臉頰那裡還一些比較頑固的色斑，但是我不怕了，我相信肯定能去掉的</p>
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01AYtmBl2BlAzlYoNIW_!!917298378.png" />
+                <div class="corner">
+                    <div class="cornerRoll">
+                    </div>
+                    <div class="cornerZindex"></div>
+                </div>
+            </div>
+            <div class="rollAngle">
+                <p style="margin-top:10px">
+                    45天後：斑點已經全部消失了！！！這個時候臉上已經沒有任何斑點了，（忽略我的狀態，剛起床的時候拍的，看起來有點無精打采๑´∀`๑）
+                </p>
+                <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01QGmdlC2BlAzhlMrXh_!!917298378.jpg" />
+                <div class="corner">
+                    <div class="cornerRoll">
+                    </div>
+                    <div class="cornerZindex"></div>
+                </div>
+            </div>
+
+        </article>
+        <p style="margin-top: 20px;">
+            <span
+                style="font-weight: 600;">臉上的斑點真的全部消失了!!!，</span>我開心極了，後來我就信心滿滿的去見了他的父母，順利的和他走進了婚姻的殿堂，開啟了我們的幸福生活，我現在的狀態可以說比年輕的時候還好，毫不誇張的說我開啟了新的人生！
+        </p>
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01xnFVhe2BlAzhTdPM5_!!917298378.jpg">
+        <article class="article article8">
+            <h3>溫馨提示：</h3>
+            <i>1</i>
+            <b>長斑的姐妹們不要害怕，斑點並不可怕，只要方法用對了，祛斑不是大問題。
+            </b>
+            <i>1</i>
+            <b> 我把Anna老師的LINE號放在下面，大家需要祛斑的話可以自行添加哦ʕ ᵔᴥᵔ ʔ!</b>
+        </article>
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01bZ3Z1h2BlAzoXRwf2_!!917298378.gif"
+            style="width: 80%;margin: auto;" onclick="$$.goline()" />
+        <article class="article article9">
+            <h4>文末：</h4>
+            <i>1</i>
+            祝願每位姐妹都能祛斑成功，擁有乾乾淨淨的的臉蛋，找到自己的幸！這就是我寫這篇文章的初心♡(*´∀`*)♡
+            <i>1</i>
+            看完文章，大家有什麼想問的，可以在下面留言，我看到會為大家解答的(｡>∀&lt;｡)
+        </article>
+        <div class="commentBox marTop20">
+            <p class="commentBoxP">熱門評論</p>
+            <div class="userComment">
+                <textarea cols="1" rows="10" placeholder="新增留言......"></textarea>
+                <button style="cursor: pointer;">評論</button>
+            </div>
+            <div class="commentContent marTop20">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foo1">
+            <span class="footSpan">首頁</span>
+            <span>|</span>
+            <span class="footSpan" onclick="$$.goline()">網路客服</span>
+            <span>|</span>
+            <span class="footSpan" onclick="$$.goline()">產品答疑</span>
+            <div>未經允許，禁止轉載，網站聲明</div>
+            <p>© 2018 Skin information network.</p>
+        </div>
+    </footer>
+    <script async src="https://static.newworkbench.com/v4/licat.min.js?update=2020.12.04"></script>
+    <script>
+        var webconfig = {
+            baseHost: location.host,
+        }
+    </script>
+    <script>
+        let commentUserInfo = [{
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01GSqGZ32BlAzaZ1Q3N_!!917298378.jpg",
+                userName: "時光荏苒",
+                commentPraise: 320,
+                commentContent: "看完這篇文章我覺得我又看到了變美的希望，我臉上的這些斑點，我找了無數祛斑的方法，但是還是沒用，看到小編的經歷，我決定去試試，萬一成功了呢，反正臉都已經這樣了。",
+                commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01utv6fT2BlAzhTd8jp_!!917298378.png",
+                timer: "2天前",
+                replyFlag: true,
+                replyHeaderImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01GSqGZ32BlAzaZ1Q3N_!!917298378.jpg",
+                replyName: "時光荏苒",
+                replyTimer: "1天前",
+                replyContent: "姐妹們，我回來了，Anna真的好厲害，嗚嗚嗚，她讓我看到了希望，看到了能變美的希望，我臉上的斑點肉眼可見的變淡了！！！",
+                replyCommentImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01fagZq12BlAzllKafU_!!917298378.jpg",
+                replyPraise: 20,
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01xJUgqR2BlAz1Y0pYU_!!917298378.jpg",
+                userName: "人生如夢",
+                commentPraise: 280,
+                commentContent: "效果很明顯，看看之前滿臉斑點的自己，再看看現在的自己，差距真的好大",
+                commentImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01ztwZ5w2BlAzVhZVMz_!!917298378.jpg",
+                timer: "3天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01okDSR82BlAz0K2Gzf_!!917298378.jpg",
+                userName: "pig",
+                commentPraise: 235,
+                commentContent: "我臉上的這個斑點能去掉嗎？看著真的太顯老了，我明明才三十多歲，但是看起來像五六十歲的阿麼。",
+                commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01yvFgCx2BlAzh1emwi_!!917298378.jpg",
+                timer: "5天前",
+                replyFlag: true,
+                replyHeaderImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN010dL9cj2BlAyvASH5u_!!917298378.jpg",
+                replyName: "何青",
+                replyTimer: "2天前",
+                replyContent: "可以祛除的哦！你加Anna的LINE，她看了你臉上的斑點以後會為你制定祛斑方案的，你只需要按照她說的就好了。",
+                replyCommentImg: "",
+                replyPraise: 1,
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01k7SnK72BlAysFOnUE_!!917298378.jpg",
+                userName: "歲月如歌",
+                commentPraise: 210,
+                commentContent: "沒想到才1個月，斑點就完全祛除了，肌膚也比以白了不止一個度，這個算是祛斑之外的驚喜了吧，嘿嘿！",
+                commentImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01sCfvwZ2BlAzfx7ZnJ_!!917298378.png",
+                timer: "10天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01TyUkYk2BlAyvKWxuQ_!!917298378.jpg",
+                userName: "光點",
+                commentPraise: 200,
+                commentContent: "30歲，多年沒見的大學同學在IG上發了一張素顏照，說自己臉上的斑點去掉了，說了很多夸Anna的話，於是我讓她把Anna的LINE號給我，我也去試試，沒想到才一個月臉上的斑點就已經全部去掉了。",
+                commentImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01FRKvQa2BlAzinCAtx_!!917298378.jpg",
+                timer: "5天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01f6kXce2BlAyvKYJ5i_!!917298378.jpg",
+                userName: "隨遇而安",
+                commentPraise: 160,
+                commentContent: "32歲，斑點伴隨了我整個大學時期直到現在，上大學的時候有了斑點，而且還越來越多。慢慢的我就變得越來越沒有自信，大學四年，和男同學說話不超過20句。看著別人成雙成對嗎，而我只能一個人離開這個美好的大學校園。參加工作了也因為臉上的斑點而沒有找到一份很好的工作，一次偶然的機會讓我知道了Anna，看到網上很多人都說她在祛斑方面很厲害，我就毫不猶豫的去加她了，用了一個多月，我臉上的斑點全沒了，直到現在我都還感覺跟做夢一樣。",
+                commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN012Kbb932BlAzoXQCZ6_!!917298378.jpg",
+                timer: "13天前"
+            },
+            {
+                userImg: "https://static.newworkbench.com/gravatar/default.jpg",
+                userName: "遊客",
+                commentPraise: 70,
+                commentContent: "一直都有在使用Anna的保養法啦，即使現在臉上沒有了斑點，但還是一直有堅持保養喔~",
+                commentImg: null,
+                timer: "11天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01Ca5dFM2BlAyzc0372_!!917298378.jpg",
+                userName: "李心艾",
+                commentPraise: 50,
+                commentContent: "超贊的!!!困擾多年的黑斑終於除掉了，效果太感人了~",
+                commentImg: null,
+                timer: "11天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01OXSSHN2BlAysFRD7s_!!917298378.jpg",
+                userName: "堅果麻麻",
+                commentPraise: 35,
+                commentContent: "剛開始加上老師的時候沒耐心聽她講解，說了不好聽的話，後來被她服務所打動才決定試一試，現在用了不到30天，真的就如老師所說一樣，徹底把我斑點祛除了，皺紋也沒了，有點小開心，果然專業的老師就是不一樣，我會介紹更多朋友回報老師的",
+                commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01WFjsGV2BlAz3FnGC9_!!917298378.jpg",
+                timer: "3分鐘前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN013PzMtm2BlAyygTOf9_!!917298378.jpg",
+                userName: "遊客",
+                commentPraise: 30,
+                commentContent: "效果很明顯，老師的態度也很好好，隔三差五就問我怎麽樣，不過老師以後要是把下午發信息的時間改為晚上我更高興",
+                commentImg: null,
+                timer: "6天前"
+            },
+            {
+                userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN013PCRjC2BlAyqk1G7i_!!917298378.jpg",
+                userName: "不為誰而做的歌",
+                commentPraise: 10,
+                commentContent: "才三十幾歲的我，手就跟五六十歲的阿姨一樣，我這手還有得救嗎？",
+                commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01Hf3m9Q2BlAylkI8YG_!!917298378.jpg",
+                timer: "5天前"
+            }
+        ]
+
+        const textareaEl = document.querySelector('textarea')
+        const commentBtn = document.querySelector('.userComment button')
+        const commentContent = document.querySelector('.commentContent ul')
+        let localArr = []
+
+        applyComment(commentContent, commentUserInfo)
+        commentBtn.onclick = function () {
+            let locals = localStorage.getItem('userComment')
+            let reg = /^(\s*)$/;
+            let textValue = textareaEl.value
+            if (locals) localArr = JSON.parse(locals);
+            if (!reg.test(textValue)) {
+                commentUserInfo.unshift({
+                    userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01rtnRHT2BlAxUZk1Z7_!!917298378.jpg",
+                    userName: "游客",
+                    commentPraise: 0,
+                    commentContent: textValue,
+                    commentImg: null,
+                    timer: "刚刚"
+                })
+
+                localArr.push(textValue)
+                localStorage.setItem('userComment', JSON.stringify(localArr))
+                applyComment(commentContent, commentUserInfo)
+            }
+        }
+
+        commentContent.addEventListener('click', function (event) {
+            if (event.target.nodeName === "I") {
+                let eventCommon = event.path[1].children[0]
+                let numClass = event.path[1].children[0].className
+                let num = Number(eventCommon.innerText)
+                if (numClass != 'judge') {
+                    event.path[1].children[0].innerText = num + 1
+                    event.path[1].children[0].className = 'judge'
+                } else {
+                    event.path[1].children[0].innerText = num - 1
+                    event.path[1].children[0].className = ''
+                }
+            }
+        })
+
+        function applyComment(el, obj) {
+            let strInner = obj.map((item, index, array) => {
+                return `
+			<li>
+				<img src="${item.userImg}" class="userPhoto">
+				<div class="commentUserMsg">
+					<div class="commentUserHead">
+						<p class="uNament">${item.userName}</p>
+                        <p class="commentTime">${item.timer}</p>
+					</div>
+		
+						<div class="commentUserBody">
+						<p class="userCommentContent">${item.commentContent}</p>
+						<img class="${item.commentImg ? "commentImgClass" : "commentImg"}" src="${item.commentImg ?? ""}">
+					</div>
+					<div class="commentUserFoot">
+                        <span>回復</span>
+						<div style="user-select: none;">
+							<strong class="">${item.commentPraise}</strong>
+							<i class="iconfont icon-zan"></i>
+						</div>
+					</div>
+                  
+                    ${item.replyFlag ? `<div class="${item.replyFlag ? 'replyContentBox' : 'replyNone'}">
+                            <div class="replyContentL">
+                                <img src="${item.replyHeaderImg}" />    
+                            </div>
+                            <div class="replyContentR">
+                                <div class="commentUserHead">
+                                    <p class="uNament">${item.replyName}</p>
+                                    <p class="commentTime">${item.replyTimer}</p>    
+                                </div>
+                                <div class="commentUserBody">
+                                    <p class="userCommentContent">${item.replyContent}</p>
+                                    <img src="${item.replyCommentImg}" />
+                                </div>
+                                <div class="commentUserFoot">
+                                    <span>回復</span>
+                                    <div style="user-select: none;">
+                                        <strong class="">${item.replyPraise}</strong>
+                                        <i class="iconfont icon-zan"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`:""}  
+				</div>
+			</li>
+			`
+            })
+            commentContent.innerHTML = strInner.join('')
+        }
+
+        let carouselFont = document.querySelector('.comm_header_nav_child')
+
+
+
+        setInterval(() => {
+            let speed = -45;
+            let moveTop = window.getComputedStyle(carouselFont).top.slice(0, -2);
+            carouselFont.style.transition = "top 0.5s ease-in"
+            moveTop = Number(moveTop)
+            if (moveTop == -135) {
+                carouselFont.style.transition = "none"
+                moveTop = 0;
+                speed = 0;
+            }
+            carouselFont.style.top = (speed + moveTop) + 'px'
+        }, 3000)
+    </script>
+</body>
+
+</html>

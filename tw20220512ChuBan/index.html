@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20年黑斑輕鬆去除全紀錄，日曬斑、痘印、老人斑、深層斑……超強除斑攻略一招搞定！</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_3331954_cyyikfw8pof.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-style: normal;
+            box-sizing: border-box;
+        }
+
+        .contact {
+            cursor: pointer !important;
+        }
+
+        .fixedOver {
+            overflow: hidden;
+        }
+
+        .mask {
+            display: none;
+            position: absolute;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        .bottomBtn {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 600px;
+            border: none;
+            outline: none;
+            background: #3b5998;
+            text-align: center;
+            line-height: 60px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .wxidText {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+        }
+
+        #bigbox {
+            width: 100%;
+            max-width: 620px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .simplified {
+            margin-right: 10px;
+        }
+
+        .simplified,
+        .multiply,
+        .copyBtn {
+            padding: 1em;
+            border: 0;
+            border-radius: 0.5em;
+            font-size: 0.8rem;
+            color: white;
+            background-image: linear-gradient(to bottom, #5570bb, #881176);
+            box-shadow: 0.1em 0.1em 0.5em #124;
+            cursor: pointer;
+        }
+
+        .copyBtn {
+            background-image: linear-gradient(to bottom, #74694f, #118883);
+            padding: 4px;
+            width: 40px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+
+        .headTitle {
+            background-color: #ccab94;
+            line-height: 24px;
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+        }
+
+        .addLineGood {
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 0.005rem solid #dcdde0;
+            border-top: 0.005rem solid #dcdde0;
+            padding: 5px 0;
+        }
+
+        .removingImage {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .addLineGood a {
+            color: green;
+        }
+
+        .commentBox {
+            margin-top: 10px;
+        }
+
+        .personFierce {
+            padding: 5px 0;
+            display: flex;
+            justify-content: end;
+        }
+
+        .personFierce-content {
+            display: flex;
+            margin-right: 26px;
+        }
+
+        .personFierce-content span {
+            cursor: default;
+        }
+
+        .iconFabulous {
+            background: url('https://img.alicdn.com/imgextra/i4/43843319/O1CN01t0HsdQ1aO9BO0mAFM_!!43843319.png') no-repeat center;
+            background-size: cover;
+            width: 20px;
+            height: 20px;
+            display: block;
+            border-radius: 50%;
+        }
+
+        .comment-right-top {
+            background-color: #f0f1f5;
+            padding: 12px;
+            border-radius: 30px;
+        }
+
+        .iconSize {
+            width: 30px;
+            height: 30px;
+        }
+
+        .comment-left {
+            margin-right: 10px;
+        }
+
+        .comment-Content li {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 16px;
+        }
+
+        .commentWord {
+            line-height: 24px;
+        }
+
+        .comment-left img {
+            border-radius: 50%;
+            width: 54px;
+            height: 54px;
+        }
+
+        .comment-right-bot {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .color333 {
+            color: #333;
+        }
+
+        .comment-right-top img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 16px;
+        }
+
+        .addLineGood-left {
+            cursor: pointer;
+        }
+
+        .comment-Content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .fabulous {
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 0.3rem rgb(0 0 0 / 30%);
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        .fabulous i {
+            cursor: pointer;
+        }
+
+        .fabulous span {
+            cursor: default;
+            margin-left: 4px;
+        }
+
+        .comment-Content ul li {
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgb(243, 243, 243);
+        }
+
+        footer {
+            margin-top: 24px;
+            color: #fff;
+            background-color: #a3520d;
+            padding: 4%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .changeLange {
+            margin: 10px 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .changeLange ul {
+            display: flex;
+            align-items: center;
+        }
+
+        .changeLange ul li {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .changeLange ul li i {
+            width: 100%;
+            height: 100%;
+            font-size: 30px;
+            color: #7e7878;
+        }
+
+        .footerTop ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerTop ul li,
+        .copyright {
+            cursor: default;
+        }
+
+        .fooCenter ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footerTop {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .fooCenter {
+            margin: 7px auto;
+            max-width: 300px;
+        }
+
+        .copyright {
+            margin-top: 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mask">
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN019rS2Hl2BlAzOpiWYy_!!917298378.gif"
+            style="display:none" />
+        <img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN012ZOvpx2BlAzVUyS9r_!!917298378.gif"
+            style="display:none" />
+    </div>
+    <textarea style="display: none;" id="foo"></textarea>
+    <div id="bigbox">
+        <div class="headTitle">
+            20年黑斑輕鬆去除全紀錄，日曬斑、痘印、老人斑、深層斑……超強除斑攻略一招搞定！
+        </div>
+        <div class="changeLange">
+            <ul>
+                <li>
+                    <i class="iconfont icon-tuitetwitter44"></i>
+                </li>
+                <li>
+                    <i class="iconfont icon-facebookfacebook51"></i>
+                </li>
+                <li>
+                    <i class="iconfont icon-instagram"></i>
+                </li>
+            </ul>
+        </div>
+        <img class="removingImage"
+            src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01NL8aGC2BlAzTWZW4N_!!917298378.jpg" alt="30天除斑记录" />
+        <div class="addLineGood">
+            <a style="cursor: pointer;" onclick="$$.goline()">添加line</a>
+            <div class="addLineGood-left">
+                <i>👍</i>
+                <span class="color333">贊此篇文章</span>
+            </div>
+        </div>
+        <div class="personFierce">
+            <div class="personFierce-content">
+                <i class="iconFabulous"></i>
+                <span>18563</span>人
+            </div>
+        </div>
+        <div class="commentBox">
+            <div class="comment-Content">
+                <ul></ul>
+            </div>
+        </div>
+        <footer>
+            <div class="footerTop">
+                <ul>
+                    <li onclick="$$.goline()">訂閱網站</li>
+                    <li class="contact" onclick="$$.goline()">聯繫我們</li>
+                    <li>隱私政策</li>
+                </ul>
+            </div>
+            <div class="fooCenter">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-tuitetwitter44"></i>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-facebookfacebook51"></i>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+            <p class="copyright">© 2022 All Rights Reserved.</p>
+        </footer>
+    </div>
+    <button class="bottomBtn" onclick="$$.goline()">領取除斑秘方</button>
+</body>
+<script>
+    var commentRender = document.querySelector('.comment-Content ul')
+    var addEleNum = document.querySelector(".personFierce-content span")
+    var addClick = document.querySelector('.addLineGood-left')
+
+
+    var commentUserInfo = [{
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01O1JI3W2BlAzLNTmMI_!!917298378.jpg",
+        commentWord: "我來發反饋啦~我從小就長很多雀斑，也很困擾，用過很多淡斑精華都沒用，只有比較淡一點，但還是很多😥想去打雷射又怕之後會長出來💔後來發現了這個方法，效果真的讓我超驚喜！下面是我一個月後的樣子，一個月能有這樣的效果真的超開心~",
+        commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN018laUBk2BlAzQego3n_!!917298378.jpg",
+        timeDay: 18,
+        fabulousNumber: 1295
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01dh37IF2BlAzJ6hZIB_!!917298378.jpg",
+        commentWord: "我也來小小分享一下~我的兩頰很容易長痘痘，我也很愛去摳，導致痘斑都紅紅黑黑的😱還有也很容易長閉鎖性粉刺，看過很多皮膚科，但是每次稍微有好轉又會復發…後來在網上看見很多人都在分享這個方法，想著試一試，沒想到才半個月痘斑就明顯淡了很多，一個月後不僅痘斑消了很多，就連皮膚也有變好😆",
+        commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN011yzgGY2BlAzC1JdTf_!!917298378.jpg",
+        timeDay: 15,
+        fabulousNumber: 1264
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01smpGW62BlAzRrjlEt_!!917298378.jpg",
+        commentWord: "台灣的紫外線真的很恐怖，不知不覺曬斑越來越多😰一直想去除斑，但本人非常怕痛，我又希望可以快速復原，就找了現在這個方法，沒什麼恢復期，而且不用承受熱傷害😝不得不說這是我做過最正確的決定了，才過了幾週，斑比起之前真的有淡超多！",
+        commentImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01ZAu5ut2BlAzIQ729p_!!917298378.jpg",
+        timeDay: 8,
+        fabulousNumber: 1235
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01KmjoEl2BlAzQe2G6Y_!!917298378.jpg",
+        commentWord: "我媽的兩邊臉上大部分都是斑點，她每次出門喝喜酒或同學會都會很在意臉上這些斑，我也會在網上幫她看看有什麼好的除斑方法，我有看到很多評價說這個方法去除老人斑特別有效，沒想到才用了一個月，她的斑真的淡了超多！",
+        commentImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01xalZjh2BlAzLO5uV6_!!917298378.jpg",
+        timeDay: 11,
+        fabulousNumber: 1208
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01D7WR502BlAzLW1bXv_!!917298378.jpg",
+        commentWord: "希望我的分享能夠幫助到有相同困擾的人。我臉上的胎記是太田母斑，成長過程中受過太多人的「注目」，工作之後也因為這個斑多了很多普通人沒有的困擾。雖然還能看到一些痕跡，但我對現在的效果已經非常滿意了！",
+        commentImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN016Eqw4b2BlAzPsY0eN_!!917298378.jpg",
+        timeDay: 16,
+        fabulousNumber: 1174
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01eZxTBk2BlAzRrkMew_!!917298378.jpg",
+        commentWord: "小女子我偏偏遺傳到媽媽的斑，遮瑕用再多也遮不住，還會嚴重卡粉，打雷射又怕會反黑😭這個方法真的好很多，我才用了一個月，斑就有明顯變淡，最令我驚喜的是，膚色也有提亮很多😍這個錢花得也太值了吧！",
+        commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01toKLYb2BlAzJ7K2Ex_!!917298378.jpg",
+        timeDay: 16,
+        fabulousNumber: 1148
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01nYWjE32BlAzTnirQ3_!!917298378.jpg",
+        commentWord: "後悔沒早點去處理！這塊曬斑已經好幾年了，很久之前有想過要去打掉，但想到還要做功課選療程什麼的，就懶懶的😂這次是因為我妹用這個方法去除了雀斑，她就一直推薦給我。第一個療程結束之後，視覺上淡化就已經有八九成了，堅持下去效果會更好，真的是心裡默默讚嘆這個方法讚嘆妹妹💗",
+        commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01CGKNR22BlAzQeh4hM_!!917298378.jpg",
+        timeDay: 14,
+        fabulousNumber: 1111
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01qcendr2BlAzPs0AeA_!!917298378.jpg",
+        commentWord: "我是肝斑受害者，我之前打過皮秒，結痂醜了一個禮拜但是斑沒掉…後來在網上看到這個方法，請教了很多用過它的網友，他們都說效果很讚，而且我的情況很適合，於是就去了XDD一個月後的效果真的嚇到我，才一個月斑就淡了這麼多！後來又堅持了兩個月，我終於擁有了乾乾淨淨的臉了！",
+        commentImg: "https://img.alicdn.com/imgextra/i4/917298378/O1CN01U1AvUG2BlAzLWbn1X_!!917298378.jpg",
+        timeDay: 11,
+        fabulousNumber: 1087
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01qXWG9t2BlAzLVzzhq_!!917298378.jpg",
+        commentWord: "在小學就覺得臉髒髒的很討厭，也很不喜歡別人說有雀斑很可愛……查資料爬文有的沒的已經持續兩年多了，想去雷射但又很怕痛，後來閨蜜把這個方法推薦給了我。現在已經用了兩個月啦，不用經歷什麼恢復期，臉的雀斑已經淡到基本看不見了，真的超感謝我的閨蜜~",
+        commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN015QtWeL2BlAzNfkB47_!!917298378.jpg",
+        timeDay: 9,
+        fabulousNumber: 1052
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01zTFBzR2BlAzLVyNw3_!!917298378.jpg",
+        commentWord: "還在猶豫的你們趕快行動吧！我是屬於混合肌偏乾的膚質，臉上除了痘疤還有很多曬斑和膚色不均的問題，去年還出現了老年斑！幸好讓我遇到這個方法，兩個月斑就消失了很多，而且皮膚也有變好，相信堅持下去就能成為白拋拋的水煮蛋肌了💓💓💓",
+        commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01s6bD8w2BlAzNDKyDR_!!917298378.jpg",
+        timeDay: 6,
+        fabulousNumber: 1024
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01Udl6Al2BlAzOxENe5_!!917298378.jpg",
+        commentWord: "以前臉可以說是膚質超好，還是曬不黑體質，然後大二的時臉上就有了些淡斑，直到現在我發現黑色素沉澱越來越多，我真的超害怕😱在做了很多對比跟評估之後，我選擇了這個除斑方法，到第二週我就發現那些快要變成斑的小黑點都消失了，一個月後斑也消了一大部分，最開心的是膚質也有變好了很多！",
+        commentImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01NlkgOm2BlAzIQ9FN1_!!917298378.jpg",
+        timeDay: 34,
+        fabulousNumber: 1820
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN01RAtAr32BlAzQe4XUD_!!917298378.jpg",
+        commentWord: "我也來分享一下效果吧~去年因為懷孕加上我體質很容易長斑，隨著孕期我的臉也越來越花😭終於有時間除斑了，這個方法還是別的孕媽咪推薦給我的，沒想到才一個月效果就這麼好！雖然還有一些頑固斑，但是現在膚況比之前好很多，而且完全沒反黑！",
+        commentImg: "https://img.alicdn.com/imgextra/i2/917298378/O1CN013ax7iF2BlAzUc3nze_!!917298378.jpg",
+        timeDay: 34,
+        fabulousNumber: 1811
+    }, {
+        userImg: "https://img.alicdn.com/imgextra/i1/917298378/O1CN01NolqgN2BlAzTniST7_!!917298378.jpg",
+        commentWord: "從小就開始長斑，後來去診所發現我還有深層斑😥工作之後存了錢決心要除掉雀斑。也做過雷射，但是斑只結疤不消失……幸好聽了網友的推薦，目前的效果個人已經很滿意，斑點已經淡化了很多，而且不會長回來，毛孔也有縮小，化妝也變得很服帖~",
+        commentImg: "https://img.alicdn.com/imgextra/i3/917298378/O1CN01VLoOWt2BlAzGtphsq_!!917298378.jpg",
+        timeDay: 34,
+        fabulousNumber: 1681
+    }]
+    applyComment(commentRender, commentUserInfo)
+
+    addClick.onclick = function () {
+        let addEleNumClassName = addEleNum.className
+        let num = Number(addEleNum.innerText)
+        if (addEleNumClassName != 'addClass') {
+            addEleNum.innerText = num + 1
+            addEleNum.classList.add('addClass')
+        } else {
+            addEleNum.innerText = num - 1
+            addEleNum.classList.remove('addClass')
+        }
+
+    }
+
+    function applyComment(el, obj) {
+        let strInner = obj.map((item, index, array) => {
+            return `
+			<li>
+                <div class="comment-left">
+                    <img src="${item.userImg}" alt="头像">
+                </div>
+                <div class="comment-right">
+                    <div class="comment-right-top">
+                        <p class="commentWord color333">
+                            ${item.commentWord}
+                        </p>
+                        <img src=${item.commentImg} />
+                    </div>
+                    <div class="comment-right-bot">
+                        <p class="color333">${item.timeDay}天前</p>
+                        <div class="fabulous">
+                            <i class="iconFabulous iconSize"></i>
+                            <span>${item.fabulousNumber}</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+			`
+        })
+        el.innerHTML = strInner.join('')
+    }
+
+    commentRender.addEventListener('click', addEvent)
+
+    function addEvent(event) {
+        if (event.target.nodeName === "I") {
+            let eventCommon = event.path[1].children[1]
+            let numClass = event.path[1].children[1].className
+            let num = Number(eventCommon.innerText)
+            if (numClass != 'judge') {
+                event.path[1].children[1].innerText = num + 1
+                event.path[1].children[1].className = 'judge'
+            } else {
+                event.path[1].children[1].innerText = num - 1
+                event.path[1].children[1].className = ''
+            }
+        }
+    }
+</script>
+<script async src="https://static.newworkbench.com/v4/licat.min.js?update=2022.05.12"></script>
+<script>
+    var webconfig = {
+        baseHost: location.host,
+    }
+</script>
+
+</html>

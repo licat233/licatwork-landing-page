@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>臻皙煥顏修護霜</title>
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+img{
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+}
+li{
+    list-style-type:none;
+}
+.container{
+    max-width: 750px;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 75px;
+    position: relative;
+}
+.header .top{
+    margin: 3%;
+    border-bottom: 1px dashed #d9d9d9;
+}
+.header .top h1{
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+.header .top p{
+    color: #fc8625;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+.header .bottom{
+    color: #5b5b5b;
+    margin: 0 3%;
+}
+.header .bottom .left{
+    float: left;
+}
+.header .bottom .left .price{
+    float: left;
+    color: #f61d4b;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.header .bottom .left .price span{
+    font-size: 3rem;
+}
+.header .bottom .left .discount{
+    float: left;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+.header .bottom .left .discount .cost-price{
+    color: #b3b3b3;
+}
+.header .bottom .left .discount .cost-price span{
+    text-decoration: line-through;
+}
+.header .bottom .right{
+    float: right;
+}
+.header .bottom .right .icon{
+    font-size: 1.5rem;
+    padding-right: 10px;
+    border: 1px solid #f61d4b;
+}
+.header .bottom .right .icon img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+.header .bottom .right .time{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f61d4b;
+}
+.header .bottom .tip{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #666;
+    margin: 3% 0;
+}
+.header .bottom .tip img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+@media screen and (max-width: 700px){
+    .container{
+        padding-bottom: 50px;
+    }
+    .header .top h1{
+        font-size: 1.5rem;
+    }
+    .header .top p{
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+    .header .bottom .left .price{
+        font-size: 1.2rem;
+    }
+    .header .bottom .left .price span{
+        font-size: 2.4rem;
+    }
+    .header .bottom .left .discount{
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+    .header .bottom .right .icon{
+        font-size: 1rem;
+    }
+    .header .bottom .right .icon img{
+        width: 30px;
+    }
+    .header .bottom .right .time{
+        font-size: 1rem;
+    }
+    .header .bottom .tip{
+        font-size: 1rem;
+        margin: 6% 0;
+    }
+    .header .bottom .tip img{
+        margin-right: 5px;
+        width: 20px;
+    }
+}
+@media screen and (max-width: 350px){
+    .header .top h1{
+        font-size: 1rem;
+    }
+    .header .top p{
+        font-size: .9rem;
+    }
+    .header .bottom .left .price{
+        font-size: 1rem;
+    }
+    .header .bottom .left .price span{
+        font-size: 1.5rem;
+    }
+    .header .bottom .left .discount{
+        font-size: .9rem;
+    }
+    .header .bottom .right .icon{
+        font-size: .9rem;
+    }
+    .header .bottom .right .icon img{
+        width: 25px;
+    }
+    .header .bottom .right .time{
+        font-size: .9rem;
+    }
+    .header .bottom .tip{
+        font-size: .9rem;
+        margin: 4% 0;
+    }
+}
+.notice{
+    font-size: 1.2rem;
+    color: #7D5521;
+    padding: 3%;
+}
+.notice .title{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #7D5521;
+    letter-spacing: 2px;
+}
+.order{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 5%;
+    color: #7D5521;
+}
+.order p{
+    margin: 10px 0;
+}
+.order .logo{
+    font-size: 1.3rem;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #7D5521;
+    letter-spacing: 2px;
+}
+.order .guige li{
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #7D5521;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.order .guige .gg{
+    background: #7D5521;
+    color: #fff;
+}
+.order .list{
+    text-align: right;
+}
+.order .iut{
+    width: 98%;
+    height: 30px;
+    padding-left: 1%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #7D5521;
+}
+.order .address{
+    margin-bottom: 10px;
+}
+.order .address .wfdqxl{
+    height: 30px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #7D5521;
+}
+.order textarea{
+    width: 98%;
+    height: 60px;
+    padding-left: 1%;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #7D5521;
+}
+.order #mode{
+    padding: 8px;
+    border: 1px solid #7D5521;
+    margin: 10px 0;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.order .gou{
+    display: inline-block;
+    background: #A42B1A;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+.order #orderbtn{
+    text-align: center;
+}
+.order .btn{
+    padding: 10px 60px;
+    background: #A42B1A;
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+#tsmsg{
+    display: none;
+    background-color: #000;
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    border: none;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 200px;
+    max-height: 20px;
+    margin: auto;
+    position: fixed;
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.guild{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fc2e47;
+    text-align: center;
+    padding: 20px 0;
+}
+.guild a{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.guild img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+@media screen and (max-width: 700px){
+    .notice{
+        font-size: .9rem;
+    }
+    .notice .title{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        padding-bottom: 5px;
+    }
+    .order p{
+        margin: 5px 0;
+    }
+    .order .logo{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        padding: 6px 0;
+    }
+    .order .guige li{
+        font-size: .9rem;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+    .order #orderbtn{
+        margin-bottom: 10px;
+    }
+    .order .btn{
+        padding: 5px 30px;
+        font-size: 1.2rem;
+    }
+    .guild{
+        padding: 10px 0;
+    }
+    .guild a{
+        font-size: 1.2rem;
+    }
+}
+
+.swiper-container{
+    --swiper-pagination-color: #ff6600;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-img">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide swiper-slide-active">
+                            <img src="https://img.alicdn.com/imgextra/i4/917298378/O1CN01EWCuiH2BlAtcr8bv6_!!917298378.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top">
+                <h1>臻皙煥顏修護霜</h1>
+                <p>核心植物草本萃取技術，開啓肌膚全面修復</p>
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <div class="price">NT$<span>9800</span>
+                    </div>
+                    <div class="discount">
+                        <div class="cost-price">原價：<span>12800</span>
+                        </div>
+                        <div class="num">已搶694盒</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="icon">
+                        <img src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01gzlOyc2BlAtf3mJSM_!!917298378.png">限時搶購</div>
+                    <div class="time">距結束 <span id="countdown">00:28:40</span>
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="tip"> <span><img src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01E2yKlP2BlAtfSUnCY_!!917298378.png">品質保證</span>
+                    <span><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01IfyjtN2BlAtZQJOzB_!!917298378.png">貨到付款</span>
+                    <span><img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01P0l1Da2BlAtYAJEkt_!!917298378.png">免郵配送</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01keK9d92BlAta0rrF9_!!917298378.jpg">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01vb1ghU2BlAtadYIpH_!!917298378.jpg">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i2/917298378/O1CN0181ZZYd2BlAtj3FDuH_!!917298378.jpg">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01ILV1DQ2BlAth1p6PO_!!917298378.jpg">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i3/917298378/O1CN01iqV6AY2BlAtheWDlP_!!917298378.jpg">
+             <img class="lazy" src="https://img.alicdn.com/imgextra/i2/917298378/O1CN01t1ZEyV2BlAtdYtRpO_!!917298378.jpg">
+        </div>
+        <div class="notice" id="notice">
+            <div class="title">訂購須知</div>
+            <div>配送方式：
+                <br>- 貨到付款，暫只接受現金。
+                <br>- 免郵費! 支持黑貓宅配（推薦）、超商自取。
+                <br>- 訂購成功後，約4-7天内收到商品。
+                <br>*若遇星期天、國定假日到貨可能會延遲。</div>
+        </div>
+		<a name="dd"></a>
+      <!--<div style="height:550px;">-->
+      <!--      <iframe id="aliziIframe" name="aliziIframe"-->
+      <!--          src="https://www.vxrag.com/wforder/wfdata/item/8e8850243be8079a.html" width="100%" height="100%"-->
+      <!--          scrolling="no" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe>-->
+      <!--  </div>-->
+        <div class="footer" style="margin: 10px;font-size: 14px;text-align: center;color: #aaaaaa;display:none">
+            <div>廣告托播:艾凱創意行銷股份有限公司</div>
+            <div>公司電話: 02-89942838</div>
+            <div>公司地址: 新北市新莊區中和街155巷24弄7號</div>
+        </div>
+        <div class="guild">
+            <a href="#dd" style="display: block">
+                <img src="https://img.alicdn.com/imgextra/i1/917298378/O1CN01DPhuUs2BlAt2kXCDW_!!917298378.png">立即訂購</a>
+        </div>
+    </div>
+	    <script>
+        window.onload = function() {
+            var countdown = document.getElementById("countdown");
+            var time = 1800;
+            setInterval(function() {
+                time = time - 1;
+                var minute = parseInt(time / 60);
+                var second = parseInt(time % 60);
+                countdown.innerHTML = '00:' + minute + ':' + second;
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
